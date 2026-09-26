@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Über uns – Fuhrparkmanagement aus der Schweiz | FleetSwiss</title>
 <meta name="description" content="FleetSwiss ist ein Produkt der Alpine Service Switzerland GmbH und digitalisiert das Fuhrparkmanagement für Schweizer Unternehmen.">
-<link rel="canonical" href="https://fleetswiss.ch/ueber-uns">
+<link rel="canonical" href="https://fleetswiss.ch/ueber-uns.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FleetSwiss">
 <meta property="og:title" content="Über uns – Fuhrparkmanagement aus der Schweiz | FleetSwiss">
 <meta property="og:description" content="FleetSwiss ist ein Produkt der Alpine Service Switzerland GmbH und digitalisiert das Fuhrparkmanagement für Schweizer Unternehmen.">
 <meta property="og:locale" content="de_CH">
-<meta property="og:url" content="https://fleetswiss.ch/ueber-uns">
+<meta property="og:url" content="https://fleetswiss.ch/ueber-uns.html">
 <meta property="og:image" content="https://fleetswiss.ch/assets/og-fleetswiss.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -781,6 +781,14 @@
   @media (max-width: 420px) { .logo .logo-image { height: 26px; } }
   .footer-brand .footer-logo { height: 28px; width: auto; max-width: 100%; object-fit: contain; display: block; }
 </style>
+<style id="header-layout">
+  /* Desktop-Kopfzeile: Logo links, Navigation rechts, volle Breite mit schmalem Seitenrand */
+  @media (min-width: 901px) {
+    header.site .nav-row { max-width: none; padding-left: clamp(24px, 3.5vw, 56px); padding-right: clamp(24px, 3.5vw, 56px); }
+    header.site nav.primary { margin-left: auto; }
+    header.site .nav-right { display: none; }
+  }
+</style>
 </head>
 <body>
 <header class="site">
@@ -789,11 +797,11 @@
       <picture><source srcset="/assets/brand/fleetswiss-logo-white.png" media="(prefers-color-scheme: dark)"><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
     </a>
     <nav class="primary" aria-label="Hauptnavigation">
-      <a href="/produkt">Produkt</a>
-      <a href="/funktionen">Funktionen</a>
-      <a href="/sicherheit">Sicherheit</a>
-      <a href="/ueber-uns">Über uns</a>
-      <a href="/kontakt">Kontakt</a>
+      <a href="/produkt.html">Produkt</a>
+      <a href="/funktionen.html">Funktionen</a>
+      <a href="/sicherheit.html">Sicherheit</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/#kontakt">Kontakt</a>
     </nav>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
@@ -801,17 +809,17 @@
         <span aria-hidden="true">|</span>
         <button type="button" aria-current="false">EN</button>
       </div>
-      <a href="/kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
+      <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/produkt">Produkt</a>
-    <a href="/funktionen">Funktionen</a>
-    <a href="/sicherheit">Sicherheit</a>
-    <a href="/ueber-uns">Über uns</a>
-    <a href="/kontakt">Kontakt</a>
-    <a href="/kontakt" class="btn btn-primary">Demo anfragen</a>
+    <a href="/produkt.html">Produkt</a>
+    <a href="/funktionen.html">Funktionen</a>
+    <a href="/sicherheit.html">Sicherheit</a>
+    <a href="/ueber-uns.html">Über uns</a>
+    <a href="/#kontakt">Kontakt</a>
+    <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
   </div>
 </header>
 <main>
@@ -841,7 +849,7 @@
     <div class="wrap">
       <h2>Bereit, FleetSwiss live zu sehen?</h2>
       <p>Vereinbaren Sie eine unverbindliche Demo &ndash; wir zeigen Ihnen FleetSwiss anhand Ihrer eigenen Flotte.</p>
-      <a href="/kontakt" class="btn btn-primary">Demo anfragen</a>
+      <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
     </div>
   </section>
 
@@ -857,26 +865,26 @@
       <div class="footer-col">
         <h2 class="footer-h">Produkt</h2>
         <ul>
-          <li><a href="/produkt">Produkt</a></li>
-          <li><a href="/funktionen">Funktionen</a></li>
-          <li><a href="/produkt#roadmap">Roadmap</a></li>
+          <li><a href="/produkt.html">Produkt</a></li>
+          <li><a href="/funktionen.html">Funktionen</a></li>
+          <li><a href="/produkt.html#roadmap">Roadmap</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h2 class="footer-h">Unternehmen</h2>
         <ul>
-          <li><a href="/sicherheit">Sicherheit</a></li>
-          <li><a href="/ueber-uns">Über uns</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+          <li><a href="/sicherheit.html">Sicherheit</a></li>
+          <li><a href="/ueber-uns.html">Über uns</a></li>
+          <li><a href="/#kontakt">Kontakt</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h2 class="footer-h">Rechtliches</h2>
         <ul>
-          <li><a href="/datenschutz">Datenschutz</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/agb">AGB</a></li>
-          <li hidden><a href="/datenschutz#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/agb.html">AGB</a></li>
+          <li hidden><a href="/datenschutz.html#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
         </ul>
       </div>
     </div>

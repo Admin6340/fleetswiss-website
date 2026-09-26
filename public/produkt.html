@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Digitale Flottenverwaltung: Plattform & Roadmap | FleetSwiss</title>
 <meta name="description" content="FleetSwiss als Plattform für die digitale Flottenverwaltung: strukturierte Datenübernahme, begleitetes Onboarding und transparente Roadmap.">
-<link rel="canonical" href="https://fleetswiss.ch/produkt">
+<link rel="canonical" href="https://fleetswiss.ch/produkt.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FleetSwiss">
 <meta property="og:title" content="Digitale Flottenverwaltung: Plattform & Roadmap | FleetSwiss">
 <meta property="og:description" content="FleetSwiss als Plattform für die digitale Flottenverwaltung: strukturierte Datenübernahme, begleitetes Onboarding und transparente Roadmap.">
 <meta property="og:locale" content="de_CH">
-<meta property="og:url" content="https://fleetswiss.ch/produkt">
+<meta property="og:url" content="https://fleetswiss.ch/produkt.html">
 <meta property="og:image" content="https://fleetswiss.ch/assets/og-fleetswiss.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -781,6 +781,39 @@
   @media (max-width: 420px) { .logo .logo-image { height: 26px; } }
   .footer-brand .footer-logo { height: 28px; width: auto; max-width: 100%; object-fit: contain; display: block; }
 </style>
+<style id="product-visuals">
+  /* Kennzeichnungen 1 / CH / V1 / E2E zentriert, Beschreibung linksbuendig */
+  .stat-card .num { text-align: center; }
+  .stat-card .lbl { text-align: left; }
+  /* Produktvisuals */
+  .shot { margin: 0; }
+  .shot img { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border-radius: 10px; border: 1px solid var(--line); background: #fff;
+              box-shadow: 0 24px 60px -32px rgba(14,42,71,0.45); }
+  .shot figcaption { margin-top: 12px; font-size: 13px; color: var(--slate-light); text-align: center; }
+  .product-views .pv-list { display: grid; gap: 56px; margin-top: 40px; }
+  .pv-row { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 44px; align-items: center; }
+  .pv-row.pv-flip { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
+  .pv-row.pv-flip .pv-media { order: 2; }
+  .pv-media { display: flex; justify-content: center; }
+  .pv-media .shot { width: 100%; }
+  .pv-media .shot.pv-natural { width: auto; max-width: 100%; }
+  .pv-text h3 { font-size: 21px; font-weight: 800; color: var(--navy); line-height: 1.3; }
+  .pv-text p { margin-top: 10px; font-size: 16px; color: var(--slate); line-height: 1.65; }
+  @media (max-width: 900px) {
+    .pv-row, .pv-row.pv-flip { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .pv-row.pv-flip .pv-media { order: 0; }
+    .product-views .pv-list { gap: 44px; }
+  }
+  @media (max-width: 640px) { .pv-media .shot { max-width: 420px; margin: 0 auto; } }
+</style>
+<style id="header-layout">
+  /* Desktop-Kopfzeile: Logo links, Navigation rechts, volle Breite mit schmalem Seitenrand */
+  @media (min-width: 901px) {
+    header.site .nav-row { max-width: none; padding-left: clamp(24px, 3.5vw, 56px); padding-right: clamp(24px, 3.5vw, 56px); }
+    header.site nav.primary { margin-left: auto; }
+    header.site .nav-right { display: none; }
+  }
+</style>
 </head>
 <body>
 <header class="site">
@@ -789,11 +822,11 @@
       <picture><source srcset="/assets/brand/fleetswiss-logo-white.png" media="(prefers-color-scheme: dark)"><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
     </a>
     <nav class="primary" aria-label="Hauptnavigation">
-      <a href="/produkt">Produkt</a>
-      <a href="/funktionen">Funktionen</a>
-      <a href="/sicherheit">Sicherheit</a>
-      <a href="/ueber-uns">Über uns</a>
-      <a href="/kontakt">Kontakt</a>
+      <a href="/produkt.html">Produkt</a>
+      <a href="/funktionen.html">Funktionen</a>
+      <a href="/sicherheit.html">Sicherheit</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/#kontakt">Kontakt</a>
     </nav>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
@@ -801,17 +834,17 @@
         <span aria-hidden="true">|</span>
         <button type="button" aria-current="false">EN</button>
       </div>
-      <a href="/kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
+      <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/produkt">Produkt</a>
-    <a href="/funktionen">Funktionen</a>
-    <a href="/sicherheit">Sicherheit</a>
-    <a href="/ueber-uns">Über uns</a>
-    <a href="/kontakt">Kontakt</a>
-    <a href="/kontakt" class="btn btn-primary">Demo anfragen</a>
+    <a href="/produkt.html">Produkt</a>
+    <a href="/funktionen.html">Funktionen</a>
+    <a href="/sicherheit.html">Sicherheit</a>
+    <a href="/ueber-uns.html">Über uns</a>
+    <a href="/#kontakt">Kontakt</a>
+    <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
   </div>
 </header>
 <main>
@@ -837,6 +870,87 @@
         <div class="stat-card"><div class="num">CH</div><div class="lbl">Persönlicher Support aus der Schweiz</div></div>
         <div class="stat-card"><div class="num">V1</div><div class="lbl">Aktueller Stand, laufend erweitert</div></div>
         <div class="stat-card"><div class="num">E2E</div><div class="lbl">Durchgängig abgebildet – von Handover bis Return</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUKT-EINBLICKE (Beispielansichten mit Demodaten) -->
+  <section class="product-views" aria-labelledby="einblicke-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Produkt-Einblicke</div>
+        <h2 id="einblicke-title">FleetSwiss im Einsatz</h2>
+        <p>Beispielansichten mit Demodaten.</p>
+      </div>
+      <div class="pv-list">
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/fahrzeugverwaltung-mobile.png" width="374" height="400">
+          <img src="/assets/product/fahrzeugverwaltung.png" width="838" height="505" alt="FleetSwiss-Fahrzeugliste mit Suche, Filtern nach Poolfahrzeug, Fahrtenbuch, Fahrzeugklasse und Kraftstoff sowie Kontrollschild, Fahrzeug, Status, Fahrer und Kilometerstand" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Fahrzeugverwaltung</h3>
+        <p>Vollständige Fahrzeugübersicht mit Stammdaten, Dokumenten und Historie an einem Ort.</p>
+      </div>
+      </div>
+      <div class="pv-row pv-flip">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/fahrzeugakte-mobile.png" width="410" height="342">
+          <img src="/assets/product/fahrzeugakte.png" width="668" height="376" alt="FleetSwiss-Fahrzeugakte mit Identität und Fahrzeugdaten, Status und Nutzung, Leasing und Kosten sowie Dokumentenübersicht" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Fahrzeugakte inkl. Leasing &amp; Dokumente</h3>
+        <p>Verträge, Laufzeiten und Kosten pro Fahrzeug transparent im Blick behalten. Fahrzeug- und Vertragsdokumente zentral, sicher und jederzeit auffindbar ablegen.</p>
+      </div>
+      </div>
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/poolreservierung-mobile.png" width="401" height="347">
+          <img src="/assets/product/poolreservierung.png" width="501" height="376" alt="FleetSwiss-Poolreservierung mit Wochenkalender der Poolfahrzeuge und Formular für eine neue Reservierung" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Poolreservierung</h3>
+        <p>Gemeinsam genutzte Fahrzeuge einfach verwalten, buchen und reservieren.</p>
+      </div>
+      </div>
+      <div class="pv-row pv-flip">
+      <div class="pv-media">
+        <figure class="shot pv-natural">
+          <picture>
+          <img src="/assets/product/qr-fahrtenbuch.png" width="305" height="189" alt="FleetSwiss-Fahrzeugetikett mit QR-Code, Kontrollschild und Fahrzeugmodell zum Start einer Fahrt im E-Fahrtenbuch" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>QR-/E-Fahrtenbuch</h3>
+        <p>Fahrten unkompliziert per QR-Code erfassen – ohne separate Hardware.</p>
+      </div>
+      </div>
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot pv-natural">
+          <picture>
+          <img src="/assets/product/fahrerverwaltung.png" width="541" height="187" alt="FleetSwiss-Fahrerliste mit Suche, Filtern und Übersicht der Fahrer mit zugeordneten Fahrzeugen und Status" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Fahrerverwaltung</h3>
+        <p>Klare Zuordnung von Fahrern zu Fahrzeugen inkl. Kontrollschild- und Zuordnungshistorie.</p>
+      </div>
+      </div>
       </div>
     </div>
   </section>
@@ -929,7 +1043,7 @@
     <div class="wrap">
       <h2>Bereit, FleetSwiss live zu sehen?</h2>
       <p>Vereinbaren Sie eine unverbindliche Demo &ndash; wir zeigen Ihnen FleetSwiss anhand Ihrer eigenen Flotte.</p>
-      <a href="/kontakt" class="btn btn-primary">Demo anfragen</a>
+      <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
     </div>
   </section>
 
@@ -945,26 +1059,26 @@
       <div class="footer-col">
         <h2 class="footer-h">Produkt</h2>
         <ul>
-          <li><a href="/produkt">Produkt</a></li>
-          <li><a href="/funktionen">Funktionen</a></li>
-          <li><a href="/produkt#roadmap">Roadmap</a></li>
+          <li><a href="/produkt.html">Produkt</a></li>
+          <li><a href="/funktionen.html">Funktionen</a></li>
+          <li><a href="/produkt.html#roadmap">Roadmap</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h2 class="footer-h">Unternehmen</h2>
         <ul>
-          <li><a href="/sicherheit">Sicherheit</a></li>
-          <li><a href="/ueber-uns">Über uns</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+          <li><a href="/sicherheit.html">Sicherheit</a></li>
+          <li><a href="/ueber-uns.html">Über uns</a></li>
+          <li><a href="/#kontakt">Kontakt</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h2 class="footer-h">Rechtliches</h2>
         <ul>
-          <li><a href="/datenschutz">Datenschutz</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/agb">AGB</a></li>
-          <li hidden><a href="/datenschutz#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/agb.html">AGB</a></li>
+          <li hidden><a href="/datenschutz.html#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
         </ul>
       </div>
     </div>

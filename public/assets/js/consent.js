@@ -23,7 +23,7 @@
   var CONFIG = {
     version: 1,
     storageKey: 'fs_consent',
-    privacyUrl: '/datenschutz',
+    privacyUrl: '/datenschutz.html',
     categories: {
       necessary: {
         required: true,
