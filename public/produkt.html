@@ -825,6 +825,19 @@
   }
   :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
 </style>
+<style id="service-models">
+  /* V1.8 Leistungsmodelle */
+  .sm-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 24px; align-items: start; }
+  .sm-card { background: var(--white); }
+  .sm-card h3 { font-size: 19px; font-weight: 800; color: var(--navy); }
+  .sm-card p { font-size: 15px; }
+  .sm-list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .sm-list li { padding: 9px 0; border-top: 1px solid var(--line); font-size: 14.5px; line-height: 1.55; color: var(--slate); }
+  .sm-list strong { color: var(--ink); font-weight: 600; }
+  .sm-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  @media (max-width: 820px) { .sm-grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 480px) { .sm-cta .btn { flex: 1 1 100%; justify-content: center; text-align: center; } }
+</style>
 </head>
 <body>
 <header class="site">
@@ -964,6 +977,38 @@
         <p>Klare Zuordnung von Fahrern zu Fahrzeugen inkl. Kontrollschild- und Zuordnungshistorie.</p>
       </div>
       </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGSMODELLE (V1.8) -->
+  <section class="service-models" style="background:var(--paper);" aria-labelledby="modelle-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Leistungsmodelle</div>
+        <h2 id="modelle-title">Zwei Wege, FleetSwiss zu nutzen</h2>
+      </div>
+      <div class="sm-grid">
+        <div class="feature-card sm-card">
+          <h3>FleetSwiss Software</h3>
+          <p>Sie arbeiten selbst mit der Plattform. Die Funktionen stehen Ihnen gemäss gebuchtem Umfang zur Verfügung.</p>
+        </div>
+        <div class="feature-card sm-card">
+          <h3>Managed Fleet</h3>
+          <p>Ergänzende Fleet-Management-Dienstleistungen passend zu Ihrer Flotte – von der Unterstützung bei Beschaffung und Vertragsprozessen bis zu Schaden-, Rückgabe- und Partnerprozessen. Umfang und Verantwortlichkeiten werden individuell vereinbart.</p>
+          <ul class="sm-list">
+              <li><strong>Fahrzeugbeschaffung:</strong> Unterstützung bei Fahrzeugbestellungen und der Übergabe neuer Fahrzeuge.</li>
+              <li><strong>Vertrags- und Dokumentenmanagement:</strong> Unterstützung bei Leasing- und Vertragsprozessen sowie bei der Ablage von Fahrzeugdokumenten.</li>
+              <li><strong>Schadenmanagement:</strong> Begleitung von Schadenfällen von der Meldung bis zum Abschluss.</li>
+              <li><strong>Fahrzeugrückgaben:</strong> Begleitung von Rückgaben inklusive Vorbereitung und Protokoll.</li>
+              <li><strong>Partner und Garagen:</strong> Unterstützung bei der Koordination mit Partnergaragen und Dienstleistern.</li>
+              <li><strong>Operative Fuhrparkadministration:</strong> Unterstützung bei administrativen Fuhrparkaufgaben wie Fristen und Kontrollen.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm-cta">
+        <a href="/#preise" class="btn btn-outline">Preise ansehen</a>
+        <a href="/#kontakt" class="btn btn-primary">Fleet Management anfragen</a>
       </div>
     </div>
   </section>

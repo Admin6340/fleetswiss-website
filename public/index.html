@@ -927,6 +927,23 @@
   }
   :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
 </style>
+<style id="pricing-models">
+  /* V1.8 Leistungsmodelle & Preise */
+  .pricing-panel.pricing-models { display: block; }
+  .pm-head { max-width: 680px; }
+  .pm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+  .pm-card { display: flex; flex-direction: column; }
+  .pm-card h3 { font-size: 22px; font-weight: 800; color: #fff; margin-top: 6px; }
+  .pricing-panel .pm-card p { font-size: 15px; margin-top: 10px; }
+  .pm-list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .pm-list li { position: relative; padding: 7px 0 7px 22px; font-size: 14.5px; color: #DCE7F1; border-top: 1px solid rgba(255,255,255,0.12); }
+  .pm-list li::before { content: ""; position: absolute; left: 2px; top: 14px; width: 8px; height: 8px; border-radius: 50%; background: #7EB4E6; }
+  .pm-price { margin-top: auto; padding-top: 22px; font-size: 24px; font-weight: 800; color: #fff; }
+  .pm-unit { font-size: 15px; font-weight: 600; color: #B9CBDD; }
+  .pm-card .btn { width: 100%; justify-content: center; text-align: center; margin-top: 16px; }
+  .pm-note { margin-top: 24px; font-size: 13px; line-height: 1.55; color: #93A9BE; max-width: 820px; }
+  @media (max-width: 820px) { .pm-grid { grid-template-columns: minmax(0, 1fr); } }
+</style>
 </head>
 <body>
 <header class="site">
@@ -1164,24 +1181,38 @@
       </div>
     </div>
   </section>
-<!-- PRICING -->
-  <section style="background:var(--paper);">
+<!-- PRICING: Leistungsmodelle & Preise -->
+  <section id="preise" style="background:var(--paper);" aria-labelledby="preise-title">
     <div class="wrap">
-      <div class="pricing-panel">
-        <div>
-          <div class="eyebrow" style="color:#7EB4E6;">Preise</div>
-          <h2>Individuell nach Flottengrösse und Leistungsumfang</h2>
-          <p>FleetSwiss wird passend zur Flottengrösse und den benötigten Modulen angeboten.</p>
+      <div class="pricing-panel pricing-models">
+        <div class="pm-head">
+          <div class="eyebrow" style="color:#7EB4E6;">Leistungsmodelle</div>
+          <h2 id="preise-title">Software oder Fleet Management – passend zu Ihrer Flotte</h2>
+          <p>Verwalten Sie Ihren Fuhrpark eigenständig mit FleetSwiss, oder lassen Sie sich zusätzlich bei operativen Fuhrparkprozessen unterstützen.</p>
         </div>
-        <div class="pricing-side">
-          <div class="pricing-model">Ihr Angebot richtet sich nach</div>
-          <ul class="pricing-factors">
-            <li><div class="pricing-model-value">Flottengrösse</div></li>
-            <li><div class="pricing-model-value">Benötigten Modulen</div></li>
-          </ul>
-          <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
-          <div class="fine">Sie erhalten ein individuelles Angebot für Ihre Flotte.</div>
+        <div class="pm-grid">
+          <article class="pricing-side pm-card" aria-labelledby="pm-software">
+            <div class="pricing-model">SaaS-Plattform</div>
+            <h3 id="pm-software">FleetSwiss Software</h3>
+            <p>Digitale Plattform zur eigenständigen Fuhrparkverwaltung: Fahrzeuge, Fahrer, Verträge, Schäden, Dokumente und operative Prozesse an einem Ort.</p>
+            <ul class="pm-list">
+              <li>Fahrzeug-, Fahrer- und Vertragsverwaltung</li>
+              <li>Poolfahrzeuge, Reservationen und QR-Fahrtenbuch</li>
+              <li>Schadenmanagement und Dokumente</li>
+              <li>Datenimport, PDF-Protokolle und Excel-/ZIP-Export</li>
+            </ul>
+            <div class="pm-price">ab CHF 14.– <span class="pm-unit">/ Fahrzeug / Monat</span></div>
+            <a href="#kontakt" class="btn btn-primary">Demo anfragen</a>
+          </article>
+          <article class="pricing-side pm-card" aria-labelledby="pm-managed">
+            <div class="pricing-model">Fleet Management</div>
+            <h3 id="pm-managed">Managed Fleet</h3>
+            <p>Ergänzende Fleet-Management-Dienstleistungen passend zu Ihrer Flotte – von der Unterstützung bei Beschaffung und Vertragsprozessen bis zu Schaden-, Rückgabe- und Partnerprozessen. Umfang und Verantwortlichkeiten werden individuell vereinbart.</p>
+            <div class="pm-price">Individuelles Angebot</div>
+            <a href="#kontakt" class="btn btn-on-dark">Fleet Management anfragen</a>
+          </article>
         </div>
+        <p class="pm-note">Preis abhängig von Flottengrösse, Funktionsumfang und Leistungsmodell. Einrichtung, Datenmigration und kundenspezifische Leistungen können separat verrechnet werden. Alle Preise exkl. MWST.</p>
       </div>
     </div>
   </section>
