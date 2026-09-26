@@ -43,27 +43,16 @@
     --white: #FFFFFF;
     --ink: #14202E;
     --slate: #4B5A68;
-    --slate-light: #7C8B98;
+    --slate-light: #5E6C79;
     --line: #DFE6EC;
     --green: #2E9E5B;
     --red-mark: #C7492B;
     --shadow: 0 20px 50px -25px rgba(14,42,71,0.35);
     --radius: 10px;
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color-scheme: light;
+    color-scheme: only light;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: #0B1620;
-      --white: #10202E;
-      --ink: #EAF0F5;
-      --slate: #B7C4CE;
-      --slate-light: #8695A2;
-      --line: #223546;
-      --ice: #132534;
-    }
-  }
   :root[data-theme="dark"] {
     --paper: #0B1620;
     --white: #10202E;
@@ -149,9 +138,6 @@
     padding-top: env(safe-area-inset-top, 0px);
   }
   :root[data-theme="dark"] header.site { background: rgba(16,32,46,0.9); }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) header.site { background: rgba(16,32,46,0.9); }
-  }
   .nav-row {
     display: flex;
     align-items: center;
@@ -561,7 +547,7 @@
     padding: 5px 11px; border-radius: 999px;
     margin-bottom: 16px;
   }
-  .roadmap-card.now .tag { background: #E2F3E9; color: var(--green); }
+  .roadmap-card.now .tag { background: #E2F3E9; color: #1E7A45; }
   .roadmap-card.next .tag { background: var(--ice); color: var(--blue); }
   .roadmap-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
   .roadmap-card ul { list-style: none; padding: 0; margin: 18px 0 0; }
@@ -801,17 +787,32 @@
   nav.primary a.nav-login:hover, nav.primary a.nav-login:focus-visible { background: var(--blue); color: #fff; }
   .mobile-menu a.mobile-login { margin-top: 10px; border: 1px solid var(--blue); color: var(--blue); font-weight: 600; }
   .mobile-menu a.mobile-login:hover { background: var(--blue); color: #fff; }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) nav.primary a.nav-login, :root:not([data-theme="light"]) .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
-  }
   :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+</style>
+<style id="mobile-fix">
+  /* V1.8 FINAL Mobile-Korrektur: Bis 900 px gilt immer das helle FleetSwiss-Farbsystem.
+     Desktop (ab 901 px) bleibt unverändert, inklusive seiner bisherigen Dunkelmodus-Regeln. */
+  @media (max-width: 900px) {
+    :root { color-scheme: only light; }
+    :root:not([data-theme="dark"]) {
+      --paper: #F6F8FA; --white: #FFFFFF; --ink: #14202E; --slate: #4B5A68;
+      --slate-light: #5E6C79; --line: #DFE6EC; --ice: #EAF1F8;
+    }
+    :root:not([data-theme="dark"]) header.site { background: rgba(255,255,255,0.96); }
+    .menu-toggle span, .menu-toggle::before, .menu-toggle::after { background: var(--navy); }
+    :root:not([data-theme="dark"]) .mobile-menu a.mobile-login { border-color: var(--blue); color: var(--blue); }
+    .mobile-menu a.btn-primary { color: #fff; }
+    input, select, textarea { background: #fff; color: var(--ink); border-color: #8193A4; }
+    input::placeholder, textarea::placeholder { color: #6B7B89; }
+    .roadmap-card.now .tag { color: #1E7A45; }
+  }
 </style>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav-row">
     <a href="/" class="logo" aria-label="FleetSwiss Startseite">
-      <picture><source srcset="/assets/brand/fleetswiss-logo-white.png" media="(prefers-color-scheme: dark)"><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
+      <picture><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
     </a>
     <nav class="primary" aria-label="Hauptnavigation">
       <a href="/produkt.html">Produkt</a>
