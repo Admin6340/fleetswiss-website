@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerklärung | FleetSwiss</title>
+<meta name="description" content="Datenschutzerklärung von FleetSwiss – Fleet Management Platform der Alpine Service Switzerland GmbH, Baar: Website, Plattform, Kundendaten und Ihre Rechte.">
+<link rel="canonical" href="https://fleetswiss.ch/datenschutz">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FleetSwiss">
+<meta property="og:title" content="Datenschutzerklärung | FleetSwiss">
+<meta property="og:description" content="Datenschutzerklärung von FleetSwiss – Fleet Management Platform der Alpine Service Switzerland GmbH, Baar: Website, Plattform, Kundendaten und Ihre Rechte.">
+<meta property="og:locale" content="de_CH">
+<meta property="og:url" content="https://fleetswiss.ch/datenschutz">
+<meta property="og:image" content="https://fleetswiss.ch/assets/og-fleetswiss.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FleetSwiss Firmenfahrzeuge vor Schweizer Alpenpanorama">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style id="fonts-local">
+  /* Inter (SIL OFL 1.1), lokal gehostet – keine Verbindung zu Google Fonts */
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url('/assets/fonts/inter-latin-ext-wght-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url('/assets/fonts/inter-latin-wght-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+</style>
+<style>
+  :root {
+    --navy: #0E2A47;
+    --navy-2: #143a63;
+    --blue: #1D5FA8;
+    --blue-light: #4C8FCB;
+    --ice: #EAF1F8;
+    --paper: #F6F8FA;
+    --white: #FFFFFF;
+    --ink: #14202E;
+    --slate: #4B5A68;
+    --slate-light: #7C8B98;
+    --line: #DFE6EC;
+    --green: #2E9E5B;
+    --red-mark: #C7492B;
+    --shadow: 0 20px 50px -25px rgba(14,42,71,0.35);
+    --radius: 10px;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0B1620;
+      --white: #10202E;
+      --ink: #EAF0F5;
+      --slate: #B7C4CE;
+      --slate-light: #8695A2;
+      --line: #223546;
+      --ice: #132534;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0B1620;
+    --white: #10202E;
+    --ink: #EAF0F5;
+    --slate: #B7C4CE;
+    --slate-light: #8695A2;
+    --line: #223546;
+    --ice: #132534;
+  }
+
+  * { box-sizing: border-box; }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(78px + env(safe-area-inset-top, 0px));
+  }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--ink);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+  }
+  h1, h2, h3, h4 { margin: 0; font-family: var(--font); letter-spacing: -0.01em; }
+  p { margin: 0; }
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: var(--font);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary {
+    background: var(--blue);
+    color: #fff;
+  }
+  .btn-primary:hover { background: var(--navy-2); }
+  .btn-outline {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--ink);
+  }
+  .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+  .btn-on-dark {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.4);
+    color: #fff;
+  }
+  .btn-on-dark:hover { background: rgba(255,255,255,0.18); }
+
+  /* Header */
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  :root[data-theme="dark"] header.site { background: rgba(16,32,46,0.9); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) header.site { background: rgba(16,32,46,0.9); }
+  }
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    gap: 24px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-image {
+    height: 30px;
+    width: auto;
+    display: block;
+  }
+  nav.primary {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  nav.primary a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--slate);
+  }
+  nav.primary a:hover { color: var(--blue); }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .lang-switch {
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--slate-light);
+  }
+  .lang-switch button {
+    background: none; border: none; cursor: pointer;
+    font: inherit; color: inherit; padding: 2px 4px;
+  }
+  .lang-switch button[aria-current="true"] { color: var(--navy); }
+  .menu-toggle {
+    display: none;
+    background: none; border: none; cursor: pointer;
+    padding: 8px;
+  }
+  .menu-toggle span, .menu-toggle::before, .menu-toggle::after {
+    content: ""; display: block; width: 22px; height: 2px;
+    background: var(--navy); margin: 5px 0; transition: all .2s ease;
+  }
+  @media (max-width: 900px) {
+    nav.primary { display: none; }
+    .menu-toggle { display: block; }
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 8px 20px 24px;
+    border-top: 1px solid var(--line);
+    background: var(--white);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .mobile-menu .btn { margin-top: 16px; justify-content: center; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero-media {
+    position: absolute; inset: 0;
+    background-size: cover;
+    background-position: 60% 55%;
+  }
+  .hero-media::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(7,17,29,0.6) 0%, rgba(7,17,29,0.36) 20%, rgba(7,17,29,0.12) 36%, rgba(7,17,29,0) 52%);
+  }
+  @media (max-width: 760px) {
+    .hero-media { background-position: 74% 52%; }
+  }
+  .hero-inner {
+    position: relative;
+    padding: 108px 0 92px;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #CFE0F2;
+    margin-bottom: 26px;
+  }
+  .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #5CC28A; }
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.1;
+    font-weight: 800;
+    max-width: 720px;
+    margin-bottom: 26px;
+  }
+  .hero p.lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #DCE7F1;
+    max-width: 520px;
+    margin-bottom: 34px;
+  }
+  .hero-benefits {
+    list-style: none;
+    padding: 0; margin: 0 0 38px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero-benefits li {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 500; color: #EAF1F8;
+  }
+  .hero-benefits svg { flex: none; }
+  .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+  @media (max-width: 560px) {
+    .hero-benefits { grid-template-columns: 1fr; }
+  }
+
+  /* Trust / benefit strip */
+  .strip {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 30px 0;
+  }
+  .strip-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 900px) {
+    .strip-row { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .strip-row { grid-template-columns: 1fr; }
+  }
+  .strip-item {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .strip-item svg { flex: none; margin-top: 2px; color: var(--blue); }
+  .strip-item .t { font-weight: 600; font-size: 14.5px; color: var(--ink); }
+  .strip-item .s { font-size: 13px; color: var(--slate-light); margin-top: 2px; }
+
+  /* Section generic */
+  section { padding: 96px 0; }
+  @media (max-width: 640px) { section { padding: 64px 0; } }
+  .section-head {
+    max-width: 620px;
+    margin-bottom: 52px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    font-weight: 800;
+    color: var(--navy);
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .section-head p {
+    margin-top: 14px;
+    font-size: 16.5px;
+    color: var(--slate);
+    line-height: 1.6;
+  }
+
+  /* Platform statement */
+  .platform {
+    background: var(--navy);
+    color: #fff;
+    padding: 88px 0;
+  }
+  .platform-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .platform-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .platform h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    line-height: 1.28;
+  }
+  .platform h2 .accent { color: #7EB4E6; }
+  .platform p {
+    color: #B9CBDD;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 18px;
+  }
+  .platform-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .stat-card .num { font-size: 28px; font-weight: 800; }
+  .stat-card .lbl { font-size: 13.5px; color: #AFC2D5; margin-top: 6px; line-height: 1.4; }
+
+  /* Feature grid */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 980px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature-card {
+    padding: 26px 24px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .feature-card .icon {
+    width: 40px; height: 40px;
+    border-radius: 9px;
+    background: var(--ice);
+    color: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .feature-card h3 { font-size: 16px; font-weight: 700; color: var(--ink); }
+  .feature-card p { font-size: 14px; color: var(--slate); margin-top: 8px; line-height: 1.55; }
+
+  /* Product / screenshot */
+  .product-frame {
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--ice), var(--paper));
+    padding: 56px 32px;
+    text-align: center;
+  }
+  .product-frame .mock-top {
+    max-width: 640px; margin: 0 auto 22px;
+    height: 10px; border-radius: 6px;
+    background: repeating-linear-gradient(90deg, var(--line) 0 8px, transparent 8px 16px);
+    opacity: .6;
+  }
+  .product-frame .mock-body {
+    max-width: 760px; margin: 0 auto;
+    border: 1.5px dashed #B9CADB;
+    border-radius: 12px;
+    padding: 54px 24px;
+    background: rgba(255,255,255,0.5);
+  }
+  .product-frame .mock-body svg { margin: 0 auto 18px; color: var(--blue-light); }
+  .product-frame .mock-body h3 { font-size: 17px; color: var(--navy); font-weight: 700; }
+  .product-frame .mock-body p { font-size: 14px; color: var(--slate-light); margin-top: 8px; max-width: 380px; margin-left: auto; margin-right: auto; }
+
+  /* Process steps */
+  .process-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 980px) { .process-row { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 620px) { .process-row { grid-template-columns: 1fr 1fr; } }
+  .process-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+  }
+  .process-card .icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: var(--ice); color: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+  }
+  .process-card h4 { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+  .process-card p { font-size: 12.8px; color: var(--slate-light); margin-top: 6px; line-height: 1.5; }
+
+  .process-extra {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 780px) { .process-extra { grid-template-columns: 1fr; } }
+  .process-extra .row-item {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 16px;
+    background: var(--paper);
+    border-radius: var(--radius);
+  }
+  .process-extra svg { flex: none; color: var(--blue); margin-top: 2px; }
+  .process-extra .t { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .process-extra .s { font-size: 12.8px; color: var(--slate-light); margin-top: 3px; }
+
+  /* Import/integration */
+  .import-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 860px) { .import-wrap { grid-template-columns: 1fr; gap: 32px; } }
+  .import-list { list-style: none; padding: 0; margin: 0; }
+  .import-list li {
+    display: flex; gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .import-list li:first-child { padding-top: 0; }
+  .import-list svg { flex: none; color: var(--blue); margin-top: 3px; }
+  .import-list .t { font-size: 15px; font-weight: 600; color: var(--ink); }
+  .import-list .s { font-size: 13.5px; color: var(--slate); margin-top: 3px; line-height: 1.5; }
+  .source-pills {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 22px;
+  }
+  .source-pill {
+    padding: 9px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--paper);
+  }
+  .note-box {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: var(--ice);
+    border-radius: var(--radius);
+    font-size: 13.5px;
+    color: var(--navy-2);
+    line-height: 1.55;
+  }
+
+  /* Security */
+  .security {
+    background: var(--navy);
+    color: #fff;
+    padding: 88px 0;
+  }
+  .security .section-head h2 { color: #fff; }
+  .security .section-head p { color: #B9CBDD; }
+  .security-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 980px) { .security-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .security-grid { grid-template-columns: 1fr; } }
+  .security-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .security-card .icon { color: #7EB4E6; margin-bottom: 14px; }
+  .security-card h4 { font-size: 14.5px; font-weight: 700; }
+  .security-card p { font-size: 13px; color: #AFC2D5; margin-top: 7px; line-height: 1.5; }
+  .swiss-line {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 36px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+    flex-wrap: wrap;
+  }
+  .swiss-line .flag { width: 22px; height: 22px; flex: none; }
+  .swiss-line p { font-size: 14.5px; color: #DCE7F1; }
+
+  /* Roadmap */
+  .roadmap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 780px) { .roadmap-grid { grid-template-columns: 1fr; } }
+  .roadmap-card {
+    border-radius: var(--radius);
+    padding: 30px 28px;
+    border: 1px solid var(--line);
+  }
+  .roadmap-card.now { background: var(--paper); }
+  .roadmap-card.next { background: var(--white); border-style: dashed; }
+  .roadmap-card .tag {
+    display: inline-block;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.03em;
+    padding: 5px 11px; border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .roadmap-card.now .tag { background: #E2F3E9; color: var(--green); }
+  .roadmap-card.next .tag { background: var(--ice); color: var(--blue); }
+  .roadmap-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
+  .roadmap-card ul { list-style: none; padding: 0; margin: 18px 0 0; }
+  .roadmap-card li {
+    display: flex; gap: 10px; align-items: flex-start;
+    font-size: 14.5px; color: var(--slate); padding: 8px 0;
+    line-height: 1.45;
+  }
+  .roadmap-card li svg { flex: none; margin-top: 3px; }
+  .roadmap-card.now li svg { color: var(--green); }
+  .roadmap-card.next li svg { color: var(--blue-light); }
+  .roadmap-foot {
+    margin-top: 16px; font-size: 12.5px; color: var(--slate-light);
+  }
+
+  /* Pricing (no fixed table, per brief) */
+  .pricing-panel {
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-2));
+    color: #fff;
+    padding: 56px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .pricing-panel { grid-template-columns: 1fr; padding: 40px 28px; } }
+  .pricing-panel h2 { font-size: clamp(22px, 2.8vw, 30px); font-weight: 800; line-height: 1.25; }
+  .pricing-panel p { color: #C6D6E5; margin-top: 14px; font-size: 15.5px; line-height: 1.65; }
+  .pricing-side {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 14px;
+    padding: 26px;
+  }
+  .pricing-model { font-size: 13px; color: #9FB6CB; font-weight: 600; letter-spacing: .02em; }
+  .pricing-model-value { font-size: 20px; font-weight: 700; margin-top: 8px; }
+  .pricing-side hr { border: none; border-top: 1px solid rgba(255,255,255,0.16); margin: 18px 0; }
+  .pricing-side .btn { width: 100%; justify-content: center; margin-top: 6px; }
+  .pricing-side .fine { font-size: 12px; color: #93A9BE; margin-top: 12px; line-height: 1.5; }
+
+  /* Contact */
+  .contact-section {
+    position: relative;
+    color: #fff;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+  .contact-media {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center 70%;
+  }
+  .contact-media::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(120deg, rgba(9,24,41,0.94) 0%, rgba(9,24,41,0.85) 40%, rgba(9,24,41,0.55) 100%);
+  }
+  .contact-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: start;
+  }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .contact-grid h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; line-height: 1.2; }
+  .contact-grid > div:first-child p { color: #DCE7F1; font-size: 16px; margin-top: 16px; line-height: 1.65; max-width: 420px; }
+  .contact-tag { margin-top: 32px; font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: #7EB4E6; }
+  .contact-tag span { display: block; font-size: 13px; letter-spacing: 0.1em; }
+
+  .form-card {
+    background: #fff;
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: var(--shadow);
+  }
+  .form-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); }
+  .form-card > p { font-size: 14px; color: var(--slate); margin-top: 6px; }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+  @media (max-width: 480px) { .form-grid { grid-template-columns: 1fr; } }
+  .form-grid .full { grid-column: 1 / -1; }
+  label {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--slate);
+    margin-bottom: 6px;
+  }
+  input, select, textarea {
+    width: 100%;
+    font: inherit;
+    padding: 11px 13px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 1px;
+    background: #fff;
+  }
+  textarea { resize: vertical; min-height: 92px; }
+  .form-card .btn { width: 100%; justify-content: center; margin-top: 18px; }
+  .form-status { font-size: 13px; margin-top: 12px; color: var(--green); display: none; }
+  .form-status.show { display: block; }
+
+  /* Footer */
+  footer.site {
+    background: #081826;
+    color: #9FB2C4;
+    padding: 64px 0 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  @media (max-width: 780px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+  .footer-brand p { font-size: 13.5px; color: #7E93A6; margin-top: 12px; line-height: 1.6; max-width: 260px; }
+  .footer-col h5 {
+    font-size: 12.5px; text-transform: none; font-weight: 700; color: #fff;
+    margin-bottom: 14px;
+  }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; }
+  .footer-col li { margin-bottom: 10px; }
+  .footer-col a { text-decoration: none; font-size: 13.5px; color: #9FB2C4; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 28px;
+    font-size: 13px;
+  }
+  .footer-bottom .legal { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-bottom a { text-decoration: none; color: #9FB2C4; }
+  .footer-bottom a:hover { color: #fff; }
+  .swiss-badge {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: #7E93A6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+
+  ::selection { background: var(--blue); color: #fff; }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+</style>
+
+<style>
+  /* Page head banner (subpages) */
+  .page-head { background: var(--navy); color:#fff; padding: 72px 0 60px; }
+  .page-head .eyebrow { color:#7EB4E6; }
+  .page-head h1 { font-size: clamp(28px,3.6vw,40px); font-weight:800; margin-top:10px; line-height:1.2; }
+  .page-head p { color:#B9CBDD; margin-top:14px; font-size:16px; line-height:1.6; max-width:640px; }
+
+  /* Compact process flow (homepage) */
+  .process-compact { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; }
+  .process-compact .step { display:flex; flex-direction:column; align-items:center; text-align:center; flex:1 1 140px; padding:10px; min-width:120px; }
+  .process-compact .step .dot { width:44px;height:44px;border-radius:50%;background:var(--ice);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700; font-size:15px; margin-bottom:10px; }
+  .process-compact .step .lbl { font-size:14.5px; font-weight:600; color:var(--ink); }
+  .process-compact .arrow { flex:0 0 auto; color:var(--slate-light); font-size:22px; padding:0 8px; }
+  @media (max-width:760px){
+    .process-compact { flex-direction:column; }
+    .process-compact .arrow{ transform:rotate(90deg); padding:6px 0; }
+  }
+
+  /* Teaser "more" link */
+  .more-link { display:inline-flex; align-items:center; gap:6px; margin-top:26px; font-weight:600; font-size:14.5px; color:var(--blue); text-decoration:none; }
+  .more-link:hover { color: var(--navy-2); }
+  .more-link.on-dark { color:#7EB4E6; }
+  .more-link.on-dark:hover { color:#fff; }
+
+  /* Compact security grid (homepage, max 4 items) */
+  .security-compact-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  @media (max-width:860px){ .security-compact-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .security-compact-grid{ grid-template-columns:1fr;} }
+
+  .page-cta { background: var(--paper); text-align:center; }
+  .page-cta h2 { font-size: clamp(22px,3vw,30px); font-weight:800; color:var(--navy); }
+  .page-cta p { margin-top:12px; color:var(--slate); font-size:15.5px; }
+  .page-cta .btn { margin-top:22px; }
+</style>
+
+
+<style id="v1-final">
+  /* V1-Finalisierung: Harmonisierung & Responsive */
+  .footer-col .footer-h { font-size: 12.5px; font-weight: 700; color: #fff; margin: 0 0 14px; letter-spacing: 0; }
+  .security-card h3 { font-size: 14.5px; font-weight: 700; }
+  .process-card h3 { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--blue-light); outline-offset: 3px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+<style id="pre-golive">
+  .lang-switch[hidden] { display: none !important; }
+  .footer-col .legal-pending { font-size: 13.5px; color: #6F8497; }
+  .form-status.info { color: var(--slate); }
+</style>
+<style id="impressum">
+  .legal-text h2 { font-size: 17px; font-weight: 700; color: var(--navy); margin: 36px 0 10px; }
+  .legal-text h2:first-child { margin-top: 0; }
+  .legal-text address, .legal-text p { font-style: normal; font-size: 16px; line-height: 1.7; color: var(--slate); }
+  .legal-text a { color: var(--blue); }
+</style>
+<style id="agb">
+  .page-head .agb-subtitle { margin-top: 10px; font-size: 18px; font-weight: 600; color: #DCE7F1; }
+  .page-head .agb-stand { margin-top: 6px; font-size: 14px; color: #9FB6CB; }
+  .agb-text .agb-section { padding-top: 8px; }
+  .agb-text .agb-section + .agb-section { margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .agb-text h2 { margin: 0 0 16px; font-size: 19px; line-height: 1.35; }
+  .agb-text .agb-h-no { color: var(--blue); }
+  .agb-clause { display: grid; grid-template-columns: 3.4em 1fr; gap: 0 12px; margin-top: 12px; }
+  .agb-clause .agb-no { font-size: 14px; font-weight: 600; color: var(--slate-light); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .agb-text .agb-clause p { margin: 0; }
+  .agb-footer { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .agb-footer p + address, .agb-footer address + p { margin-top: 10px; }
+  .agb-text :target { scroll-margin-top: calc(90px + env(safe-area-inset-top, 0px)); }
+  @media (max-width: 560px) {
+    .agb-clause { grid-template-columns: 1fr; }
+    .agb-clause .agb-no { padding-top: 0; }
+    .agb-text h2 { font-size: 17.5px; }
+    .agb-text .agb-section + .agb-section { margin-top: 28px; padding-top: 24px; }
+  }
+</style>
+<style id="dse">
+  .dse-text .agb-section > p, .dse-text .agb-section > address, .dse-text .agb-section > ul { margin-top: 12px; }
+  .dse-text .agb-section > h2 + p, .dse-text .agb-section > h2 + address { margin-top: 0; }
+  .dse-text h3 { margin: 22px 0 0; font-size: 16px; font-weight: 700; color: var(--navy); }
+  .dse-text ul { padding-left: 1.25em; color: var(--slate); font-size: 16px; line-height: 1.7; }
+  .dse-text ul li { margin: 2px 0; }
+  .dse-text address strong, .dse-text p strong { color: var(--ink); }
+  .dse-text a { overflow-wrap: anywhere; }
+</style>
+<style id="brand">
+  /* Finales FleetSwiss-Logo (Header/Footer) */
+  .logo .logo-image { height: 30px; width: auto; max-width: 100%; object-fit: contain; display: block; }
+  .logo picture { display: block; line-height: 0; }
+  @media (max-width: 420px) { .logo .logo-image { height: 26px; } }
+  .footer-brand .footer-logo { height: 28px; width: auto; max-width: 100%; object-fit: contain; display: block; }
+</style>
+<style id="header-layout">
+  /* Desktop-Kopfzeile: Logo links, Navigation rechts, volle Breite mit schmalem Seitenrand */
+  @media (min-width: 901px) {
+    header.site .nav-row { max-width: none; padding-left: clamp(24px, 3.5vw, 56px); padding-right: clamp(24px, 3.5vw, 56px); }
+    header.site nav.primary { margin-left: auto; }
+    header.site .nav-right { display: none; }
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="/" class="logo" aria-label="FleetSwiss Startseite">
+      <picture><source srcset="/assets/brand/fleetswiss-logo-white.png" media="(prefers-color-scheme: dark)"><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
+    </a>
+    <nav class="primary" aria-label="Hauptnavigation">
+      <a href="/produkt">Produkt</a>
+      <a href="/funktionen">Funktionen</a>
+      <a href="/sicherheit">Sicherheit</a>
+      <a href="/ueber-uns">Über uns</a>
+      <a href="/kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
+        <button type="button" aria-current="true">DE</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" aria-current="false">EN</button>
+      </div>
+      <a href="/kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/produkt">Produkt</a>
+    <a href="/funktionen">Funktionen</a>
+    <a href="/sicherheit">Sicherheit</a>
+    <a href="/ueber-uns">Über uns</a>
+    <a href="/kontakt">Kontakt</a>
+    <a href="/kontakt" class="btn btn-primary">Demo anfragen</a>
+  </div>
+</header>
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Datenschutzerklärung</h1>
+      <p class="agb-subtitle">FleetSwiss – Fleet Management Platform</p>
+      <p class="agb-stand">Stand: September 2026</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap legal-text agb-text dse-text" style="max-width:820px;">
+      <section class="agb-section" id="ziffer-1" aria-labelledby="ziffer-1-titel">
+        <h2 id="ziffer-1-titel"><span class="agb-h-no">1.</span> Allgemeines</h2>
+        <p>Der Schutz von Personendaten und vertraulichen Unternehmensdaten hat für FleetSwiss einen hohen Stellenwert.</p>
+        <p>Diese Datenschutzerklärung informiert darüber, wie Personendaten im Zusammenhang mit der öffentlichen FleetSwiss-Website, der FleetSwiss-Plattform und den damit verbundenen Dienstleistungen bearbeitet werden.</p>
+        <p>FleetSwiss ist eine Software-as-a-Service-Lösung der:</p>
+        <address><strong>Alpine Service Switzerland GmbH</strong><br>
+          Baarermattstrasse 8b<br>
+          6340 Baar<br>
+          Schweiz</address>
+        <address><strong>E-Mail:</strong> <a href="mailto:info@fleetswiss.ch">info@fleetswiss.ch</a><br>
+          <strong>Website:</strong> <a href="https://fleetswiss.ch">fleetswiss.ch</a></address>
+        <p>nachfolgend «FleetSwiss», «wir» oder «uns».</p>
+        <p>Die Bearbeitung von Personendaten erfolgt insbesondere nach dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der Datenschutzverordnung (DSV). Soweit auf eine konkrete Datenbearbeitung zusätzlich die Datenschutz-Grundverordnung der Europäischen Union (DSGVO) oder anderes anwendbares Datenschutzrecht Anwendung findet, werden auch dessen Anforderungen berücksichtigt.</p>
+      </section>
+      <section class="agb-section" id="ziffer-2" aria-labelledby="ziffer-2-titel">
+        <h2 id="ziffer-2-titel"><span class="agb-h-no">2.</span> Geltungsbereich</h2>
+        <p>Diese Datenschutzerklärung gilt insbesondere für:</p>
+        <ul>
+          <li>die öffentliche FleetSwiss-Website;</li>
+          <li>die FleetSwiss SaaS-Plattform;</li>
+          <li>Kunden- und Benutzerkonten der FleetSwiss-Plattform;</li>
+          <li>Administratoren und Fleet Manager;</li>
+          <li>Fahrer und Mitarbeitende von Kunden;</li>
+          <li>Poolfahrzeugnutzer;</li>
+          <li>Partner und Partnergaragen, soweit diese Zugriff auf entsprechende Plattformfunktionen erhalten;</li>
+          <li>Kontakt-, Support- und Demoanfragen;</li>
+          <li>Vertrags- und Kundenbeziehungen mit FleetSwiss;</li>
+          <li>von Kunden in FleetSwiss importierte oder erfasste Daten;</li>
+          <li>technische Betriebs-, Sicherheits- und Protokolldaten.</li>
+        </ul>
+        <p>Die öffentliche FleetSwiss-Website und die geschützte FleetSwiss-Plattform sind dabei technisch und funktional zu unterscheiden. Nicht jede in dieser Datenschutzerklärung beschriebene Bearbeitung findet bereits beim Besuch der öffentlichen Website statt.</p>
+        <p>Je nach eingesetzten FleetSwiss-Modulen und dem mit dem jeweiligen Kunden vereinbarten Leistungsumfang können unterschiedliche Kategorien von Personendaten bearbeitet werden.</p>
+      </section>
+      <section class="agb-section" id="ziffer-3" aria-labelledby="ziffer-3-titel">
+        <h2 id="ziffer-3-titel"><span class="agb-h-no">3.</span> Verantwortliche Stelle</h2>
+        <p>Soweit Alpine Service Switzerland GmbH selbst über Zweck und Mittel einer Datenbearbeitung entscheidet, ist sie datenschutzrechtlich verantwortlich.</p>
+        <p>Verantwortliche Stelle:</p>
+        <address><strong>Alpine Service Switzerland GmbH</strong><br>
+          Baarermattstrasse 8b<br>
+          6340 Baar<br>
+          Schweiz</address>
+        <address><strong>E-Mail:</strong> <a href="mailto:info@fleetswiss.ch">info@fleetswiss.ch</a><br>
+          <strong>Website:</strong> <a href="https://fleetswiss.ch">fleetswiss.ch</a></address>
+        <p>Dies betrifft insbesondere Daten im Zusammenhang mit:</p>
+        <ul>
+          <li>der öffentlichen FleetSwiss-Website;</li>
+          <li>direkten Anfragen an FleetSwiss;</li>
+          <li>Interessenten und potentiellen Kunden;</li>
+          <li>Vertragsbeziehungen mit Kunden;</li>
+          <li>Abrechnung und Administration;</li>
+          <li>eigenen Geschäftskontakten;</li>
+          <li>Sicherheit und technischem Betrieb der eigenen Systeme, soweit FleetSwiss selbst über Zweck und Mittel der betreffenden Bearbeitung entscheidet.</li>
+        </ul>
+        <p>Soweit FleetSwiss Personendaten ausschliesslich im Auftrag eines Kunden bearbeitet, richtet sich die Rollenverteilung nach Ziffer 4.</p>
+      </section>
+      <section class="agb-section" id="ziffer-4" aria-labelledby="ziffer-4-titel">
+        <h2 id="ziffer-4-titel"><span class="agb-h-no">4.</span> FleetSwiss als Auftragsbearbeiter</h2>
+        <p>Bei Personendaten, welche ein Kunde innerhalb der FleetSwiss-Plattform erfasst, importiert, speichert oder anderweitig bearbeiten lässt, handelt FleetSwiss grundsätzlich als Auftragsbearbeiter des jeweiligen Kunden, soweit FleetSwiss nicht selbst über Zweck und Mittel der betreffenden Bearbeitung entscheidet.</p>
+        <p>Der jeweilige Kunde bleibt grundsätzlich datenschutzrechtlich Verantwortlicher für die von ihm veranlasste Bearbeitung von Personendaten.</p>
+        <p>Dies betrifft insbesondere Daten von:</p>
+        <ul>
+          <li>Mitarbeitenden;</li>
+          <li>Fahrern;</li>
+          <li>Benutzern;</li>
+          <li>Fahrzeugnutzern;</li>
+          <li>sonstigen Personen, deren Daten ein Kunde innerhalb von FleetSwiss bearbeitet.</li>
+        </ul>
+        <p>FleetSwiss bearbeitet solche Kundendaten grundsätzlich:</p>
+        <ul>
+          <li>zur Bereitstellung der vereinbarten Plattformfunktionen;</li>
+          <li>zur Erfüllung der mit dem Kunden vereinbarten Leistungen;</li>
+          <li>gemäss den Weisungen des Kunden;</li>
+          <li>zur Sicherstellung des technischen Betriebs;</li>
+          <li>zur Gewährleistung der Sicherheit der Plattform;</li>
+          <li>im Rahmen von Support-, Wartungs- oder Migrationsleistungen, soweit erforderlich.</li>
+        </ul>
+        <p>Die Einzelheiten der Auftragsbearbeitung können in einer gesonderten Auftragsbearbeitungsvereinbarung zwischen FleetSwiss und dem jeweiligen Kunden geregelt werden.</p>
+      </section>
+      <section class="agb-section" id="ziffer-5" aria-labelledby="ziffer-5-titel">
+        <h2 id="ziffer-5-titel"><span class="agb-h-no">5.</span> Verantwortung des Kunden</h2>
+        <p>Der Kunde ist insbesondere dafür verantwortlich:</p>
+        <ul>
+          <li>dass die über FleetSwiss vorgenommene Bearbeitung von Personendaten rechtmässig erfolgt;</li>
+          <li>dass eine ausreichende Rechtsgrundlage beziehungsweise sonstige datenschutzrechtliche Voraussetzung für die Bearbeitung besteht;</li>
+          <li>dass erforderliche Informationen gegenüber Mitarbeitenden, Fahrern und anderen betroffenen Personen erteilt werden;</li>
+          <li>dass erforderliche Einwilligungen eingeholt werden, soweit eine Einwilligung erforderlich ist;</li>
+          <li>dass nur erforderliche und zulässige Daten in FleetSwiss erfasst oder importiert werden;</li>
+          <li>dass Benutzerkonten ordnungsgemäss verwaltet werden;</li>
+          <li>dass Rollen und Zugriffsberechtigungen angemessen vergeben werden;</li>
+          <li>dass bestehende Berechtigungen regelmässig überprüft werden;</li>
+          <li>dass Berechtigungen bei Funktionswechseln, Austritten oder Wegfall des Zugriffsbedarfs angepasst oder entzogen werden;</li>
+          <li>dass die durch FleetSwiss bereitgestellten Funktionen im Rahmen der für den Kunden geltenden arbeits-, datenschutz- und sonstigen gesetzlichen Vorschriften eingesetzt werden.</li>
+        </ul>
+        <p>FleetSwiss stellt die technischen Funktionen zur Rollen- und Berechtigungsverwaltung bereit.</p>
+        <p>FleetSwiss bestimmt grundsätzlich nicht, welche Personen innerhalb der Organisation eines Kunden Zugriff auf bestimmte Kundendaten erhalten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-6" aria-labelledby="ziffer-6-titel">
+        <h2 id="ziffer-6-titel"><span class="agb-h-no">6.</span> Rollen- und Berechtigungskonzept</h2>
+        <p>FleetSwiss verwendet ein rollenbasiertes Berechtigungssystem.</p>
+        <p>Der Kunde bestimmt grundsätzlich selbst, welche Benutzer eingerichtet werden und welche Rollen und Zugriffsrechte diese erhalten.</p>
+        <p>Je nach Konfiguration und gebuchtem Leistungsumfang können beispielsweise unterschiedliche Berechtigungen vorgesehen werden für:</p>
+        <ul>
+          <li>Kundenadministratoren;</li>
+          <li>Fleet Manager;</li>
+          <li>weitere interne Fachfunktionen;</li>
+          <li>Fahrer;</li>
+          <li>Mitarbeitende;</li>
+          <li>Partner;</li>
+          <li>Partnergaragen;</li>
+          <li>sonstige ausdrücklich berechtigte Benutzer.</li>
+        </ul>
+        <p>Die Zugehörigkeit zu einem Unternehmen oder einer Unternehmensgruppe führt nicht automatisch zum Zugriff auf sämtliche Mandanten oder Datenbestände.</p>
+        <p>Mandantenübergreifende Zugriffe sind nur zulässig, wenn entsprechende Berechtigungen ausdrücklich eingerichtet wurden.</p>
+        <p>Der Kunde ist für die korrekte Vergabe und laufende Überprüfung dieser Berechtigungen verantwortlich.</p>
+      </section>
+      <section class="agb-section" id="ziffer-7" aria-labelledby="ziffer-7-titel">
+        <h2 id="ziffer-7-titel"><span class="agb-h-no">7.</span> Mandantentrennung</h2>
+        <p>FleetSwiss ist als mandantenfähige Plattform konzipiert.</p>
+        <p>Daten verschiedener Kunden werden logisch voneinander getrennt.</p>
+        <p>Benutzer erhalten grundsätzlich nur Zugriff auf diejenigen Mandanten und Datenbestände, für die ihnen entsprechende Berechtigungen eingeräumt wurden.</p>
+        <p>Auch mehrere Unternehmen einer Unternehmensgruppe können als getrennte Mandanten geführt werden.</p>
+        <p>Ein Benutzer kann Zugriff auf mehrere Mandanten erhalten, wenn ihm diese Berechtigung ausdrücklich zugewiesen wurde.</p>
+        <p>Die Mandantentrennung und rollenbasierte Zugriffskontrolle sind Bestandteile des Sicherheits- und Berechtigungskonzepts von FleetSwiss.</p>
+      </section>
+      <section class="agb-section" id="ziffer-8" aria-labelledby="ziffer-8-titel">
+        <h2 id="ziffer-8-titel"><span class="agb-h-no">8.</span> Zugriff durch FleetSwiss</h2>
+        <p>FleetSwiss verfolgt bei administrativen Zugriffen die Grundsätze «Need-to-know» und «Least Privilege».</p>
+        <p>Mitarbeitende und Beauftragte von FleetSwiss haben grundsätzlich keinen operativen Zugriff auf Kundendaten und keinen Anlass, Kundendaten im normalen Geschäftsbetrieb inhaltlich einzusehen.</p>
+        <p>Ein administrativer Zugriff kann insbesondere erforderlich sein:</p>
+        <ul>
+          <li>bei einem vom Kunden gemeldeten Supportfall;</li>
+          <li>zur Diagnose und Behebung technischer Fehler;</li>
+          <li>zur Wiederherstellung des ordnungsgemässen Betriebs;</li>
+          <li>bei einem Sicherheitsvorfall;</li>
+          <li>zur Durchführung einer vom Kunden beauftragten Datenmigration;</li>
+          <li>zur technischen Unterstützung auf Anweisung des Kunden;</li>
+          <li>aufgrund einer ausdrücklichen Weisung des Kunden;</li>
+          <li>wenn eine zwingende gesetzliche Verpflichtung besteht;</li>
+          <li>aufgrund einer vollstreckbaren behördlichen oder gerichtlichen Anordnung.</li>
+        </ul>
+        <p>Administrative Zugriffsrechte werden auf den tatsächlich erforderlichen Personenkreis beschränkt.</p>
+        <p>Soweit technisch und organisatorisch vorgesehen und angemessen, werden administrative Zugriffe protokolliert.</p>
+        <p>FleetSwiss nutzt einen solchen administrativen Zugriff nicht, um Kundendaten für eigene sachfremde Zwecke auszuwerten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-9" aria-labelledby="ziffer-9-titel">
+        <h2 id="ziffer-9-titel"><span class="agb-h-no">9.</span> Vertraulichkeit und Verschwiegenheit</h2>
+        <p>Personen, die aufgrund ihrer Tätigkeit für FleetSwiss Zugriff auf vertrauliche Kundeninformationen oder Personendaten erhalten können, werden schriftlich zur Vertraulichkeit und Verschwiegenheit verpflichtet.</p>
+        <p>Die Verpflichtung umfasst insbesondere:</p>
+        <ul>
+          <li>Mitarbeiterdaten;</li>
+          <li>Fahrerdaten;</li>
+          <li>Fahrzeugdaten;</li>
+          <li>Fahrtenbuchdaten;</li>
+          <li>Standortinformationen;</li>
+          <li>Vertragsinformationen;</li>
+          <li>Leasinginformationen;</li>
+          <li>Schadendaten;</li>
+          <li>Versicherungsinformationen;</li>
+          <li>Dokumente;</li>
+          <li>Kosten- und Finanzinformationen;</li>
+          <li>Geschäfts- und Betriebsinformationen;</li>
+          <li>sonstige vertrauliche Kundendaten.</li>
+        </ul>
+        <p>Die Vertraulichkeits- und Verschwiegenheitsverpflichtung gilt grundsätzlich auch nach Beendigung der jeweiligen Tätigkeit fort.</p>
+      </section>
+      <section class="agb-section" id="ziffer-10" aria-labelledby="ziffer-10-titel">
+        <h2 id="ziffer-10-titel"><span class="agb-h-no">10.</span> Kategorien bearbeiteter Personendaten</h2>
+        <p>Abhängig von den vom Kunden verwendeten Funktionen kann FleetSwiss insbesondere folgende Datenkategorien technisch verarbeiten:</p>
+        <h3>Stamm- und Kontaktdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Name;</li>
+          <li>Vorname;</li>
+          <li>Benutzerkennung;</li>
+          <li>E-Mail-Adresse;</li>
+          <li>Telefonnummer;</li>
+          <li>Unternehmen;</li>
+          <li>Organisationseinheit;</li>
+          <li>Abteilung;</li>
+          <li>Funktion;</li>
+          <li>interne Mitarbeiter- oder Identifikationsnummern.</li>
+        </ul>
+        <h3>Benutzer- und Berechtigungsdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Benutzerkonto;</li>
+          <li>Benutzer-ID;</li>
+          <li>Mandantenzugehörigkeit;</li>
+          <li>Benutzerrolle;</li>
+          <li>Berechtigungen;</li>
+          <li>Login- und Sicherheitsinformationen;</li>
+          <li>Authentifizierungsstatus;</li>
+          <li>MFA-/2FA-Status;</li>
+          <li>sicherheitsrelevante Ereignisse.</li>
+        </ul>
+        <h3>Fahrerdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Fahreridentität;</li>
+          <li>Kontaktdaten;</li>
+          <li>Mitarbeiterzuordnung;</li>
+          <li>Fahrzeugzuordnungen;</li>
+          <li>historische Fahrzeugzuordnungen;</li>
+          <li>Führerausweis- und Kontrollinformationen;</li>
+          <li>Fahrten;</li>
+          <li>Poolbuchungen;</li>
+          <li>Schadeninformationen;</li>
+          <li>Fahrzeugübernahmen und -rückgaben.</li>
+        </ul>
+        <h3>Fahrzeugdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Fahrzeugidentifikationsnummer (VIN);</li>
+          <li>Kontrollschild;</li>
+          <li>historische Kontrollschilder;</li>
+          <li>Stammnummer;</li>
+          <li>Marke;</li>
+          <li>Modell;</li>
+          <li>Fahrzeugtyp;</li>
+          <li>Kilometerstand;</li>
+          <li>Fahrzeugstatus;</li>
+          <li>Fahrerzuordnung;</li>
+          <li>Vertrags- und Leasinginformationen;</li>
+          <li>Kosten;</li>
+          <li>Versicherungsinformationen;</li>
+          <li>Schadeninformationen;</li>
+          <li>Wartungsinformationen;</li>
+          <li>Zoll- und Importinformationen;</li>
+          <li>Fahrzeugdokumente.</li>
+        </ul>
+        <p>Fahrzeugdaten sind nicht in jedem Fall Personendaten. Sie können jedoch zu Personendaten werden, wenn sie einer identifizierten oder identifizierbaren Person zugeordnet werden können.</p>
+        <h3>Vertrags-, Kosten- und Leasingdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Vertragsnummer;</li>
+          <li>Vertragsbeginn;</li>
+          <li>Vertragsende;</li>
+          <li>Laufzeit;</li>
+          <li>Leasingrate;</li>
+          <li>Kilometerpaket;</li>
+          <li>Mehr- oder Minderkilometer;</li>
+          <li>Beschaffungsinformationen;</li>
+          <li>Rückgabeinformationen;</li>
+          <li>Kosten- und Abrechnungsinformationen.</li>
+        </ul>
+        <h3>Protokoll- und Sicherheitsdaten</h3>
+        <p>Beispielsweise:</p>
+        <ul>
+          <li>Login-Ereignisse;</li>
+          <li>fehlgeschlagene Anmeldeversuche;</li>
+          <li>technische Protokolle;</li>
+          <li>sicherheitsrelevante Ereignisse;</li>
+          <li>Änderungen;</li>
+          <li>Auditinformationen.</li>
+        </ul>
+      </section>
+      <section class="agb-section" id="ziffer-11" aria-labelledby="ziffer-11-titel">
+        <h2 id="ziffer-11-titel"><span class="agb-h-no">11.</span> Benutzerkonten und Authentifizierung</h2>
+        <p>Für die Nutzung geschützter Bereiche der FleetSwiss-Plattform können Benutzerkonten erforderlich sein.</p>
+        <p>Hierbei können insbesondere verarbeitet werden:</p>
+        <ul>
+          <li>Benutzerkennung;</li>
+          <li>E-Mail-Adresse;</li>
+          <li>Authentifizierungsinformationen;</li>
+          <li>Rollen;</li>
+          <li>Berechtigungen;</li>
+          <li>Mandantenzugehörigkeit;</li>
+          <li>sicherheitsbezogene Informationen.</li>
+        </ul>
+        <p>Soweit Mehrfaktor-Authentifizierung eingesetzt wird, können zusätzliche für das jeweilige Authentifizierungsverfahren erforderliche Informationen verarbeitet werden.</p>
+        <p>Für besonders privilegierte Benutzerrollen kann Mehrfaktor-Authentifizierung als Sicherheitsmassnahme vorgesehen oder verpflichtend sein.</p>
+        <p>Passwörter sollen nicht im Klartext gespeichert werden.</p>
+        <p>Diese Ziffer bezieht sich auf die geschützte FleetSwiss-Plattform. Die öffentliche FleetSwiss-Website verfügt derzeit über keinen Benutzer-Login.</p>
+      </section>
+      <section class="agb-section" id="ziffer-12" aria-labelledby="ziffer-12-titel">
+        <h2 id="ziffer-12-titel"><span class="agb-h-no">12.</span> Fahrer- und Mitarbeiterdaten</h2>
+        <p>FleetSwiss kann im Auftrag des jeweiligen Kunden Daten von Fahrern und Mitarbeitenden bearbeiten.</p>
+        <p>Der Kunde entscheidet grundsätzlich, welche dieser Daten für seine Zwecke erforderlich sind und in FleetSwiss hinterlegt werden.</p>
+        <p>FleetSwiss verwendet Fahrer- und Mitarbeiterdaten nicht für eigene personenbezogene Werbung.</p>
+        <p>FleetSwiss erstellt daraus keine eigenen kommerziellen Nutzer-, Leistungs-, Bonitäts- oder Verhaltensprofile.</p>
+      </section>
+      <section class="agb-section" id="ziffer-13" aria-labelledby="ziffer-13-titel">
+        <h2 id="ziffer-13-titel"><span class="agb-h-no">13.</span> Fahrzeug- und Zuordnungshistorie</h2>
+        <p>FleetSwiss kann historische Zuordnungen von Fahrzeugen, Fahrern und Kontrollschildern speichern.</p>
+        <p>Dies dient insbesondere:</p>
+        <ul>
+          <li>der nachvollziehbaren Flottenverwaltung;</li>
+          <li>der Dokumentation vergangener Zustände;</li>
+          <li>der Bearbeitung vergangener Vorgänge;</li>
+          <li>der Zuordnung von Ereignissen zu einem bestimmten Zeitpunkt;</li>
+          <li>der Nachvollziehbarkeit von Fahrerwechseln;</li>
+          <li>der Nachvollziehbarkeit von Kontrollschildwechseln.</li>
+        </ul>
+        <p>Historische Informationen können deshalb auch nach Änderung der aktuellen Zuordnung erhalten bleiben, solange hierfür ein betrieblicher, vertraglicher oder rechtlicher Zweck besteht.</p>
+        <p>Aktuelle Informationen müssen historische Informationen nicht zwingend überschreiben.</p>
+      </section>
+      <section class="agb-section" id="ziffer-14" aria-labelledby="ziffer-14-titel">
+        <h2 id="ziffer-14-titel"><span class="agb-h-no">14.</span> Fahrtenbuch</h2>
+        <p>Bei Nutzung der Fahrtenbuchfunktion können insbesondere folgende Informationen verarbeitet werden:</p>
+        <ul>
+          <li>verwendetes Fahrzeug;</li>
+          <li>Fahrer beziehungsweise Benutzer;</li>
+          <li>Datum;</li>
+          <li>Start- und Endzeit;</li>
+          <li>Startkilometerstand;</li>
+          <li>Endkilometerstand;</li>
+          <li>gefahrene Kilometer;</li>
+          <li>Fahrtzweck;</li>
+          <li>Bemerkungen;</li>
+          <li>gegebenenfalls punktuelle Standortinformationen.</li>
+        </ul>
+        <p>Die Daten können insbesondere der Fahrzeugverwaltung, Dokumentation der Fahrzeugnutzung, betrieblichen Nachvollziehbarkeit sowie der Erfüllung interner oder gesetzlicher Dokumentationspflichten des Kunden dienen.</p>
+        <p>Der Kunde ist dafür verantwortlich, die Fahrtenbuchfunktion im Rahmen der für ihn geltenden arbeits-, steuer-, datenschutz- und sonstigen gesetzlichen Vorschriften einzusetzen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-15" aria-labelledby="ziffer-15-titel">
+        <h2 id="ziffer-15-titel"><span class="agb-h-no">15.</span> Standortdaten</h2>
+        <p>FleetSwiss kann Funktionen anbieten, bei denen ein Benutzer im Rahmen der vom Kunden festgelegten Nutzung eine punktuelle Standortfreigabe auslöst.</p>
+        <p>Bei entsprechenden Fahrtenbuchfunktionen kann beispielsweise der Standort beim Start oder Ende einer Fahrt erfasst werden.</p>
+        <p>FleetSwiss betreibt im Rahmen dieser Funktion kein permanentes Hintergrundtracking des Fahrers.</p>
+        <p>Die konkrete Nutzung einer solchen Standortfunktion wird durch den jeweiligen Kunden festgelegt.</p>
+        <p>Der Kunde ist dafür verantwortlich, dass die Nutzung gegenüber seinen Mitarbeitenden und Fahrern rechtmässig und transparent erfolgt.</p>
+        <p>Eine spätere Einführung gesonderter GPS- oder Telematikfunktionen bleibt vorbehalten. Werden solche Funktionen angeboten, werden die hierfür erforderlichen Datenschutzinformationen entsprechend ergänzt.</p>
+      </section>
+      <section class="agb-section" id="ziffer-16" aria-labelledby="ziffer-16-titel">
+        <h2 id="ziffer-16-titel"><span class="agb-h-no">16.</span> Poolfahrzeuge und Reservationen</h2>
+        <p>Bei der Reservation und Nutzung von Poolfahrzeugen oder anderen Ressourcen können insbesondere verarbeitet werden:</p>
+        <ul>
+          <li>Benutzer;</li>
+          <li>Fahrer;</li>
+          <li>Fahrzeug beziehungsweise Ressource;</li>
+          <li>Reservierungsbeginn;</li>
+          <li>Reservierungsende;</li>
+          <li>tatsächliche Fahrzeugübernahme;</li>
+          <li>tatsächliche Fahrzeugrückgabe;</li>
+          <li>Kilometerstände;</li>
+          <li>Fahrtzweck;</li>
+          <li>Bemerkungen;</li>
+          <li>Buchungsstatus.</li>
+        </ul>
+        <p>Diese Informationen dienen insbesondere der Planung, Verwaltung und Nachvollziehbarkeit gemeinsam genutzter Fahrzeuge und Ressourcen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-17" aria-labelledby="ziffer-17-titel">
+        <h2 id="ziffer-17-titel"><span class="agb-h-no">17.</span> Führerausweis- und Berechtigungskontrollen</h2>
+        <p>Soweit ein Kunde entsprechende Funktionen verwendet, können Informationen über durchgeführte Führerausweis- oder Fahrberechtigungskontrollen gespeichert werden.</p>
+        <p>Abhängig von der Konfiguration können hierzu beispielsweise gehören:</p>
+        <ul>
+          <li>Name des Fahrers;</li>
+          <li>Kontrollzeitpunkt;</li>
+          <li>Kontrollstatus;</li>
+          <li>nächster Kontrolltermin;</li>
+          <li>dokumentierter Nachweis;</li>
+          <li>ein vom Benutzer bereitgestelltes Dokument oder Foto.</li>
+        </ul>
+        <p>Der Kunde ist für die datenschutzrechtliche Zulässigkeit, den Umfang und die erforderlichen Aufbewahrungsfristen dieser Bearbeitung verantwortlich.</p>
+        <p>FleetSwiss stellt hierfür die vereinbarte technische Funktion bereit, soweit FleetSwiss als Auftragsbearbeiter tätig wird.</p>
+      </section>
+      <section class="agb-section" id="ziffer-18" aria-labelledby="ziffer-18-titel">
+        <h2 id="ziffer-18-titel"><span class="agb-h-no">18.</span> Schadenmanagement</h2>
+        <p>Im Rahmen des Schadenmanagements können insbesondere folgende Informationen verarbeitet werden:</p>
+        <ul>
+          <li>betroffenes Fahrzeug;</li>
+          <li>Fahrer beziehungsweise meldende Person;</li>
+          <li>Zeitpunkt;</li>
+          <li>Schadenort;</li>
+          <li>Schadenbeschreibung;</li>
+          <li>Fotos;</li>
+          <li>Dokumente;</li>
+          <li>Versicherungsinformationen;</li>
+          <li>Schadennummer;</li>
+          <li>Bearbeitungsstatus;</li>
+          <li>Reparaturinformationen;</li>
+          <li>Werkstattinformationen;</li>
+          <li>Selbstbehalt;</li>
+          <li>Kosteninformationen;</li>
+          <li>gegebenenfalls Angaben zu einer Kostenbeteiligung.</li>
+        </ul>
+        <p>Die Informationen werden zur Dokumentation und Bearbeitung des jeweiligen Schadenfalls verwendet.</p>
+        <p>FleetSwiss verwendet solche Daten nicht für eigene Versicherungs-, Bonitäts-, Leistungs- oder Mitarbeiterprofile.</p>
+      </section>
+      <section class="agb-section" id="ziffer-19" aria-labelledby="ziffer-19-titel">
+        <h2 id="ziffer-19-titel"><span class="agb-h-no">19.</span> Partner und Partnergaragen</h2>
+        <p>Ein Kunde kann bestimmten externen Partnern, beispielsweise Partnergaragen, einen beschränkten Zugriff auf bestimmte Vorgänge oder Informationen ermöglichen.</p>
+        <p>Der Umfang eines solchen Zugriffs richtet sich nach den eingerichteten Rollen und Berechtigungen.</p>
+        <p>Beispielsweise kann eine Partnergarage Zugriff auf einen konkreten Rückgabe- oder Schadenprozess erhalten, ohne Zugriff auf den gesamten Datenbestand des Kunden zu erhalten.</p>
+        <p>Die konkrete Berechtigungsvergabe erfolgt grundsätzlich durch den Kunden beziehungsweise nach dessen Vorgaben.</p>
+      </section>
+      <section class="agb-section" id="ziffer-20" aria-labelledby="ziffer-20-titel">
+        <h2 id="ziffer-20-titel"><span class="agb-h-no">20.</span> Dokumentenverwaltung</h2>
+        <p>FleetSwiss kann die Speicherung und Verwaltung von Dokumenten ermöglichen.</p>
+        <p>Hierzu können beispielsweise gehören:</p>
+        <ul>
+          <li>Fahrzeugdokumente;</li>
+          <li>Fahrzeugausweise;</li>
+          <li>Leasingverträge;</li>
+          <li>Versicherungsunterlagen;</li>
+          <li>Schadenunterlagen;</li>
+          <li>Reparaturunterlagen;</li>
+          <li>Rückgabeprotokolle;</li>
+          <li>Vollmachten;</li>
+          <li>Führerausweisnachweise;</li>
+          <li>Fahrzeugbestellungen;</li>
+          <li>Rechnungen;</li>
+          <li>Gutschriften;</li>
+          <li>Zoll- und Importdokumente;</li>
+          <li>weitere fahrzeug- oder fahrerbezogene Unterlagen.</li>
+        </ul>
+        <p>Dokumente können versioniert und Änderungen historisch nachvollziehbar gespeichert werden.</p>
+        <p>Der Kunde ist dafür verantwortlich, nur solche Dokumente hochzuladen und aufzubewahren, deren Bearbeitung zulässig und erforderlich ist.</p>
+      </section>
+      <section class="agb-section" id="ziffer-21" aria-labelledby="ziffer-21-titel">
+        <h2 id="ziffer-21-titel"><span class="agb-h-no">21.</span> Datenimporte und Datenmigrationen</h2>
+        <p>Kunden können Daten selbst importieren oder FleetSwiss mit einer Datenmigration beauftragen.</p>
+        <p>Dabei können Daten insbesondere übernommen werden aus:</p>
+        <ul>
+          <li>bestehenden Flottenlisten;</li>
+          <li>CSV- oder Excel-Dateien;</li>
+          <li>ERP-Systemen;</li>
+          <li>Leasinggesellschaften;</li>
+          <li>Flottenmanagementsystemen;</li>
+          <li>Dienstleistern;</li>
+          <li>anderen vom Kunden bereitgestellten Datenquellen.</li>
+        </ul>
+        <p>Die Verantwortung dafür, dass die an FleetSwiss übergebenen Daten rechtmässig erhoben wurden und an FleetSwiss zur Bearbeitung übermittelt werden dürfen, liegt grundsätzlich beim Kunden.</p>
+        <p>FleetSwiss verwendet die im Rahmen einer Migration erhaltenen Kundendaten grundsätzlich nur für die vereinbarte Migration, Bereitstellung und den Betrieb der Plattform sowie damit zusammenhängende Leistungen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-22" aria-labelledby="ziffer-22-titel">
+        <h2 id="ziffer-22-titel"><span class="agb-h-no">22.</span> Herkunft von Daten</h2>
+        <p>Personendaten können insbesondere stammen:</p>
+        <ul>
+          <li>direkt von der betroffenen Person;</li>
+          <li>vom jeweiligen Kunden;</li>
+          <li>von berechtigten Administratoren und Benutzern des Kunden;</li>
+          <li>aus vom Kunden bereitgestellten Dateien und Datenbeständen;</li>
+          <li>aus angebundenen Systemen oder Schnittstellen;</li>
+          <li>von Leasinggesellschaften, Flottenmanagementanbietern oder anderen vom Kunden eingesetzten Dienstleistern;</li>
+          <li>von Partnern oder Partnergaragen, soweit diese zur Übermittlung der betreffenden Daten berechtigt sind;</li>
+          <li>aus sonstigen vom Kunden autorisierten Datenquellen.</li>
+        </ul>
+        <p>Welche Datenquellen tatsächlich genutzt werden, hängt von der Konfiguration, den eingesetzten Modulen und den vom jeweiligen Kunden beauftragten Integrationen ab.</p>
+        <p>FleetSwiss beschafft Kundendaten grundsätzlich nicht eigenständig aus sachfremden Quellen, um daraus eigene personenbezogene Datenbestände über Fahrer oder Mitarbeitende aufzubauen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-23" aria-labelledby="ziffer-23-titel">
+        <h2 id="ziffer-23-titel"><span class="agb-h-no">23.</span> Zwecke der Datenbearbeitung</h2>
+        <p>Personendaten können abhängig von der jeweiligen Rolle von FleetSwiss und den vom Kunden verwendeten Funktionen insbesondere zu folgenden Zwecken bearbeitet werden:</p>
+        <ul>
+          <li>Bereitstellung und Betrieb der FleetSwiss-Plattform;</li>
+          <li>Benutzer-, Rollen- und Zugriffsverwaltung;</li>
+          <li>Authentifizierung und IT-Sicherheit;</li>
+          <li>Flottenverwaltung;</li>
+          <li>Fahrer- und Fahrzeugverwaltung;</li>
+          <li>Verwaltung historischer Fahrer- und Fahrzeugzuordnungen;</li>
+          <li>Verwaltung von Kontrollschildern und deren Historie;</li>
+          <li>Vertrags- und Leasingverwaltung;</li>
+          <li>Fahrzeugbeschaffung;</li>
+          <li>Fahrtenbuchführung;</li>
+          <li>Poolfahrzeug- und Ressourcenverwaltung;</li>
+          <li>Reservationen;</li>
+          <li>Führerausweis- und Berechtigungskontrollen;</li>
+          <li>Schadenmanagement;</li>
+          <li>Fahrzeugrückgaben;</li>
+          <li>Dokumentenverwaltung;</li>
+          <li>Zoll- und Importverwaltung;</li>
+          <li>Datenimporte und Datenmigrationen;</li>
+          <li>Bereitstellung vereinbarter Schnittstellen;</li>
+          <li>Support und Fehlerbehebung;</li>
+          <li>technische Wartung und Wiederherstellung;</li>
+          <li>IT- und Informationssicherheit;</li>
+          <li>Missbrauchs- und Betrugsprävention;</li>
+          <li>Nachvollziehbarkeit sicherheits- und revisionsrelevanter Vorgänge;</li>
+          <li>Erfüllung vertraglicher Verpflichtungen;</li>
+          <li>Abrechnung;</li>
+          <li>Erfüllung gesetzlicher Verpflichtungen.</li>
+        </ul>
+        <p>FleetSwiss verwendet Kundendaten nicht für sachfremde eigene Zwecke.</p>
+      </section>
+      <section class="agb-section" id="ziffer-24" aria-labelledby="ziffer-24-titel">
+        <h2 id="ziffer-24-titel"><span class="agb-h-no">24.</span> Besonders schützenswerte Personendaten</h2>
+        <p>Die FleetSwiss-Plattform ist grundsätzlich nicht darauf ausgerichtet, umfassende besonders schützenswerte Personendaten über Mitarbeitende oder Fahrer zu erfassen.</p>
+        <p>Abhängig von den durch den Kunden verwendeten Funktionen oder hochgeladenen Dokumenten kann es jedoch vorkommen, dass besonders schützenswerte Personendaten im Sinne des anwendbaren Datenschutzrechts bearbeitet werden.</p>
+        <p>Dies kann insbesondere dann der Fall sein, wenn vom Kunden oder einer betroffenen Person Dokumente oder Nachweise hochgeladen werden, die über die für den eigentlichen FleetSwiss-Prozess erforderlichen Informationen hinaus zusätzliche personenbezogene Angaben enthalten.</p>
+        <p>Bei Führerausweis- oder Fahrberechtigungskontrollen können hochgeladene Fotos oder Dokumente beispielsweise zusätzliche Angaben enthalten, aus denen sich unter Umständen gesundheitliche Einschränkungen, Auflagen oder andere besonders schützenswerte Informationen ergeben.</p>
+        <p>Der Kunde ist dafür verantwortlich, den Umfang solcher Daten auf das für den jeweiligen Zweck erforderliche Mass zu beschränken und zu prüfen, ob die betreffende Bearbeitung zulässig ist.</p>
+        <p>Soweit für einen Prozess kein vollständiges Dokument erforderlich ist, soll der Kunde nach Möglichkeit vermeiden, nicht erforderliche besonders schützenswerte Personendaten in FleetSwiss zu erfassen oder hochzuladen.</p>
+        <p>FleetSwiss verwendet solche Daten nicht für eigene Profiling-, Werbe-, Bonitäts-, Versicherungs- oder Mitarbeiterbewertungszwecke.</p>
+      </section>
+      <section class="agb-section" id="ziffer-25" aria-labelledby="ziffer-25-titel">
+        <h2 id="ziffer-25-titel"><span class="agb-h-no">25.</span> Keine Vermarktung von Kundendaten</h2>
+        <p>FleetSwiss verkauft, vermietet oder vermarktet Kundendaten nicht.</p>
+        <p>Kundendaten werden insbesondere nicht:</p>
+        <ul>
+          <li>für den Handel mit personenbezogenen Daten verwendet;</li>
+          <li>an Dritte zu deren eigenen Werbezwecken verkauft;</li>
+          <li>für eigene personenbezogene Werbung gegenüber Fahrern oder Mitarbeitenden verwendet;</li>
+          <li>zur Erstellung eigener kommerzieller Fahrer- oder Mitarbeiterprofile verwendet;</li>
+          <li>für eigene Bonitäts-, Versicherungs-, Leistungs- oder Verhaltensprofile verwendet.</li>
+        </ul>
+        <p>Eine Bearbeitung oder Übermittlung von Kundendaten kann jedoch erfolgen, soweit sie:</p>
+        <ul>
+          <li>zur Bereitstellung der vereinbarten FleetSwiss-Dienstleistungen erforderlich ist;</li>
+          <li>zur technischen Bereitstellung, Sicherung oder Wiederherstellung der Plattform erforderlich ist;</li>
+          <li>durch den Kunden angewiesen oder genehmigt wurde;</li>
+          <li>im Rahmen einer datenschutzkonform eingebundenen Auftrags- oder Unterauftragsbearbeitung erforderlich ist;</li>
+          <li>oder aufgrund einer zwingenden gesetzlichen, behördlichen oder gerichtlichen Verpflichtung erfolgen muss.</li>
+        </ul>
+      </section>
+      <section class="agb-section" id="ziffer-26" aria-labelledby="ziffer-26-titel">
+        <h2 id="ziffer-26-titel"><span class="agb-h-no">26.</span> Auftrags- und Unterauftragsbearbeiter</h2>
+        <p>FleetSwiss kann technische Dienstleister einsetzen, soweit dies für den sicheren und zuverlässigen Betrieb der Plattform und der vereinbarten Dienstleistungen erforderlich ist.</p>
+        <p>Hierzu können insbesondere gehören:</p>
+        <ul>
+          <li>Hosting- und Rechenzentrumsanbieter;</li>
+          <li>Cloud-Infrastruktur-Anbieter;</li>
+          <li>Datenbank- und Speicherinfrastruktur;</li>
+          <li>Backup-Dienstleister;</li>
+          <li>E-Mail- und Benachrichtigungsdienste;</li>
+          <li>Authentifizierungs- und Sicherheitsdienste;</li>
+          <li>technische Infrastruktur- oder Supportpartner;</li>
+          <li>sonstige für den Betrieb erforderliche technische Dienstleister.</li>
+        </ul>
+        <p>Soweit solche Dienstleister Personendaten im Auftrag von FleetSwiss bearbeiten, werden sie entsprechend den anwendbaren datenschutzrechtlichen und vertraglichen Anforderungen eingebunden.</p>
+        <p>Sie erhalten grundsätzlich nur den für die jeweilige Leistung erforderlichen Zugriff.</p>
+        <p>FleetSwiss verkauft oder überlässt solchen Dienstleistern Kundendaten nicht zu deren eigenen Werbe-, Profiling- oder Vermarktungszwecken.</p>
+        <p>Die Einzelheiten zur Einbindung von Unterauftragsbearbeitern können zusätzlich im Auftragsbearbeitungsvertrag (AVV) geregelt werden.</p>
+      </section>
+      <section class="agb-section" id="ziffer-27" aria-labelledby="ziffer-27-titel">
+        <h2 id="ziffer-27-titel"><span class="agb-h-no">27.</span> Hosting und Datenstandort Schweiz</h2>
+        <p>FleetSwiss verfolgt für die produktive Plattform eine Hosting- und Datenhaltungsstrategie mit Datenstandort Schweiz.</p>
+        <p>Die produktive FleetSwiss-Plattform und ihre zentralen produktiven Datenbestände werden grundsätzlich auf Server- beziehungsweise Cloud-Infrastruktur in der Schweiz betrieben.</p>
+        <p>Dies betrifft insbesondere die zentrale produktive Datenhaltung der FleetSwiss-Plattform.</p>
+        <p>Auch bei einer grundsätzlich schweizerischen Datenhaltung können einzelne unterstützende technische Dienste oder Anbieter einen internationalen Bezug aufweisen.</p>
+        <p>Solche Dienste werden vor ihrem Einsatz unter Berücksichtigung der anwendbaren datenschutzrechtlichen Anforderungen geprüft und, soweit erforderlich, entsprechend vertraglich eingebunden und transparent ausgewiesen.</p>
+        <p>Die öffentliche FleetSwiss-Website und die FleetSwiss SaaS-Plattform können technisch auf unterschiedlicher Infrastruktur betrieben werden. Aussagen zur produktiven Plattforminfrastruktur sind deshalb nicht allein aus dem Quellcode der öffentlichen Website ableitbar.</p>
+      </section>
+      <section class="agb-section" id="ziffer-28" aria-labelledby="ziffer-28-titel">
+        <h2 id="ziffer-28-titel"><span class="agb-h-no">28.</span> Bekanntgabe von Daten ins Ausland</h2>
+        <p>FleetSwiss ist bestrebt, produktive Kundendaten der FleetSwiss-Plattform grundsätzlich in der Schweiz zu speichern.</p>
+        <p>Soweit im Rahmen einzelner technischer Dienste dennoch Personendaten in einem anderen Staat bearbeitet werden, dorthin bekanntgegeben werden oder ein technischer Zugriff aus einem anderen Staat möglich ist, werden die Anforderungen des jeweils anwendbaren Datenschutzrechts berücksichtigt.</p>
+        <p>Soweit für einen Empfängerstaat kein angemessenes Datenschutzniveau anerkannt ist und keine gesetzliche Ausnahme greift, werden soweit erforderlich geeignete Schutzmassnahmen eingesetzt.</p>
+        <p>Hierzu können insbesondere anerkannte vertragliche Garantien beziehungsweise Standarddatenschutzklauseln sowie erforderliche ergänzende Schutzmassnahmen gehören.</p>
+        <p>Die tatsächlich eingesetzten Dienstleister, Datenstandorte und technischen Zugriffsmöglichkeiten sind für die konkrete Beurteilung massgebend.</p>
+      </section>
+      <section class="agb-section" id="ziffer-29" aria-labelledby="ziffer-29-titel">
+        <h2 id="ziffer-29-titel"><span class="agb-h-no">29.</span> Datensicherheit</h2>
+        <p>FleetSwiss trifft unter Berücksichtigung des Risikos angemessene technische und organisatorische Massnahmen zum Schutz von Personendaten und vertraulichen Kundendaten.</p>
+        <p>Hierzu können insbesondere gehören:</p>
+        <ul>
+          <li>rollenbasierte Zugriffskontrollen;</li>
+          <li>Mandantentrennung;</li>
+          <li>Berechtigungskonzepte;</li>
+          <li>Need-to-know- und Least-Privilege-Prinzipien;</li>
+          <li>Authentifizierungsmechanismen;</li>
+          <li>Mehrfaktor-Authentifizierung für besonders privilegierte Rollen;</li>
+          <li>Schutz von Datenübertragungen durch geeignete Verschlüsselungsverfahren;</li>
+          <li>Protokollierung sicherheitsrelevanter Ereignisse;</li>
+          <li>Backup- und Wiederherstellungsverfahren;</li>
+          <li>technische Überwachung;</li>
+          <li>Aktualisierung sicherheitsrelevanter Komponenten;</li>
+          <li>organisatorische Zugriffsbeschränkungen;</li>
+          <li>Vertraulichkeits- und Verschwiegenheitsverpflichtungen;</li>
+          <li>angemessene Verfahren für den Umgang mit Sicherheitsvorfällen.</li>
+        </ul>
+        <p>Die konkreten Sicherheitsmassnahmen können entsprechend dem Stand der Technik, der technischen Architektur, dem Risiko und der Weiterentwicklung von FleetSwiss angepasst werden.</p>
+        <p>Keine elektronische Datenverarbeitung und keine Datenübertragung kann einen absoluten Schutz vor sämtlichen Risiken gewährleisten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-30" aria-labelledby="ziffer-30-titel">
+        <h2 id="ziffer-30-titel"><span class="agb-h-no">30.</span> Backups und Wiederherstellung</h2>
+        <p>Zur Sicherstellung der Verfügbarkeit und Wiederherstellbarkeit können Daten in Backup-Systemen gespeichert werden.</p>
+        <p>Gelöschte Daten können deshalb für einen begrenzten Zeitraum weiterhin in Sicherungskopien enthalten sein.</p>
+        <p>Backups werden grundsätzlich nicht dazu verwendet, regulär gelöschte Daten erneut produktiv zu verwenden, sondern dienen insbesondere der Wiederherstellung nach technischen Störungen, Sicherheitsvorfällen oder Datenverlust.</p>
+        <p>Soweit Daten aufgrund eines Wiederherstellungsvorgangs vorübergehend erneut erscheinen, werden Lösch- und Aufbewahrungsregeln im Rahmen der technisch und organisatorisch vorgesehenen Prozesse erneut berücksichtigt.</p>
+        <p>Die Aufbewahrungsdauer von Sicherungskopien richtet sich nach dem jeweils eingesetzten Backup- und Sicherheitskonzept.</p>
+      </section>
+      <section class="agb-section" id="ziffer-31" aria-labelledby="ziffer-31-titel">
+        <h2 id="ziffer-31-titel"><span class="agb-h-no">31.</span> Aufbewahrung und Löschung von Kundendaten</h2>
+        <p>FleetSwiss speichert Personendaten grundsätzlich nur so lange, wie dies für den jeweiligen Bearbeitungszweck erforderlich ist oder gesetzliche, vertragliche oder technische Gründe eine weitere Aufbewahrung erfordern.</p>
+        <p>Soweit FleetSwiss Personendaten im Auftrag eines Kunden bearbeitet, richtet sich die Aufbewahrung und Löschung grundsätzlich nach dem Vertragsverhältnis, den Weisungen des Kunden sowie den vereinbarten Lösch- und Aufbewahrungsregelungen.</p>
+        <p>Der Kunde ist dafür verantwortlich, für die von ihm bearbeiteten Daten angemessene Aufbewahrungsfristen festzulegen, soweit dies in seinem Verantwortungsbereich liegt.</p>
+        <p>Eine sofortige vollständige Entfernung aus sämtlichen Sicherungssystemen kann technisch nicht immer möglich sein. Daten können deshalb nach einer Löschung aus dem produktiven System noch während eines begrenzten Zeitraums in Backups vorhanden sein und werden im Rahmen des vorgesehenen Backup-Zyklus überschrieben oder gelöscht.</p>
+        <p>Gesetzliche Aufbewahrungspflichten sowie die Aufbewahrung von Daten zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen bleiben vorbehalten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-32" aria-labelledby="ziffer-32-titel">
+        <h2 id="ziffer-32-titel"><span class="agb-h-no">32.</span> Beendigung des Vertragsverhältnisses</h2>
+        <p>Bei Beendigung eines Kundenvertrags wird der Zugang des Kunden zur FleetSwiss-Plattform entsprechend den vertraglichen Vereinbarungen beendet.</p>
+        <p>Kundendaten können nach Vertragsende für einen vereinbarten Übergangszeitraum aufbewahrt werden, insbesondere um eine geordnete Datenherausgabe, Migration oder Wiederherstellung zu ermöglichen.</p>
+        <p>Anschliessend werden die betreffenden Kundendaten nach Massgabe der vertraglichen Vereinbarungen, der Weisungen des Kunden und der anwendbaren gesetzlichen Anforderungen gelöscht oder anonymisiert, soweit keine gesetzlichen Aufbewahrungspflichten oder sonstigen zulässigen Gründe für eine weitere Speicherung bestehen.</p>
+        <p>Daten in Sicherungskopien können bis zum Ablauf des jeweiligen Backup-Zyklus fortbestehen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-33" aria-labelledby="ziffer-33-titel">
+        <h2 id="ziffer-33-titel"><span class="agb-h-no">33.</span> Datenexport und Datenherausgabe</h2>
+        <p>FleetSwiss kann Funktionen zur Ausgabe oder zum Export von Kundendaten bereitstellen.</p>
+        <p>Der Umfang und das Format eines Datenexports richten sich nach den verfügbaren Funktionen, den vertraglichen Vereinbarungen und den technischen Möglichkeiten.</p>
+        <p>FleetSwiss kann den Kunden bei einer geordneten Datenmigration oder Datenherausgabe unterstützen.</p>
+        <p>Die Verantwortung für den sicheren Umgang mit exportierten Daten nach deren Übergabe an den Kunden liegt grundsätzlich beim Kunden.</p>
+      </section>
+      <section class="agb-section" id="ziffer-34" aria-labelledby="ziffer-34-titel">
+        <h2 id="ziffer-34-titel"><span class="agb-h-no">34.</span> Website und Server-Logdaten</h2>
+        <p>Beim Aufruf der FleetSwiss-Website können technisch erforderliche Informationen durch die eingesetzte Server- und Hosting-Infrastruktur verarbeitet werden.</p>
+        <p>Hierzu können insbesondere gehören:</p>
+        <ul>
+          <li>IP-Adresse;</li>
+          <li>Datum und Uhrzeit des Zugriffs;</li>
+          <li>aufgerufene Seite oder Ressource;</li>
+          <li>übertragene Datenmenge;</li>
+          <li>Browsertyp und Browserversion;</li>
+          <li>Betriebssystem;</li>
+          <li>Referrer-Informationen;</li>
+          <li>technische Status- und Fehlerinformationen.</li>
+        </ul>
+        <p>Diese Daten werden insbesondere benötigt, um die Website bereitzustellen, technische Fehler zu erkennen, die Sicherheit der Systeme zu gewährleisten und missbräuchliche Zugriffe zu untersuchen.</p>
+        <p>Server-Logdaten werden grundsätzlich nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist, sofern keine längere Aufbewahrung aufgrund eines konkreten Sicherheitsvorfalls oder einer gesetzlichen Verpflichtung erforderlich ist.</p>
+      </section>
+      <section class="agb-section" id="ziffer-35" aria-labelledby="ziffer-35-titel">
+        <h2 id="ziffer-35-titel"><span class="agb-h-no">35.</span> Cookies und vergleichbare Technologien</h2>
+        <p>Die öffentliche FleetSwiss-Website setzt derzeit keine Cookies ein. Technisch erforderliche Cookies bzw. vergleichbare Speichertechnologien zur Anmeldung, Authentifizierung und Sitzungsverwaltung können innerhalb der geschützten FleetSwiss-Plattform eingesetzt werden.</p>
+        <p>Technisch notwendige Technologien können innerhalb der Plattform insbesondere erforderlich sein für:</p>
+        <ul>
+          <li>Anmeldung und Authentifizierung;</li>
+          <li>Sitzungsverwaltung;</li>
+          <li>Sicherheit;</li>
+          <li>Speicherung notwendiger Benutzereinstellungen;</li>
+          <li>Schutz vor missbräuchlichen Zugriffen;</li>
+          <li>ordnungsgemässe Bereitstellung der Plattform.</li>
+        </ul>
+        <p>Sollten künftig nicht notwendige Analyse-, Marketing- oder vergleichbare Technologien eingesetzt werden, werden die hierfür erforderlichen datenschutzrechtlichen Voraussetzungen berücksichtigt.</p>
+        <p>Soweit eine Einwilligung erforderlich ist, sollen entsprechende Technologien grundsätzlich erst nach Erteilung der Einwilligung aktiviert werden.</p>
+        <p>Benutzer können Cookies zudem über die Einstellungen ihres Browsers verwalten oder löschen. Eine vollständige Deaktivierung technisch erforderlicher Cookies kann die Funktionsfähigkeit der FleetSwiss-Plattform beeinträchtigen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-36" aria-labelledby="ziffer-36-titel">
+        <h2 id="ziffer-36-titel"><span class="agb-h-no">36.</span> Webanalyse und Tracking</h2>
+        <p>FleetSwiss setzt nicht automatisch voraus, dass personenbezogene Analyse- oder Marketingdienste erforderlich sind.</p>
+        <p>Auf der öffentlichen FleetSwiss-Website werden derzeit keine Analyse-, Statistik-, Conversion- oder Marketingdienste eingesetzt.</p>
+        <p>Werden auf der öffentlichen FleetSwiss-Website künftig Analyse-, Statistik-, Conversion- oder Marketingdienste eingesetzt, wird die Datenschutzerklärung hinsichtlich der konkret eingesetzten Anbieter, Zwecke, Datenkategorien und Datenstandorte entsprechend ergänzt.</p>
+        <p>Soweit hierfür nach anwendbarem Recht eine Einwilligung erforderlich ist, erfolgt der Einsatz grundsätzlich erst nach entsprechender Einwilligung.</p>
+        <p>Kundendaten innerhalb der geschützten FleetSwiss-Plattform werden nicht für sachfremdes Werbetracking verwendet.</p>
+      </section>
+      <section class="agb-section" id="ziffer-37" aria-labelledby="ziffer-37-titel">
+        <h2 id="ziffer-37-titel"><span class="agb-h-no">37.</span> Kontakt-, Demo- und Angebotsanfragen</h2>
+        <p>Wenn eine Person FleetSwiss über das Kontaktformular, per E-Mail oder auf anderem Weg kontaktiert, können insbesondere Name, Unternehmen, E-Mail-Adresse, Telefonnummer, Inhalt der Anfrage, Zeitpunkt der Kontaktaufnahme sowie weitere freiwillig übermittelte Informationen bearbeitet werden. Diese Daten werden zur Bearbeitung der Anfrage, zur Kommunikation und gegebenenfalls zur Vorbereitung oder Durchführung einer Geschäftsbeziehung verwendet.</p>
+        <p>Entsteht daraus keine Geschäftsbeziehung, werden die Daten grundsätzlich gelöscht oder anonymisiert, sobald sie für diese Zwecke nicht mehr erforderlich sind und keine gesetzlichen oder berechtigten Gründe für eine weitere Aufbewahrung bestehen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-38" aria-labelledby="ziffer-38-titel">
+        <h2 id="ziffer-38-titel"><span class="agb-h-no">38.</span> Support und Kommunikation</h2>
+        <p>Bei Supportanfragen können Kontaktdaten, technische Informationen und die vom Benutzer oder Kunden zur Verfügung gestellten Inhalte bearbeitet werden.</p>
+        <p>Soweit zur Lösung eines konkreten Problems ein Zugriff auf Kundendaten erforderlich ist, gelten die in dieser Datenschutzerklärung beschriebenen Grundsätze für administrative Zugriffe.</p>
+        <p>Kunden und Benutzer sollen in Supportanfragen nur diejenigen Personendaten übermitteln, die zur Bearbeitung des jeweiligen Problems erforderlich sind.</p>
+        <p>FleetSwiss kann Kommunikation im Zusammenhang mit Supportfällen dokumentieren, soweit dies zur Bearbeitung, Nachvollziehbarkeit, Qualitätssicherung oder Erfüllung vertraglicher Pflichten erforderlich ist.</p>
+      </section>
+      <section class="agb-section" id="ziffer-39" aria-labelledby="ziffer-39-titel">
+        <h2 id="ziffer-39-titel"><span class="agb-h-no">39.</span> E-Mail und Benachrichtigungen</h2>
+        <p>FleetSwiss kann E-Mails und andere elektronische Benachrichtigungen versenden, beispielsweise für:</p>
+        <ul>
+          <li>Benutzerregistrierungen;</li>
+          <li>Passwort- und Sicherheitsvorgänge;</li>
+          <li>Systembenachrichtigungen;</li>
+          <li>Erinnerungen;</li>
+          <li>Buchungsinformationen;</li>
+          <li>Schadenprozesse;</li>
+          <li>Vertrags- oder Fahrzeugereignisse;</li>
+          <li>Supportkommunikation;</li>
+          <li>betriebliche Informationen.</li>
+        </ul>
+        <p>Hierfür können spezialisierte Versanddienstleister eingesetzt werden.</p>
+        <p>Der Inhalt solcher Nachrichten wird auf das für den jeweiligen Zweck erforderliche Mass beschränkt.</p>
+      </section>
+      <section class="agb-section" id="ziffer-40" aria-labelledby="ziffer-40-titel">
+        <h2 id="ziffer-40-titel"><span class="agb-h-no">40.</span> Newsletter und Marketingkommunikation</h2>
+        <p>Soweit FleetSwiss Newsletter oder andere Marketingkommunikation anbietet, erfolgt deren Versand nach Massgabe der anwendbaren gesetzlichen Anforderungen.</p>
+        <p>Empfänger können Marketingkommunikation grundsätzlich jederzeit abbestellen.</p>
+        <p>Betriebliche, sicherheitsrelevante oder unmittelbar vertragsbezogene Nachrichten sind keine Marketingkommunikation und können weiterhin erforderlich sein.</p>
+        <p>Kundendaten aus der FleetSwiss-Plattform werden nicht ohne entsprechende Grundlage für personenbezogene Marketingkampagnen verwendet.</p>
+      </section>
+      <section class="agb-section" id="ziffer-41" aria-labelledby="ziffer-41-titel">
+        <h2 id="ziffer-41-titel"><span class="agb-h-no">41.</span> Automatisierte Einzelentscheidungen und Profiling</h2>
+        <p>FleetSwiss verwendet Kundendaten grundsätzlich nicht, um für eigene Zwecke automatisierte Entscheidungen mit erheblichen rechtlichen oder vergleichbar erheblichen Auswirkungen auf Fahrer oder Mitarbeitende zu treffen.</p>
+        <p>FleetSwiss erstellt aus Kundendaten keine eigenen Bonitäts-, Leistungs-, Verhaltens- oder Risikoprofile über Mitarbeitende oder Fahrer.</p>
+        <p>Sollte ein Kunde Funktionen verwenden oder konfigurieren, die eine automatisierte Auswertung von Daten ermöglichen, ist der Kunde für die datenschutzrechtliche Zulässigkeit dieser Verwendung verantwortlich, soweit er über Zweck und Mittel der betreffenden Bearbeitung entscheidet.</p>
+        <p>Sollte FleetSwiss zukünftig selbst eine automatisierte Einzelentscheidung einsetzen, für die besondere gesetzliche Informationspflichten gelten, werden die betroffenen Personen entsprechend informiert.</p>
+      </section>
+      <section class="agb-section" id="ziffer-42" aria-labelledby="ziffer-42-titel">
+        <h2 id="ziffer-42-titel"><span class="agb-h-no">42.</span> Daten von Mitarbeitenden und arbeitsrechtliche Verantwortung</h2>
+        <p>FleetSwiss ist insbesondere für Unternehmen und Organisationen bestimmt, die Fahrzeugflotten verwalten.</p>
+        <p>Dadurch können Daten von Arbeitnehmern und anderen Beschäftigten bearbeitet werden.</p>
+        <p>Soweit der Kunde Arbeitgeber der betroffenen Personen ist, ist der Kunde dafür verantwortlich, dass der Einsatz von FleetSwiss und insbesondere Funktionen wie Fahrtenbuch, Führerausweiskontrolle, Standorterfassung, Schadenmanagement und Fahrzeugzuordnung mit den für ihn geltenden arbeits- und datenschutzrechtlichen Anforderungen vereinbar ist.</p>
+        <p>FleetSwiss entscheidet als technischer Auftragsbearbeiter grundsätzlich nicht darüber, zu welchen arbeitsrechtlichen Zwecken ein Kunde die von ihm erhobenen Daten verwendet.</p>
+      </section>
+      <section class="agb-section" id="ziffer-43" aria-labelledby="ziffer-43-titel">
+        <h2 id="ziffer-43-titel"><span class="agb-h-no">43.</span> Keine verdeckte Mitarbeiterüberwachung durch FleetSwiss</h2>
+        <p>FleetSwiss betreibt keine eigenständige verdeckte Überwachung von Mitarbeitenden oder Fahrern seiner Kunden.</p>
+        <p>Insbesondere nutzt FleetSwiss Fahrten-, Standort-, Schaden- oder Fahrzeugdaten nicht für eigene Zwecke zur Bewertung der Arbeitsleistung oder des Verhaltens einzelner Fahrer oder Mitarbeitender.</p>
+        <p>Der Kunde trägt die Verantwortung dafür, die ihm zur Verfügung stehenden Funktionen rechtmässig, verhältnismässig und transparent einzusetzen.</p>
+      </section>
+      <section class="agb-section" id="ziffer-44" aria-labelledby="ziffer-44-titel">
+        <h2 id="ziffer-44-titel"><span class="agb-h-no">44.</span> Datenschutzverletzungen und Sicherheitsvorfälle</h2>
+        <p>FleetSwiss unterhält organisatorische und technische Verfahren für den Umgang mit Sicherheitsvorfällen.</p>
+        <p>Wird eine Verletzung der Datensicherheit festgestellt, wird der Vorfall entsprechend seiner Art, seines Umfangs und seiner Risiken untersucht und bearbeitet.</p>
+        <p>Soweit FleetSwiss als Auftragsbearbeiter tätig ist, informiert FleetSwiss den betroffenen Kunden entsprechend den gesetzlichen und vertraglichen Anforderungen, wenn ein relevanter Sicherheitsvorfall Kundendaten betrifft.</p>
+        <p>Die Entscheidung über eine erforderliche Meldung an eine Datenschutzbehörde oder Information betroffener Personen liegt grundsätzlich beim datenschutzrechtlich Verantwortlichen, soweit das anwendbare Recht nichts anderes vorsieht.</p>
+        <p>Ist FleetSwiss für die betreffende Bearbeitung selbst Verantwortlicher, erfüllt FleetSwiss die für FleetSwiss geltenden gesetzlichen Melde- und Informationspflichten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-45" aria-labelledby="ziffer-45-titel">
+        <h2 id="ziffer-45-titel"><span class="agb-h-no">45.</span> Anfragen betroffener Personen</h2>
+        <p>Betroffene Personen können im Rahmen des anwendbaren Datenschutzrechts insbesondere Rechte in Bezug auf ihre Personendaten haben.</p>
+        <p>Dazu können je nach anwendbarem Recht insbesondere gehören:</p>
+        <ul>
+          <li>Recht auf Auskunft;</li>
+          <li>Recht auf Berichtigung unrichtiger Daten;</li>
+          <li>Recht auf Löschung unter den gesetzlichen Voraussetzungen;</li>
+          <li>Recht auf Einschränkung bestimmter Bearbeitungen;</li>
+          <li>Recht auf Herausgabe oder Übertragung bestimmter Daten, soweit gesetzlich vorgesehen;</li>
+          <li>Recht auf Widerruf einer erteilten Einwilligung für zukünftige Bearbeitungen;</li>
+          <li>Recht auf Widerspruch, soweit das anwendbare Recht ein solches Recht vorsieht.</li>
+        </ul>
+        <p>Diese Rechte sind nicht absolut. Gesetzliche Voraussetzungen, Ausnahmen, Aufbewahrungspflichten und überwiegende Interessen können ihre Ausübung einschränken.</p>
+      </section>
+      <section class="agb-section" id="ziffer-46" aria-labelledby="ziffer-46-titel">
+        <h2 id="ziffer-46-titel"><span class="agb-h-no">46.</span> Datenschutzanfragen bezüglich Kundendaten</h2>
+        <p>Betrifft eine Datenschutzanfrage Daten, die ein FleetSwiss-Kunde als Verantwortlicher über die Plattform bearbeitet, sollte sich die betroffene Person grundsätzlich an den jeweiligen Kunden wenden.</p>
+        <p>Dies gilt beispielsweise für einen Mitarbeiter, der Auskunft über die durch seinen Arbeitgeber in FleetSwiss gespeicherten Daten verlangt.</p>
+        <p>FleetSwiss entscheidet als Auftragsbearbeiter grundsätzlich nicht selbst über solche Anträge.</p>
+        <p>FleetSwiss unterstützt den verantwortlichen Kunden im Rahmen der vertraglichen und gesetzlichen Verpflichtungen bei der Bearbeitung entsprechender Anfragen.</p>
+        <p>Geht eine solche Anfrage unmittelbar bei FleetSwiss ein, kann FleetSwiss die anfragende Person an den verantwortlichen Kunden verweisen beziehungsweise die Anfrage nach Massgabe der vertraglichen und gesetzlichen Vorgaben behandeln.</p>
+      </section>
+      <section class="agb-section" id="ziffer-47" aria-labelledby="ziffer-47-titel">
+        <h2 id="ziffer-47-titel"><span class="agb-h-no">47.</span> Datenschutzanfragen bezüglich eigener Bearbeitungen von FleetSwiss</h2>
+        <p>Soweit FleetSwiss selbst Verantwortlicher für eine Datenbearbeitung ist, können Datenschutzanfragen direkt an FleetSwiss beziehungsweise Alpine Service Switzerland GmbH gerichtet werden.</p>
+        <p>FleetSwiss kann zur Verhinderung unberechtigter Datenoffenlegungen eine angemessene Identifikation der anfragenden Person verlangen.</p>
+        <p>Anfragen werden innerhalb der jeweils anwendbaren gesetzlichen Fristen bearbeitet.</p>
+      </section>
+      <section class="agb-section" id="ziffer-48" aria-labelledby="ziffer-48-titel">
+        <h2 id="ziffer-48-titel"><span class="agb-h-no">48.</span> Beschwerdemöglichkeiten</h2>
+        <p>Betroffene Personen können sich im Rahmen des anwendbaren Rechts an die zuständige Datenschutzaufsichtsbehörde wenden.</p>
+        <p>Für die Schweiz ist dies insbesondere der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte (EDÖB).</p>
+        <p>Soweit die DSGVO Anwendung findet, können zusätzlich die nach der DSGVO zuständigen Datenschutzaufsichtsbehörden relevant sein.</p>
+      </section>
+      <section class="agb-section" id="ziffer-49" aria-labelledby="ziffer-49-titel">
+        <h2 id="ziffer-49-titel"><span class="agb-h-no">49.</span> Gesetzliche und behördliche Offenlegung</h2>
+        <p>FleetSwiss gibt Kundendaten nicht freiwillig für sachfremde Zwecke an Behörden oder andere Dritte weiter.</p>
+        <p>Eine Offenlegung kann jedoch erfolgen, wenn FleetSwiss aufgrund anwendbaren Rechts, einer rechtsverbindlichen behördlichen Anordnung oder einer vollstreckbaren gerichtlichen Entscheidung hierzu verpflichtet ist.</p>
+        <p>Soweit rechtlich zulässig, beschränkt FleetSwiss eine solche Offenlegung auf die tatsächlich erforderlichen Daten.</p>
+        <p>Soweit FleetSwiss als Auftragsbearbeiter betroffen ist und eine Information des Kunden rechtlich zulässig ist, wird der Kunde entsprechend den gesetzlichen und vertraglichen Vorgaben einbezogen beziehungsweise informiert.</p>
+      </section>
+      <section class="agb-section" id="ziffer-50" aria-labelledby="ziffer-50-titel">
+        <h2 id="ziffer-50-titel"><span class="agb-h-no">50.</span> Vertrauliche Unternehmensdaten</h2>
+        <p>Neben Personendaten können Kunden in FleetSwiss vertrauliche Unternehmens- und Geschäftsinformationen speichern.</p>
+        <p>Dazu können insbesondere gehören:</p>
+        <ul>
+          <li>Fahrzeugkosten;</li>
+          <li>Leasingkonditionen;</li>
+          <li>Lieferanteninformationen;</li>
+          <li>Flottenstrukturen;</li>
+          <li>Vertragsinformationen;</li>
+          <li>Schadenkosten;</li>
+          <li>interne Prozesse;</li>
+          <li>Dokumente;</li>
+          <li>betriebliche Auswertungen.</li>
+        </ul>
+        <p>FleetSwiss behandelt solche Informationen entsprechend den vertraglichen Vereinbarungen und den vorgesehenen technischen und organisatorischen Sicherheitsmassnahmen vertraulich.</p>
+        <p>Die vertragliche Vertraulichkeit von Unternehmensdaten besteht unabhängig davon, ob die betreffenden Informationen datenschutzrechtlich als Personendaten gelten.</p>
+      </section>
+      <section class="agb-section" id="ziffer-51" aria-labelledby="ziffer-51-titel">
+        <h2 id="ziffer-51-titel"><span class="agb-h-no">51.</span> Änderungen an FleetSwiss und neue Funktionen</h2>
+        <p>FleetSwiss wird laufend weiterentwickelt.</p>
+        <p>Neue Module, Schnittstellen oder Funktionen können zusätzliche Datenbearbeitungen erforderlich machen.</p>
+        <p>FleetSwiss berücksichtigt Datenschutzanforderungen bei der Weiterentwicklung der Plattform und passt diese Datenschutzerklärung an, wenn neue Bearbeitungen dies erforderlich machen.</p>
+        <p>Die Einführung einer neuen Funktion bedeutet nicht automatisch, dass diese für sämtliche Kunden aktiviert wird.</p>
+      </section>
+      <section class="agb-section" id="ziffer-52" aria-labelledby="ziffer-52-titel">
+        <h2 id="ziffer-52-titel"><span class="agb-h-no">52.</span> Änderungen dieser Datenschutzerklärung</h2>
+        <p>FleetSwiss kann diese Datenschutzerklärung ändern, insbesondere wenn:</p>
+        <ul>
+          <li>sich die FleetSwiss-Plattform weiterentwickelt;</li>
+          <li>neue Funktionen eingeführt werden;</li>
+          <li>Dienstleister oder technische Infrastruktur geändert werden;</li>
+          <li>gesetzliche Anforderungen geändert werden;</li>
+          <li>behördliche Vorgaben oder Rechtsprechung eine Anpassung erforderlich machen.</li>
+        </ul>
+        <p>Massgebend ist grundsätzlich die jeweils auf der FleetSwiss-Website veröffentlichte Fassung.</p>
+        <p>Bei wesentlichen Änderungen kann FleetSwiss Kunden zusätzlich in geeigneter Form informieren.</p>
+      </section>
+      <section class="agb-section" id="ziffer-53" aria-labelledby="ziffer-53-titel">
+        <h2 id="ziffer-53-titel"><span class="agb-h-no">53.</span> Verhältnis zu Verträgen und Auftragsbearbeitungsvereinbarungen</h2>
+        <p>Diese Datenschutzerklärung dient der transparenten Information über die Bearbeitung von Personendaten.</p>
+        <p>Zusätzliche Datenschutz-, Sicherheits- und Vertraulichkeitsverpflichtungen können insbesondere geregelt sein in:</p>
+        <ul>
+          <li>Kundenverträgen;</li>
+          <li>Allgemeinen Geschäftsbedingungen;</li>
+          <li>Auftragsbearbeitungsvereinbarungen;</li>
+          <li>Service-Level-Vereinbarungen;</li>
+          <li>Vertraulichkeitsvereinbarungen;</li>
+          <li>individuellen Zusatzvereinbarungen.</li>
+        </ul>
+        <p>Soweit FleetSwiss als Auftragsbearbeiter tätig ist, werden die Rechte und Pflichten zwischen FleetSwiss und dem jeweiligen Kunden insbesondere durch die einschlägigen vertraglichen Vereinbarungen konkretisiert.</p>
+      </section>
+      <section class="agb-section" id="ziffer-54" aria-labelledby="ziffer-54-titel">
+        <h2 id="ziffer-54-titel"><span class="agb-h-no">54.</span> Datenschutz durch Technikgestaltung</h2>
+        <p>FleetSwiss berücksichtigt Datenschutz- und Sicherheitsanforderungen soweit angemessen bereits bei der Konzeption und Weiterentwicklung der Plattform.</p>
+        <p>Hierzu gehören insbesondere die Grundsätze:</p>
+        <ul>
+          <li>Datenminimierung;</li>
+          <li>Zweckbindung;</li>
+          <li>rollenbasierter Zugriff;</li>
+          <li>Mandantentrennung;</li>
+          <li>Least Privilege;</li>
+          <li>Need-to-know;</li>
+          <li>angemessene technische und organisatorische Sicherheitsmassnahmen;</li>
+          <li>Nachvollziehbarkeit sicherheitsrelevanter Vorgänge.</li>
+        </ul>
+        <p>Die konkrete Konfiguration des Systems und die Vergabe von Berechtigungen innerhalb eines Kundenmandanten liegen grundsätzlich in der Verantwortung des Kunden.</p>
+      </section>
+      <section class="agb-section" id="ziffer-55" aria-labelledby="ziffer-55-titel">
+        <h2 id="ziffer-55-titel"><span class="agb-h-no">55.</span> Schlussbestimmungen</h2>
+        <p>Diese Datenschutzerklärung beschreibt den allgemeinen Umgang mit Personendaten bei FleetSwiss.</p>
+        <p>Für einzelne Funktionen oder Dienstleistungen können ergänzende Datenschutzhinweise vorgesehen werden, wenn dies aufgrund der Art der Datenbearbeitung erforderlich oder sinnvoll ist.</p>
+        <p>Sollten einzelne Bestimmungen dieser Datenschutzerklärung aufgrund einer Änderung der Rechtslage oder der tatsächlichen technischen Ausgestaltung angepasst werden müssen, berührt dies die übrigen Bestimmungen nicht.</p>
+        <p>FleetSwiss überprüft diese Datenschutzerklärung regelmässig und aktualisiert sie bei wesentlichen Änderungen der Datenbearbeitung.</p>
+      </section>
+      <section class="agb-section" id="ziffer-56" aria-labelledby="ziffer-56-titel">
+        <h2 id="ziffer-56-titel"><span class="agb-h-no">56.</span> Kontakt</h2>
+        <p>Verantwortliche Stelle, soweit Alpine Service Switzerland GmbH selbst über Zweck und Mittel der Datenbearbeitung entscheidet:</p>
+        <address><strong>Alpine Service Switzerland GmbH</strong><br>
+          Baarermattstrasse 8b<br>
+          6340 Baar<br>
+          Schweiz</address>
+        <address><strong>FleetSwiss</strong><br>
+          <strong>E-Mail Datenschutz:</strong> <a href="mailto:info@fleetswiss.ch">info@fleetswiss.ch</a><br>
+          <strong>Website:</strong> <a href="https://fleetswiss.ch">fleetswiss.ch</a></address>
+        <p>Bei Anfragen zu Personendaten, die durch einen FleetSwiss-Kunden als Verantwortlicher bearbeitet werden, ist grundsätzlich der jeweilige Kunde erster Ansprechpartner.</p>
+        <p><strong>Stand dieser Datenschutzerklärung: September 2026</strong></p>
+      </section>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/assets/brand/fleetswiss-logo-white.png" alt="FleetSwiss" width="1200" height="175" loading="lazy">
+        <p>A product by Alpine Service Switzerland GmbH. Digitales Flottenmanagement für Schweizer Unternehmen.</p>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Produkt</h2>
+        <ul>
+          <li><a href="/produkt">Produkt</a></li>
+          <li><a href="/funktionen">Funktionen</a></li>
+          <li><a href="/produkt#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Unternehmen</h2>
+        <ul>
+          <li><a href="/sicherheit">Sicherheit</a></li>
+          <li><a href="/ueber-uns">Über uns</a></li>
+          <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Rechtliches</h2>
+        <ul>
+          <li><a href="/datenschutz">Datenschutz</a></li>
+          <li><a href="/impressum">Impressum</a></li>
+          <li><a href="/agb">AGB</a></li>
+          <li hidden><a href="/datenschutz#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FleetSwiss. Alle Rechte vorbehalten.</span>
+      <div class="swiss-badge">
+        <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#C7492B"/><rect x="13" y="8" width="6" height="16" fill="#fff"/><rect x="8" y="13" width="16" height="6" fill="#fff"/></svg>
+        Swiss based. Globally minded.
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  (function(){
+    var toggle = document.getElementById('menuToggle');
+    var menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.querySelectorAll('.mobile-menu a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    if (form) {
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        // Hinweis: Formular ist aktuell nicht an ein Backend/Mailsystem angebunden.
+        // Anbindung (z. B. E-Mail-Versand oder CRM) folgt in einem separaten Schritt.
+        status.classList.add('show');
+        form.reset();
+      });
+    }
+  })();
+</script>
+<script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
