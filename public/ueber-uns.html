@@ -789,6 +789,17 @@
     header.site .nav-right { display: none; }
   }
 </style>
+<style id="login-button">
+  /* Login-Button (externer Wechsel zu app.fleetswiss.ch) */
+  nav.primary a.nav-login { padding: 8px 18px; border: 1px solid var(--blue); border-radius: 6px; color: var(--blue); font-weight: 600; line-height: 1.2; transition: background .15s, color .15s; }
+  nav.primary a.nav-login:hover, nav.primary a.nav-login:focus-visible { background: var(--blue); color: #fff; }
+  .mobile-menu a.mobile-login { margin-top: 10px; border: 1px solid var(--blue); color: var(--blue); font-weight: 600; }
+  .mobile-menu a.mobile-login:hover { background: var(--blue); color: #fff; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) nav.primary a.nav-login, :root:not([data-theme="light"]) .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+  }
+  :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+</style>
 </head>
 <body>
 <header class="site">
@@ -802,6 +813,7 @@
       <a href="/sicherheit.html">Sicherheit</a>
       <a href="/ueber-uns.html">Über uns</a>
       <a href="/#kontakt">Kontakt</a>
+      <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
     </nav>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
@@ -820,6 +832,7 @@
     <a href="/ueber-uns.html">Über uns</a>
     <a href="/#kontakt">Kontakt</a>
     <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
+    <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
   </div>
 </header>
 <main>
