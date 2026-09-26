@@ -43,27 +43,16 @@
     --white: #FFFFFF;
     --ink: #14202E;
     --slate: #4B5A68;
-    --slate-light: #7C8B98;
+    --slate-light: #5E6C79;
     --line: #DFE6EC;
     --green: #2E9E5B;
     --red-mark: #C7492B;
     --shadow: 0 20px 50px -25px rgba(14,42,71,0.35);
     --radius: 10px;
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color-scheme: light;
+    color-scheme: only light;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: #0B1620;
-      --white: #10202E;
-      --ink: #EAF0F5;
-      --slate: #B7C4CE;
-      --slate-light: #8695A2;
-      --line: #223546;
-      --ice: #132534;
-    }
-  }
   :root[data-theme="dark"] {
     --paper: #0B1620;
     --white: #10202E;
@@ -149,9 +138,6 @@
     padding-top: env(safe-area-inset-top, 0px);
   }
   :root[data-theme="dark"] header.site { background: rgba(16,32,46,0.9); }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) header.site { background: rgba(16,32,46,0.9); }
-  }
   .nav-row {
     display: flex;
     align-items: center;
@@ -561,7 +547,7 @@
     padding: 5px 11px; border-radius: 999px;
     margin-bottom: 16px;
   }
-  .roadmap-card.now .tag { background: #E2F3E9; color: var(--green); }
+  .roadmap-card.now .tag { background: #E2F3E9; color: #1E7A45; }
   .roadmap-card.next .tag { background: var(--ice); color: var(--blue); }
   .roadmap-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
   .roadmap-card ul { list-style: none; padding: 0; margin: 18px 0 0; }
@@ -632,48 +618,6 @@
   .contact-tag { margin-top: 32px; font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: #7EB4E6; }
   .contact-tag span { display: block; font-size: 13px; letter-spacing: 0.1em; }
 
-  .form-card {
-    background: #fff;
-    color: var(--ink);
-    border-radius: 14px;
-    padding: 32px;
-    box-shadow: var(--shadow);
-  }
-  .form-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); }
-  .form-card > p { font-size: 14px; color: var(--slate); margin-top: 6px; }
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 22px;
-  }
-  @media (max-width: 480px) { .form-grid { grid-template-columns: 1fr; } }
-  .form-grid .full { grid-column: 1 / -1; }
-  label {
-    display: block;
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--slate);
-    margin-bottom: 6px;
-  }
-  input, select, textarea {
-    width: 100%;
-    font: inherit;
-    padding: 11px 13px;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--paper);
-    color: var(--ink);
-  }
-  input:focus, select:focus, textarea:focus {
-    outline: 2px solid var(--blue);
-    outline-offset: 1px;
-    background: #fff;
-  }
-  textarea { resize: vertical; min-height: 92px; }
-  .form-card .btn { width: 100%; justify-content: center; margin-top: 18px; }
-  .form-status { font-size: 13px; margin-top: 12px; color: var(--green); display: none; }
-  .form-status.show { display: block; }
 
   /* Footer */
   footer.site {
@@ -772,7 +716,6 @@
 <style id="pre-golive">
   .lang-switch[hidden] { display: none !important; }
   .footer-col .legal-pending { font-size: 13.5px; color: #6F8497; }
-  .form-status.info { color: var(--slate); }
 </style>
 <style id="brand">
   /* Finales FleetSwiss-Logo (Header/Footer) */
@@ -795,17 +738,30 @@
   nav.primary a.nav-login:hover, nav.primary a.nav-login:focus-visible { background: var(--blue); color: #fff; }
   .mobile-menu a.mobile-login { margin-top: 10px; border: 1px solid var(--blue); color: var(--blue); font-weight: 600; }
   .mobile-menu a.mobile-login:hover { background: var(--blue); color: #fff; }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) nav.primary a.nav-login, :root:not([data-theme="light"]) .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
-  }
   :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+</style>
+<style id="mobile-fix">
+  /* V1.8 FINAL Mobile-Korrektur: Bis 900 px gilt immer das helle FleetSwiss-Farbsystem.
+     Desktop (ab 901 px) bleibt unverändert, inklusive seiner bisherigen Dunkelmodus-Regeln. */
+  @media (max-width: 900px) {
+    :root { color-scheme: only light; }
+    :root:not([data-theme="dark"]) {
+      --paper: #F6F8FA; --white: #FFFFFF; --ink: #14202E; --slate: #4B5A68;
+      --slate-light: #5E6C79; --line: #DFE6EC; --ice: #EAF1F8;
+    }
+    :root:not([data-theme="dark"]) header.site { background: rgba(255,255,255,0.96); }
+    .menu-toggle span, .menu-toggle::before, .menu-toggle::after { background: var(--navy); }
+    :root:not([data-theme="dark"]) .mobile-menu a.mobile-login { border-color: var(--blue); color: var(--blue); }
+    .mobile-menu a.btn-primary { color: #fff; }
+    .roadmap-card.now .tag { color: #1E7A45; }
+  }
 </style>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav-row">
     <a href="/" class="logo" aria-label="FleetSwiss Startseite">
-      <picture><source srcset="/assets/brand/fleetswiss-logo-white.png" media="(prefers-color-scheme: dark)"><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
+      <picture><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
     </a>
     <nav class="primary" aria-label="Hauptnavigation">
       <a href="/produkt.html">Produkt</a>
@@ -964,17 +920,6 @@
       });
     });
 
-    var form = document.getElementById('contactForm');
-    var status = document.getElementById('formStatus');
-    if (form) {
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        // Hinweis: Formular ist aktuell nicht an ein Backend/Mailsystem angebunden.
-        // Anbindung (z. B. E-Mail-Versand oder CRM) folgt in einem separaten Schritt.
-        status.classList.add('show');
-        form.reset();
-      });
-    }
   })();
 </script>
 <script src="/assets/js/consent.js" defer></script>

@@ -1,16 +1,17 @@
-# FleetSwiss Website – Datenschutz-Technik (Stand 22.09.2026)
+# FleetSwiss Website – Datenschutz-Technik (Stand 26.09.2026, V1.10 FINAL)
 
 ## Externe Verbindungen
-Geprüft per Browser-Audit auf allen 7 Seiten, inkl. Absenden des Kontaktformulars.
+Geprüft per Browser-Audit auf allen 8 Seiten.
 - **Vorher:** `fonts.googleapis.com` und `fonts.gstatic.com` (Google Fonts) auf jeder Seite
-- **Jetzt:** keine externen Domains. Pro Seitenaufruf nur eigene Ressourcen: HTML, `inter-latin-wght-normal.woff2`, `consent.js` (Bilder sind im HTML eingebettet)
+- **Jetzt:** keine externen Domains beim Seitenaufruf. Geladen werden nur eigene Ressourcen der Domain (HTML, lokale Schrift, `consent.js`, Bilder unter `/assets/`)
 - Keine Analytics-, Marketing-, Tracking- oder Social-Pixel, keine iFrames, keine Karten oder Videos
 - Nicht-geladene Referenzen: OG-Tags (nur für Link-Vorschauen), JSON-LD-Kontext (`schema.org`, wird nicht aufgerufen)
+- Externe Links, die erst nach bewusstem Klick geöffnet werden: `https://wa.me/41766070531` (WhatsApp, neues Fenster, ohne Referrer) und `https://app.fleetswiss.ch` (Login)
+- Kein Kontaktformular, keine Contact-API, kein Resend-Versand für Website-Anfragen; Kontakt per `mailto:` und WhatsApp-Link
 
 ## Cookies und Browser-Speicher
 - **Cookies:** keine
 - **LocalStorage / SessionStorage:** keine Einträge
-- **Kontaktformular:** speichert nichts, sendet aktuell nichts (Transport nicht angeschlossen)
 - **Hosting:** Der Webserver darf keine Cookies setzen (beim Hosting prüfen; z. B. keine Session- oder Load-Balancer-Cookies)
 
 ## Consent-Architektur (`/assets/js/consent.js`)

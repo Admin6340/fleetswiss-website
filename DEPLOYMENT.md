@@ -1,4 +1,4 @@
-# FleetSwiss – Deployment (Stand 26.09.2026, V1.6)
+# FleetSwiss – Deployment (Stand 26.09.2026, V1.10 FINAL)
 
 **Produktiver Hosting-Modus: Nine Deploio, App-Typ «Statische Seite».**
 Die Website ist rein statisch: 8 HTML-Seiten und lokale Assets. Es gibt keine Rewrites, keine serverseitigen Weiterleitungen und keine Clean URLs. Jede Adresse entspricht genau einer Datei.
@@ -61,17 +61,23 @@ X-Content-Type-Options: nosniff
 Permissions-Policy: camera=(), microphone=(), geolocation=()
 ```
 - `Strict-Transport-Security` nur **ohne** `includeSubDomains` setzen, da sonst auch `app.fleetswiss.ch` betroffen wäre.
-- Eine Content-Security-Policy erst nach separatem Test einführen (bei Anbindung des Kontaktformulars den Versanddienst berücksichtigen).
+- Eine Content-Security-Policy erst nach separatem Test einführen.
 
-## 5. Prüfung vor und nach jedem Deployment
+## 5. Kontakt (V1.10)
+- Die Website hat **kein Kontaktformular**. Kontakt ausschliesslich über:
+  - `mailto:info@fleetswiss.ch`
+  - externer Link `https://wa.me/41766070531?text=…` (öffnet WhatsApp erst nach bewusstem Klick, in neuem Fenster, `rel="noopener noreferrer"`)
+- Keine Contact-API, kein Resend-Versand, keine WhatsApp-/Meta-Skripte oder -Widgets auf der Website. Beim normalen Seitenaufruf entsteht keine Anfrage an WhatsApp oder Meta.
+- Die separat vorbereitete `fleetswiss-contact-api` (eigenes Repository) und die Resend-Domain `send.fleetswiss.ch` sind **nicht** Bestandteil dieses Website-Deployments.
+
+## 6. Prüfung vor und nach jedem Deployment
 - 0 interne 404: jeder Link, jede Sprungmarke und jede Asset-Referenz zeigt auf eine vorhandene Datei in `public/`.
 - Canonical jeder Seite = tatsächlich erreichbare URL, `og:url` = Canonical, alle Sitemap-URLs erreichbar.
 - Keine externen Asset-Abhängigkeiten (Schriften, Skripte, Bilder nur von der eigenen Domain).
 - Die OG-Tags verweisen absolut auf `https://fleetswiss.ch/assets/og-fleetswiss.jpg`; Link-Vorschauen funktionieren erst auf der Live-Domain.
 
-## 6. Nicht verwendete technische Dateien
+## 7. Nicht verwendete technische Dateien
 `Dockerfile` und `deploy/nginx/default.conf.template` bleiben im Repository, werden im Modus «Statische Seite» aber **nicht verwendet**. Sie stammen aus einer früheren Variante mit Dockerfile-Build und nginx und enthalten deren Clean-URL- und Weiterleitungsregeln. Für einen späteren Wechsel auf Dockerfile/nginx müssten sie an das `.html`-URL-Schema aus Abschnitt 2 angepasst werden.
 
 ## Vor Go-live nicht vergessen
-- Kontaktformular an echten Versand (E-Mail/CRM) anbinden, dann Erfolgsmeldung aktivieren
 - Datenschutzerklärung Ziff. 27/28 (Datenstandort Schweiz) mit dem tatsächlich gewählten Hosting der Plattform abgleichen; Ziff. 34 (Server-Logdaten) mit Nine als Website-Hoster abgleichen
