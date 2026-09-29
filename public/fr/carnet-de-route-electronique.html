@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carnet de route électronique pour entreprises | FleetSwiss</title>
+<meta name="description" content="Carnet de route électronique pour véhicules d&#x27;entreprise et de pool : réserver, scanner le code QR et documenter les trajets numériquement. Pour les entreprises en Suisse.">
+<link rel="canonical" href="https://fleetswiss.ch/fr/carnet-de-route-electronique.html">
+<link rel="alternate" hreflang="de-CH" href="https://fleetswiss.ch/elektronisches-fahrtenbuch.html">
+<link rel="alternate" hreflang="fr-CH" href="https://fleetswiss.ch/fr/carnet-de-route-electronique.html">
+<link rel="alternate" hreflang="en" href="https://fleetswiss.ch/en/electronic-logbook.html">
+<link rel="alternate" hreflang="x-default" href="https://fleetswiss.ch/elektronisches-fahrtenbuch.html">
+<meta property="og:locale:alternate" content="de_CH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FleetSwiss">
+<meta property="og:title" content="Carnet de route électronique pour entreprises | FleetSwiss">
+<meta property="og:description" content="Carnet de route électronique pour véhicules d&#x27;entreprise et de pool : réserver, scanner le code QR et documenter les trajets numériquement. Pour les entreprises en Suisse.">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:url" content="https://fleetswiss.ch/fr/carnet-de-route-electronique.html">
+<meta property="og:image" content="https://fleetswiss.ch/assets/og-fleetswiss.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Véhicules d&#x27;entreprise FleetSwiss devant un panorama alpin suisse">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style id="fonts-local">
+  /* Inter (SIL OFL 1.1), lokal gehostet – keine Verbindung zu Google Fonts */
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url('/assets/fonts/inter-latin-ext-wght-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url('/assets/fonts/inter-latin-wght-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+</style>
+<style>
+  :root {
+    --navy: #0E2A47;
+    --navy-2: #143a63;
+    --blue: #1D5FA8;
+    --blue-light: #4C8FCB;
+    --ice: #EAF1F8;
+    --paper: #F6F8FA;
+    --white: #FFFFFF;
+    --ink: #14202E;
+    --slate: #4B5A68;
+    --slate-light: #5E6C79;
+    --line: #DFE6EC;
+    --green: #2E9E5B;
+    --red-mark: #C7492B;
+    --shadow: 0 20px 50px -25px rgba(14,42,71,0.35);
+    --radius: 10px;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: only light;
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #0B1620;
+    --white: #10202E;
+    --ink: #EAF0F5;
+    --slate: #B7C4CE;
+    --slate-light: #8695A2;
+    --line: #223546;
+    --ice: #132534;
+  }
+
+  * { box-sizing: border-box; }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(78px + env(safe-area-inset-top, 0px));
+  }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--ink);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+  }
+  h1, h2, h3, h4 { margin: 0; font-family: var(--font); letter-spacing: -0.01em; }
+  p { margin: 0; }
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: var(--font);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary {
+    background: var(--blue);
+    color: #fff;
+  }
+  .btn-primary:hover { background: var(--navy-2); }
+  .btn-outline {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--ink);
+  }
+  .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+  .btn-on-dark {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.4);
+    color: #fff;
+  }
+  .btn-on-dark:hover { background: rgba(255,255,255,0.18); }
+
+  /* Header */
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  :root[data-theme="dark"] header.site { background: rgba(16,32,46,0.9); }
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    gap: 24px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-image {
+    height: 30px;
+    width: auto;
+    display: block;
+  }
+  nav.primary {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  nav.primary a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--slate);
+  }
+  nav.primary a:hover { color: var(--blue); }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .lang-switch {
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--slate-light);
+  }
+  .lang-switch button {
+    background: none; border: none; cursor: pointer;
+    font: inherit; color: inherit; padding: 2px 4px;
+  }
+  .lang-switch button[aria-current="true"] { color: var(--navy); }
+  .menu-toggle {
+    display: none;
+    background: none; border: none; cursor: pointer;
+    padding: 8px;
+  }
+  .menu-toggle span, .menu-toggle::before, .menu-toggle::after {
+    content: ""; display: block; width: 22px; height: 2px;
+    background: var(--navy); margin: 5px 0; transition: all .2s ease;
+  }
+  @media (max-width: 900px) {
+    nav.primary { display: none; }
+    .menu-toggle { display: block; }
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 8px 20px 24px;
+    border-top: 1px solid var(--line);
+    background: var(--white);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .mobile-menu .btn { margin-top: 16px; justify-content: center; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero-media {
+    position: absolute; inset: 0;
+    background-size: cover;
+    background-position: 60% 55%;
+  }
+  .hero-media::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(7,17,29,0.6) 0%, rgba(7,17,29,0.36) 20%, rgba(7,17,29,0.12) 36%, rgba(7,17,29,0) 52%);
+  }
+  @media (max-width: 760px) {
+    .hero-media { background-position: 74% 52%; }
+  }
+  .hero-inner {
+    position: relative;
+    padding: 108px 0 92px;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #CFE0F2;
+    margin-bottom: 26px;
+  }
+  .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #5CC28A; }
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.1;
+    font-weight: 800;
+    max-width: 720px;
+    margin-bottom: 26px;
+  }
+  .hero p.lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #DCE7F1;
+    max-width: 520px;
+    margin-bottom: 34px;
+  }
+  .hero-benefits {
+    list-style: none;
+    padding: 0; margin: 0 0 38px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero-benefits li {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 500; color: #EAF1F8;
+  }
+  .hero-benefits svg { flex: none; }
+  .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+  @media (max-width: 560px) {
+    .hero-benefits { grid-template-columns: 1fr; }
+  }
+
+  /* Trust / benefit strip */
+  .strip {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 30px 0;
+  }
+  .strip-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 900px) {
+    .strip-row { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .strip-row { grid-template-columns: 1fr; }
+  }
+  .strip-item {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .strip-item svg { flex: none; margin-top: 2px; color: var(--blue); }
+  .strip-item .t { font-weight: 600; font-size: 14.5px; color: var(--ink); }
+  .strip-item .s { font-size: 13px; color: var(--slate-light); margin-top: 2px; }
+
+  /* Section generic */
+  section { padding: 96px 0; }
+  @media (max-width: 640px) { section { padding: 64px 0; } }
+  .section-head {
+    max-width: 620px;
+    margin-bottom: 52px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    font-weight: 800;
+    color: var(--navy);
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .section-head p {
+    margin-top: 14px;
+    font-size: 16.5px;
+    color: var(--slate);
+    line-height: 1.6;
+  }
+
+  /* Platform statement */
+  .platform {
+    background: var(--navy);
+    color: #fff;
+    padding: 88px 0;
+  }
+  .platform-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .platform-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .platform h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    line-height: 1.28;
+  }
+  .platform h2 .accent { color: #7EB4E6; }
+  .platform p {
+    color: #B9CBDD;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 18px;
+  }
+  .platform-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .stat-card .num { font-size: 28px; font-weight: 800; }
+  .stat-card .lbl { font-size: 13.5px; color: #AFC2D5; margin-top: 6px; line-height: 1.4; }
+
+  /* Feature grid */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 980px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature-card {
+    padding: 26px 24px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .feature-card .icon {
+    width: 40px; height: 40px;
+    border-radius: 9px;
+    background: var(--ice);
+    color: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .feature-card h3 { font-size: 16px; font-weight: 700; color: var(--ink); }
+  .feature-card p { font-size: 14px; color: var(--slate); margin-top: 8px; line-height: 1.55; }
+
+  /* Product / screenshot */
+  .product-frame {
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--ice), var(--paper));
+    padding: 56px 32px;
+    text-align: center;
+  }
+  .product-frame .mock-top {
+    max-width: 640px; margin: 0 auto 22px;
+    height: 10px; border-radius: 6px;
+    background: repeating-linear-gradient(90deg, var(--line) 0 8px, transparent 8px 16px);
+    opacity: .6;
+  }
+  .product-frame .mock-body {
+    max-width: 760px; margin: 0 auto;
+    border: 1.5px dashed #B9CADB;
+    border-radius: 12px;
+    padding: 54px 24px;
+    background: rgba(255,255,255,0.5);
+  }
+  .product-frame .mock-body svg { margin: 0 auto 18px; color: var(--blue-light); }
+  .product-frame .mock-body h3 { font-size: 17px; color: var(--navy); font-weight: 700; }
+  .product-frame .mock-body p { font-size: 14px; color: var(--slate-light); margin-top: 8px; max-width: 380px; margin-left: auto; margin-right: auto; }
+
+  /* Process steps */
+  .process-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 980px) { .process-row { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 620px) { .process-row { grid-template-columns: 1fr 1fr; } }
+  .process-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+  }
+  .process-card .icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: var(--ice); color: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+  }
+  .process-card h4 { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+  .process-card p { font-size: 12.8px; color: var(--slate-light); margin-top: 6px; line-height: 1.5; }
+
+  .process-extra {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 780px) { .process-extra { grid-template-columns: 1fr; } }
+  .process-extra .row-item {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 16px;
+    background: var(--paper);
+    border-radius: var(--radius);
+  }
+  .process-extra svg { flex: none; color: var(--blue); margin-top: 2px; }
+  .process-extra .t { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .process-extra .s { font-size: 12.8px; color: var(--slate-light); margin-top: 3px; }
+
+  /* Import/integration */
+  .import-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 860px) { .import-wrap { grid-template-columns: 1fr; gap: 32px; } }
+  .import-list { list-style: none; padding: 0; margin: 0; }
+  .import-list li {
+    display: flex; gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .import-list li:first-child { padding-top: 0; }
+  .import-list svg { flex: none; color: var(--blue); margin-top: 3px; }
+  .import-list .t { font-size: 15px; font-weight: 600; color: var(--ink); }
+  .import-list .s { font-size: 13.5px; color: var(--slate); margin-top: 3px; line-height: 1.5; }
+  .source-pills {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 22px;
+  }
+  .source-pill {
+    padding: 9px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--paper);
+  }
+  .note-box {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: var(--ice);
+    border-radius: var(--radius);
+    font-size: 13.5px;
+    color: var(--navy-2);
+    line-height: 1.55;
+  }
+
+  /* Security */
+  .security {
+    background: var(--navy);
+    color: #fff;
+    padding: 88px 0;
+  }
+  .security .section-head h2 { color: #fff; }
+  .security .section-head p { color: #B9CBDD; }
+  .security-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 980px) { .security-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .security-grid { grid-template-columns: 1fr; } }
+  .security-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .security-card .icon { color: #7EB4E6; margin-bottom: 14px; }
+  .security-card h4 { font-size: 14.5px; font-weight: 700; }
+  .security-card p { font-size: 13px; color: #AFC2D5; margin-top: 7px; line-height: 1.5; }
+  .swiss-line {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 36px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+    flex-wrap: wrap;
+  }
+  .swiss-line .flag { width: 22px; height: 22px; flex: none; }
+  .swiss-line p { font-size: 14.5px; color: #DCE7F1; }
+
+  /* Roadmap */
+  .roadmap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 780px) { .roadmap-grid { grid-template-columns: 1fr; } }
+  .roadmap-card {
+    border-radius: var(--radius);
+    padding: 30px 28px;
+    border: 1px solid var(--line);
+  }
+  .roadmap-card.now { background: var(--paper); }
+  .roadmap-card.next { background: var(--white); border-style: dashed; }
+  .roadmap-card .tag {
+    display: inline-block;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.03em;
+    padding: 5px 11px; border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .roadmap-card.now .tag { background: #E2F3E9; color: #1E7A45; }
+  .roadmap-card.next .tag { background: var(--ice); color: var(--blue); }
+  .roadmap-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
+  .roadmap-card ul { list-style: none; padding: 0; margin: 18px 0 0; }
+  .roadmap-card li {
+    display: flex; gap: 10px; align-items: flex-start;
+    font-size: 14.5px; color: var(--slate); padding: 8px 0;
+    line-height: 1.45;
+  }
+  .roadmap-card li svg { flex: none; margin-top: 3px; }
+  .roadmap-card.now li svg { color: var(--green); }
+  .roadmap-card.next li svg { color: var(--blue-light); }
+  .roadmap-foot {
+    margin-top: 16px; font-size: 12.5px; color: var(--slate-light);
+  }
+
+  /* Pricing (no fixed table, per brief) */
+  .pricing-panel {
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-2));
+    color: #fff;
+    padding: 56px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .pricing-panel { grid-template-columns: 1fr; padding: 40px 28px; } }
+  .pricing-panel h2 { font-size: clamp(22px, 2.8vw, 30px); font-weight: 800; line-height: 1.25; }
+  .pricing-panel p { color: #C6D6E5; margin-top: 14px; font-size: 15.5px; line-height: 1.65; }
+  .pricing-side {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 14px;
+    padding: 26px;
+  }
+  .pricing-model { font-size: 13px; color: #9FB6CB; font-weight: 600; letter-spacing: .02em; }
+  .pricing-model-value { font-size: 20px; font-weight: 700; margin-top: 8px; }
+  .pricing-side hr { border: none; border-top: 1px solid rgba(255,255,255,0.16); margin: 18px 0; }
+  .pricing-side .btn { width: 100%; justify-content: center; margin-top: 6px; }
+  .pricing-side .fine { font-size: 12px; color: #93A9BE; margin-top: 12px; line-height: 1.5; }
+
+  /* Contact */
+  .contact-section {
+    position: relative;
+    color: #fff;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+  .contact-media {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center 70%;
+  }
+  .contact-media::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(120deg, rgba(9,24,41,0.94) 0%, rgba(9,24,41,0.85) 40%, rgba(9,24,41,0.55) 100%);
+  }
+  .contact-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: start;
+  }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .contact-grid h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; line-height: 1.2; }
+  .contact-grid > div:first-child p { color: #DCE7F1; font-size: 16px; margin-top: 16px; line-height: 1.65; max-width: 420px; }
+  .contact-tag { margin-top: 32px; font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: #7EB4E6; }
+  .contact-tag span { display: block; font-size: 13px; letter-spacing: 0.1em; }
+
+
+  /* Footer */
+  footer.site {
+    background: #081826;
+    color: #9FB2C4;
+    padding: 64px 0 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  @media (max-width: 780px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+  .footer-brand p { font-size: 13.5px; color: #7E93A6; margin-top: 12px; line-height: 1.6; max-width: 260px; }
+  .footer-col h5 {
+    font-size: 12.5px; text-transform: none; font-weight: 700; color: #fff;
+    margin-bottom: 14px;
+  }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; }
+  .footer-col li { margin-bottom: 10px; }
+  .footer-col a { text-decoration: none; font-size: 13.5px; color: #9FB2C4; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 28px;
+    font-size: 13px;
+  }
+  .footer-bottom .legal { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-bottom a { text-decoration: none; color: #9FB2C4; }
+  .footer-bottom a:hover { color: #fff; }
+  .swiss-badge {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: #7E93A6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+
+  ::selection { background: var(--blue); color: #fff; }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+</style>
+
+<style>
+  /* Page head banner (subpages) */
+  .page-head { background: var(--navy); color:#fff; padding: 72px 0 60px; }
+  .page-head .eyebrow { color:#7EB4E6; }
+  .page-head h1 { font-size: clamp(28px,3.6vw,40px); font-weight:800; margin-top:10px; line-height:1.2; }
+  .page-head p { color:#B9CBDD; margin-top:14px; font-size:16px; line-height:1.6; max-width:640px; }
+
+  /* Compact process flow (homepage) */
+  .process-compact { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; }
+  .process-compact .step { display:flex; flex-direction:column; align-items:center; text-align:center; flex:1 1 140px; padding:10px; min-width:120px; }
+  .process-compact .step .dot { width:44px;height:44px;border-radius:50%;background:var(--ice);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700; font-size:15px; margin-bottom:10px; }
+  .process-compact .step .lbl { font-size:14.5px; font-weight:600; color:var(--ink); }
+  .process-compact .arrow { flex:0 0 auto; color:var(--slate-light); font-size:22px; padding:0 8px; }
+  @media (max-width:760px){
+    .process-compact { flex-direction:column; }
+    .process-compact .arrow{ transform:rotate(90deg); padding:6px 0; }
+  }
+
+  /* Teaser "more" link */
+  .more-link { display:inline-flex; align-items:center; gap:6px; margin-top:26px; font-weight:600; font-size:14.5px; color:var(--blue); text-decoration:none; }
+  .more-link:hover { color: var(--navy-2); }
+  .more-link.on-dark { color:#7EB4E6; }
+  .more-link.on-dark:hover { color:#fff; }
+
+  /* Compact security grid (homepage, max 4 items) */
+  .security-compact-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  @media (max-width:860px){ .security-compact-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .security-compact-grid{ grid-template-columns:1fr;} }
+
+  .page-cta { background: var(--paper); text-align:center; }
+  .page-cta h2 { font-size: clamp(22px,3vw,30px); font-weight:800; color:var(--navy); }
+  .page-cta p { margin-top:12px; color:var(--slate); font-size:15.5px; }
+  .page-cta .btn { margin-top:22px; }
+</style>
+
+
+<style id="v1-final">
+  /* V1-Finalisierung: Harmonisierung & Responsive */
+  .footer-col .footer-h { font-size: 12.5px; font-weight: 700; color: #fff; margin: 0 0 14px; letter-spacing: 0; }
+  .security-card h3 { font-size: 14.5px; font-weight: 700; }
+  .process-card h3 { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--blue-light); outline-offset: 3px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+<style id="pre-golive">
+  .lang-switch[hidden] { display: none !important; }
+  .footer-col .legal-pending { font-size: 13.5px; color: #6F8497; }
+</style>
+<style id="brand">
+  /* Finales FleetSwiss-Logo (Header/Footer) */
+  .logo .logo-image { height: 30px; width: auto; max-width: 100%; object-fit: contain; display: block; }
+  .logo picture { display: block; line-height: 0; }
+  @media (max-width: 420px) { .logo .logo-image { height: 26px; } }
+  .footer-brand .footer-logo { height: 28px; width: auto; max-width: 100%; object-fit: contain; display: block; }
+</style>
+<style id="header-layout">
+  /* Desktop-Kopfzeile: Logo links, Navigation rechts, volle Breite mit schmalem Seitenrand */
+  @media (min-width: 901px) {
+    header.site .nav-row { max-width: none; padding-left: clamp(24px, 3.5vw, 56px); padding-right: clamp(24px, 3.5vw, 56px); }
+    header.site nav.primary { margin-left: auto; }
+    header.site .nav-right { display: none; }
+  }
+</style>
+<style id="login-button">
+  /* Login-Button (externer Wechsel zu app.fleetswiss.ch) */
+  nav.primary a.nav-login { padding: 8px 18px; border: 1px solid var(--blue); border-radius: 6px; color: var(--blue); font-weight: 600; line-height: 1.2; transition: background .15s, color .15s; }
+  nav.primary a.nav-login:hover, nav.primary a.nav-login:focus-visible { background: var(--blue); color: #fff; }
+  .mobile-menu a.mobile-login { margin-top: 10px; border: 1px solid var(--blue); color: var(--blue); font-weight: 600; }
+  .mobile-menu a.mobile-login:hover { background: var(--blue); color: #fff; }
+  :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+</style>
+<style id="mobile-fix">
+  /* V1.8 FINAL Mobile-Korrektur: Bis 900 px gilt immer das helle FleetSwiss-Farbsystem.
+     Desktop (ab 901 px) bleibt unverändert, inklusive seiner bisherigen Dunkelmodus-Regeln. */
+  @media (max-width: 900px) {
+    :root { color-scheme: only light; }
+    :root:not([data-theme="dark"]) {
+      --paper: #F6F8FA; --white: #FFFFFF; --ink: #14202E; --slate: #4B5A68;
+      --slate-light: #5E6C79; --line: #DFE6EC; --ice: #EAF1F8;
+    }
+    :root:not([data-theme="dark"]) header.site { background: rgba(255,255,255,0.96); }
+    .menu-toggle span, .menu-toggle::before, .menu-toggle::after { background: var(--navy); }
+    :root:not([data-theme="dark"]) .mobile-menu a.mobile-login { border-color: var(--blue); color: var(--blue); }
+    .mobile-menu a.btn-primary { color: #fff; }
+    .roadmap-card.now .tag { color: #1E7A45; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "FleetSwiss",
+      "item": "https://fleetswiss.ch/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Carnet de route électronique",
+      "item": "https://fleetswiss.ch/fr/carnet-de-route-electronique.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FleetSwiss Digital Logbook",
+  "alternateName": "Carnet de route électronique de FleetSwiss",
+  "applicationCategory": "BusinessApplication",
+  "description": "Carnet de route électronique et réservation de véhicules de pool pour entreprises : réserver un véhicule, scanner le code QR, démarrer le trajet et documenter les kilomètres numériquement.",
+  "url": "https://fleetswiss.ch/fr/carnet-de-route-electronique.html",
+  "inLanguage": "fr-CH",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alpine Service Switzerland GmbH",
+    "url": "https://fleetswiss.ch/"
+  }
+}
+</script>
+<style id="logbook">
+  /* V1.11 FleetSwiss Digital Logbook */
+  .lb-hero { background: var(--navy); color: #fff; padding: 72px 0 68px; }
+  .lb-hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 56px; align-items: center; }
+  .lb-hero .eyebrow { color: #7EB4E6; }
+  .lb-hero h1 { font-size: clamp(30px, 4vw, 46px); font-weight: 800; line-height: 1.15; margin-top: 10px; }
+  .lb-brand { margin-top: 12px; font-size: 16px; font-weight: 600; color: #A7CDF0; }
+  .lb-claim { margin-top: 26px; font-size: clamp(19px, 2vw, 22px); font-weight: 700; line-height: 1.35; }
+  .lb-steps-line { margin-top: 6px; font-size: 17px; color: #DCE7F1; }
+  .lb-hero .lb-text { margin-top: 16px; font-size: 16px; line-height: 1.6; color: #B9CBDD; max-width: 560px; }
+  .lb-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .lb-cta .btn { min-height: 50px; justify-content: center; text-align: center; }
+  .lb-from { margin-top: 16px; font-size: 14px; color: #B9CBDD; }
+  .lb-from strong { color: #fff; font-size: 16px; }
+  .lb-visual { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .lb-visual img { display: block; max-width: 100%; height: auto; border-radius: 10px; background: #fff; box-shadow: 0 24px 60px -30px rgba(0,0,0,0.55); }
+  .lb-visual figcaption { font-size: 13px; color: #93A9BE; }
+  .lb-intro { max-width: 760px; }
+  .lb-phone-pair { display: flex; gap: 18px; justify-content: center; align-items: flex-start; }
+  .lb-phone-pair img { display: block; width: auto; max-width: calc(50% - 9px); height: auto; background: none; border: 0; border-radius: 0; box-shadow: none; filter: drop-shadow(0 22px 34px rgba(0,0,0,0.35)); }
+  .lb-phone-pair img + img { margin-top: 34px; }
+  .lb-hero .lb-phones figcaption { max-width: 440px; text-align: center; line-height: 1.5; }
+  .lb-flow-claim { margin-top: 36px; font-size: clamp(18px, 2vw, 22px); font-weight: 700; color: var(--ink); text-align: center; }
+  .lb-flow { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 24px; padding: 28px 24px 14px; -webkit-overflow-scrolling: touch; }
+  .lb-flow:focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; }
+  .lb-flow-item { flex: 0 0 auto; width: 240px; margin: 0; scroll-snap-align: center; text-align: center; }
+  .lb-flow-item:first-child { margin-left: auto; }
+  .lb-flow-item:last-child { margin-right: auto; }
+  .lb-flow-item img { display: block; width: auto; max-width: 100%; margin: 0 auto; height: auto; filter: drop-shadow(0 18px 28px rgba(14,42,71,0.22)); }
+  .lb-flow-item figcaption { margin-top: 12px; font-size: 14.5px; font-weight: 600; color: var(--ink); display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .lb-flow-item figcaption span { width: 24px; height: 24px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 12.5px; display: inline-flex; align-items: center; justify-content: center; }
+  .lb-flow-caption { margin-top: 10px; font-size: 13.5px; color: var(--slate-light); text-align: center; }
+  @media (min-width: 1280px) { .lb-flow-item { width: clamp(180px, calc((100vw - 188px) / 6), 252px); } }
+  .lb-h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; color: var(--navy); margin-top: 10px; line-height: 1.2; }
+  .lb-intro .lb-key { margin-top: 18px; font-size: 20px; font-weight: 700; color: var(--ink); }
+  .lb-intro p { margin-top: 12px; font-size: 16.5px; line-height: 1.65; color: var(--slate); }
+  .lb-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
+  .lb-step { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 22px; }
+  .lb-step .n { width: 36px; height: 36px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .lb-step h3 { margin-top: 14px; font-size: 17px; font-weight: 700; color: var(--ink); }
+  .lb-step p { margin-top: 8px; font-size: 14.5px; line-height: 1.55; color: var(--slate); }
+  .lb-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .lb-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+  .lb-split h3 { font-size: 20px; font-weight: 700; color: var(--ink); }
+  .lb-split p { margin-top: 12px; font-size: 16px; line-height: 1.65; color: var(--slate); }
+  .lb-list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .lb-list li { position: relative; padding: 8px 0 8px 26px; border-top: 1px solid var(--line); font-size: 15.5px; color: var(--ink); }
+  .lb-list li::before { content: ""; position: absolute; left: 4px; top: 16px; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+  .lb-shot { margin: 0; }
+  .lb-shot img { display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 10px; border: 1px solid var(--line); background: #fff; box-shadow: 0 24px 60px -32px rgba(14,42,71,0.45); }
+  .lb-shot figcaption { margin-top: 12px; font-size: 13px; color: var(--slate-light); text-align: center; }
+  .lb-trust { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .lb-note { margin-top: 28px; padding: 20px 22px; border-left: 3px solid var(--blue); background: var(--ice); border-radius: 6px; font-size: 15.5px; line-height: 1.6; color: var(--ink); }
+  .lb-pricing { background: var(--paper); }
+  .lb-plans { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; align-items: stretch; row-gap: 26px; }
+  .lb-plan.lb-enterprise { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 24px; padding: 22px 24px; }
+  .lb-enterprise > div { flex: 1 1 auto; }
+  .lb-enterprise .lb-price { flex: 0 0 auto; margin-top: 0; font-size: 22px; }
+  .lb-plan.lb-enterprise .btn { flex: 0 0 auto; width: auto; margin-top: 0; padding-left: 28px; padding-right: 28px; }
+  .lb-plan { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 20px 22px; }
+  .lb-plan.featured { border: 2px solid var(--blue); box-shadow: 0 20px 44px -28px rgba(14,42,71,0.45); }
+  .lb-badge { position: absolute; top: -12px; left: 20px; background: var(--blue); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; }
+  .lb-plan h3 { font-size: 14px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); }
+  .lb-cap { margin-top: 6px; font-size: 14px; color: var(--slate); }
+  .lb-price { margin-top: 16px; font-size: 26px; font-weight: 800; color: var(--ink); line-height: 1.2; }
+  .lb-price span { font-size: 14px; font-weight: 600; color: var(--slate); }
+  .lb-year { margin-top: 4px; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+  .lb-bill { font-size: 13px; color: var(--slate-light); }
+  .lb-plan ul { list-style: none; margin: 16px 0 0; padding: 0; flex: 1; }
+  .lb-plan li { padding: 7px 0; border-top: 1px solid var(--line); font-size: 13.5px; line-height: 1.45; color: var(--slate); }
+  .lb-plan .btn { margin-top: 18px; width: 100%; min-height: 48px; justify-content: center; text-align: center; }
+  .lb-price-note { margin-top: 20px; font-size: 14px; color: var(--slate); }
+  .lb-boxes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+  .lb-box { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .lb-box h3 { font-size: 17px; font-weight: 700; color: var(--ink); }
+  .lb-box p, .lb-box li { font-size: 15px; line-height: 1.6; color: var(--slate); }
+  .lb-box p { margin-top: 10px; }
+  .lb-box dl { margin: 12px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px; }
+  .lb-box dt { color: var(--slate); }
+  .lb-box dd { margin: 0; font-weight: 600; color: var(--ink); }
+  .lb-box a { color: var(--blue); }
+  .lb-checkout-note { margin-top: 14px; padding: 12px 14px; background: var(--ice); border-radius: 6px; font-size: 14.5px; color: var(--ink); }
+  .lb-upgrade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .lb-upgrade .feature-card { display: flex; flex-direction: column; }
+  .lb-upgrade .feature-card h3 { font-size: 19px; }
+  .lb-upgrade .feature-card .lb-sub { margin-top: 6px; font-size: 15px; font-weight: 600; color: var(--blue); }
+  .lb-upgrade .feature-card p { font-size: 15px; }
+  .lb-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 14px 0 0; padding: 0; }
+  .lb-tags li { font-size: 13px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: #fff; }
+  .lb-upgrade .btn { margin-top: auto; align-self: flex-start; }
+  .lb-upgrade .lb-spacer { flex: 1; min-height: 20px; }
+  .lb-ladder { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin-top: 40px; list-style: none; padding: 0; }
+  .lb-ladder li { position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+  .lb-ladder li + li::before { content: "→"; position: absolute; left: -30px; top: 50%; transform: translateY(-50%); font-size: 22px; color: var(--blue); }
+  .lb-ladder strong { display: block; font-size: 16px; color: var(--ink); }
+  .lb-ladder span { display: block; margin-top: 4px; font-size: 14px; color: var(--slate); }
+  .lb-ladder-claim { margin-top: 22px; font-size: 18px; font-weight: 700; color: var(--ink); }
+  .lb-faq { max-width: 860px; }
+  .lb-faq details { border-top: 1px solid var(--line); }
+  .lb-faq details:last-child { border-bottom: 1px solid var(--line); }
+  .lb-faq summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; position: relative; font-size: 16.5px; font-weight: 600; color: var(--ink); }
+  .lb-faq summary::-webkit-details-marker { display: none; }
+  .lb-faq summary::after { content: "+"; position: absolute; right: 6px; top: 14px; font-size: 22px; color: var(--blue); }
+  .lb-faq details[open] summary::after { content: "–"; }
+  .lb-faq details p { padding: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: var(--slate); }
+  @media (max-width: 1100px) { .lb-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 900px) {
+    .lb-hero-grid, .lb-split { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+    .lb-steps, .lb-features, .lb-trust { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .lb-upgrade, .lb-boxes { grid-template-columns: minmax(0, 1fr); }
+    .lb-ladder { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+    .lb-ladder li + li::before { content: "↓"; left: 50%; top: -30px; transform: translateX(-50%); }
+  }
+  @media (max-width: 560px) {
+    .lb-steps, .lb-features, .lb-trust, .lb-plans { grid-template-columns: minmax(0, 1fr); }
+    .lb-cta .btn { flex: 1 1 100%; }
+    .lb-box dl { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+    .lb-box dd { margin-bottom: 8px; }
+    .lb-plan.lb-enterprise { flex-direction: column; align-items: stretch; gap: 12px; }
+    .lb-plan.lb-enterprise .btn { width: 100%; }
+  }
+</style>
+<style id="i18n-lang">
+  /* V1.13 Sprachumschalter DE | FR | EN */
+  .lang-switch { display: flex; align-items: center; gap: 2px; font-size: 13px; font-weight: 600; color: var(--slate-light); white-space: nowrap; }
+  .lang-switch span { padding: 0 1px; }
+  .lang-switch a { padding: 4px 5px; border-radius: 4px; color: var(--slate); text-decoration: none; line-height: 1.2; }
+  .lang-switch a:hover, .lang-switch a:focus-visible { color: var(--blue); }
+  .lang-switch a[aria-current="page"] { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+  nav.primary .lang-switch { margin-left: -12px; }
+  nav.primary .lang-switch a { font-size: 13px; font-weight: 600; }
+  .mobile-menu .lang-switch { order: 99; justify-content: flex-start; gap: 6px; padding: 16px 0 2px; font-size: 15px; }
+  .mobile-menu .lang-switch a { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; font-weight: 600; }
+  .mobile-menu .lang-switch a[aria-current="page"] { border-color: var(--navy); }
+  .mobile-menu .lang-switch span { display: none; }
+  :root[data-theme="dark"] .lang-switch a { color: #C9D6E3; }
+  :root[data-theme="dark"] .lang-switch a[aria-current="page"] { color: #fff; }
+  .legal-lang-note { margin-top: 18px; font-size: 12.5px; color: #93A9BE; }
+  .lang-switch .lang-off { padding: 4px 5px; color: var(--slate-light); opacity: .55; cursor: not-allowed; }
+  .mobile-menu .lang-switch .lang-off { display: inline-block; padding: 8px 12px; border: 1px dashed var(--line); border-radius: 6px; font-weight: 600; }
+  .legal-lang-banner { background: var(--paper, #F5F7FA); border-bottom: 1px solid var(--line); font-size: 13px; line-height: 1.5; color: var(--slate); }
+  .legal-lang-banner .wrap { padding-top: 9px; padding-bottom: 9px; }
+  .legal-lang-banner span[lang="de-CH"] { color: var(--navy); font-weight: 600; }
+  @media (max-width: 1180px) {
+    nav.primary { display: none; }
+    .menu-toggle { display: block; }
+    header.site .nav-right { display: flex; }
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="/fr/" class="logo" aria-label="Page d&#x27;accueil FleetSwiss">
+      <picture><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
+    </a>
+    <nav class="primary" aria-label="Navigation principale">
+      <a href="/fr/produit.html">Produit</a>
+      <a href="/fr/fonctions.html">Fonctions</a>
+      <a href="/fr/carnet-de-route-electronique.html">Carnet de route</a>
+      <a href="/fr/securite.html">Sécurité</a>
+      <a href="/fr/a-propos.html">À propos</a>
+      <a href="/fr/#kontakt">Contact</a>
+      <a href="https://app.fleetswiss.ch" class="nav-login">Connexion</a>
+      <div class="lang-switch lang-desktop" role="group" aria-label="Choisir la langue"><a href="/elektronisches-fahrtenbuch.html" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/carnet-de-route-electronique.html" hreflang="fr-CH" lang="fr-CH" aria-current="page">FR</a><span aria-hidden="true">|</span><a href="/en/electronic-logbook.html" hreflang="en" lang="en">EN</a></div>
+    </nav>
+    <div class="nav-right">
+      <a href="/fr/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demander une démo</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/fr/produit.html">Produit</a>
+    <a href="/fr/fonctions.html">Fonctions</a>
+    <a href="/fr/carnet-de-route-electronique.html">Carnet de route</a>
+    <a href="/fr/securite.html">Sécurité</a>
+    <a href="/fr/a-propos.html">À propos</a>
+    <a href="/fr/#kontakt">Contact</a>
+    <a href="/fr/#kontakt" class="btn btn-primary">Demander une démo</a>
+    <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Connexion</a>
+    <div class="lang-switch lang-mobile" role="group" aria-label="Choisir la langue"><a href="/elektronisches-fahrtenbuch.html" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/carnet-de-route-electronique.html" hreflang="fr-CH" lang="fr-CH" aria-current="page">FR</a><span aria-hidden="true">|</span><a href="/en/electronic-logbook.html" hreflang="en" lang="en">EN</a></div>
+  </div>
+</header>
+<main>
+
+  <!-- HERO -->
+  <section class="lb-hero" aria-labelledby="lb-title">
+    <div class="wrap lb-hero-grid">
+      <div>
+        <div class="eyebrow">FleetSwiss Digital Logbook</div>
+        <h1 id="lb-title">Carnet de route électronique pour entreprises</h1>
+        <p class="lb-brand">FleetSwiss Digital Logbook – carnet de route électronique et réservation de véhicules de pool</p>
+        <p class="lb-claim">Le carnet de route que plus personne ne doit chercher.</p>
+        <p class="lb-steps-line">Réserver un véhicule de pool. Scanner le code QR. Démarrer le trajet. Terminé.</p>
+        <p class="lb-text">FleetSwiss Digital Logbook remplace les carnets de route papier par un processus numérique simple. Les collaborateurs réservent les véhicules de pool en ligne et documentent leurs trajets directement sur smartphone ou ordinateur.</p>
+        <div class="lb-cta">
+          <a href="https://app.fleetswiss.ch/checkout" class="btn btn-primary" data-checkout-plan="">Souscrire en ligne</a>
+          <a href="#funktionen" class="btn btn-on-dark">Voir les fonctions</a>
+        </div>
+        <p class="lb-from"><strong>Dès CHF 99.– / mois</strong> · facturation annuelle · hors TVA</p>
+      </div>
+      <figure class="lb-visual lb-phones">
+        <div class="lb-phone-pair">
+          <img src="/assets/product/fahrer-1-qr-scannen.png" width="252" height="635" alt="Vue conducteur mobile : scanner le code QR du véhicule avec le smartphone" fetchpriority="high" decoding="async">
+          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="253" height="637" alt="Vue conducteur mobile : véhicule reconnu et autorisé pour le conducteur, avec informations sur le permis de conduire, la réservation et le site" decoding="async">
+        </div>
+        <figcaption>Exemple d'affichage avec données de démonstration (interface en allemand) · FleetSwiss fonctionne directement dans le navigateur du smartphone – aucune installation d'application requise.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- STATT PAPIER -->
+  <section aria-labelledby="lb-papier">
+    <div class="wrap"><div class="lb-intro">
+      <div class="eyebrow">Carnet de route électronique. Simplement par code QR.</div>
+      <h2 id="lb-papier" class="lb-h2">Le carnet de route électronique au lieu du papier</h2>
+      <p class="lb-key">Réserver numériquement les véhicules de pool, scanner le code QR et documenter directement les trajets – sans carnet de route papier et sans solution complète de gestion de flotte.</p>
+      <p>Commencer aujourd'hui avec le carnet de route numérique. Étendre demain, si nécessaire, à FleetSwiss Fleet Management. Le démarrage avec Digital Logbook est possible sans obligation d'acheter la plateforme complète de gestion de flotte.</p>
+    </div></div>
+  </section>
+
+  <!-- SO FUNKTIONIERT ES -->
+  <section id="so-funktioniert-es" style="background:var(--paper);" aria-labelledby="lb-ablauf">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Comment ça marche</div>
+        <h2 id="lb-ablauf">Comment fonctionne le carnet de route électronique avec code QR</h2>
+      </div>
+      <ol class="lb-steps">
+        <li class="lb-step"><div class="n" aria-hidden="true">1</div><h3>Réserver</h3><p>Les collaborateurs choisissent le véhicule de pool disponible et réservent la période souhaitée.</p></li>
+        <li class="lb-step"><div class="n" aria-hidden="true">2</div><h3>Scanner le code QR</h3><p>Scanner le code QR du véhicule avec le smartphone. FleetSwiss s'ouvre directement dans le navigateur – aucune installation d'application séparée n'est nécessaire.</p></li>
+        <li class="lb-step"><div class="n" aria-hidden="true">3</div><h3>Démarrer le trajet</h3><p>Saisir le kilométrage et le motif du trajet, puis démarrer le trajet.</p></li>
+        <li class="lb-step"><div class="n" aria-hidden="true">4</div><h3>Terminer le trajet</h3><p>Saisir le kilométrage final. FleetSwiss documente de manière traçable le conducteur, le véhicule, l'heure et le trajet.</p></li>
+      </ol>
+      <p class="lb-flow-claim">Scanner le QR. Reconnaître le véhicule. Documenter le trajet. Terminé.</p>
+    </div>
+    <div class="lb-flow" role="region" aria-label="Déroulement dans la vue conducteur mobile" tabindex="0">
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-1-qr-scannen.png" width="252" height="635" alt="Vue conducteur mobile : scanner le code QR du véhicule avec le smartphone" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">1</span>Scanner le QR</figcaption>
+        </figure>
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="253" height="637" alt="Vue conducteur mobile : véhicule reconnu et autorisé pour le conducteur, avec informations sur le permis de conduire, la réservation et le site" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">2</span>Véhicule reconnu</figcaption>
+        </figure>
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-3-fahrt-starten.png" width="252" height="636" alt="Vue conducteur mobile : démarrer le trajet avec kilométrage, type de trajet et motif du trajet" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">3</span>Démarrer le trajet</figcaption>
+        </figure>
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-4-fahrt-laeuft.png" width="251" height="636" alt="Vue conducteur mobile : trajet en cours avec heure de départ, kilométrage de départ et kilométrage actuel" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">4</span>Trajet en cours</figcaption>
+        </figure>
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-5-fahrt-beenden.png" width="253" height="636" alt="Vue conducteur mobile : terminer le trajet avec kilométrage final et indication de défauts ou de dommages" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">5</span>Terminer le trajet</figcaption>
+        </figure>
+        <figure class="lb-flow-item">
+          <img src="/assets/product/fahrer-6-abschluss.png" width="252" height="636" alt="Vue conducteur mobile : trajet terminé, avec options pour la restitution du véhicule, une nouvelle réservation et la page d&#x27;accueil" loading="lazy" decoding="async">
+          <figcaption><span aria-hidden="true">6</span>Clôture</figcaption>
+        </figure>
+    </div>
+    <div class="wrap"><p class="lb-flow-caption">Exemple d'affichage avec données de démonstration (interface en allemand) · FleetSwiss fonctionne directement dans le navigateur du smartphone – aucune installation d'application requise.</p></div>
+  </section>
+
+  <!-- FUNKTIONEN -->
+  <section id="funktionen" aria-labelledby="lb-funktionen">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Fonctions</div>
+        <h2 id="lb-funktionen">Fonctions du carnet de route FleetSwiss</h2>
+      </div>
+      <div class="lb-features">
+        <div class="feature-card"><h3>Carnet de route électronique</h3><p>Une documentation numérique au lieu de listes papier.</p></div>
+        <div class="feature-card"><h3>Code QR sur le véhicule</h3><p>Accès direct au bon véhicule.</p></div>
+        <div class="feature-card"><h3>Réservation de véhicules de pool</h3><p>Vérifier la disponibilité et réserver des véhicules.</p></div>
+        <div class="feature-card"><h3>Conducteurs et collaborateurs</h3><p>Gérer les utilisateurs et les conducteurs de manière centralisée.</p></div>
+        <div class="feature-card"><h3>Kilométrages</h3><p>Saisir numériquement le kilométrage de départ et d'arrivée.</p></div>
+        <div class="feature-card"><h3>Historique des trajets</h3><p>Documenter de manière traçable les trajets passés.</p></div>
+        <div class="feature-card"><h3>Contrôle des permis de conduire</h3><p>Les conducteurs peuvent enregistrer leur permis de conduire numériquement. Les contrôles récurrents peuvent être gérés.</p></div>
+        <div class="feature-card"><h3>Audit et traçabilité</h3><p>Les opérations pertinentes sont documentées de manière traçable.</p></div>
+        <div class="feature-card"><h3>Plusieurs entreprises</h3><p>Les ressources de pool partagées peuvent, avec l'autorisation correspondante, être utilisées aussi entre organisations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POOLFAHRZEUGE UND RESSOURCEN -->
+  <section id="poolfahrzeuge" style="background:var(--paper);" aria-labelledby="lb-pool">
+    <div class="wrap lb-split">
+      <div>
+        <div class="eyebrow">Véhicules de pool et ressources</div>
+        <h2 id="lb-pool" class="lb-h2">Réserver numériquement les véhicules de pool</h2>
+        <h3 style="margin-top:18px;">Pas seulement réserver des véhicules.</h3>
+        <p>Outre les véhicules de pool, FleetSwiss peut également gérer d'autres ressources partagées, par exemple :</p>
+        <ul class="lb-list"><li>Véhicules de pool</li><li>Remorques</li><li>Véhicules de remplacement</li><li>Autres ressources de l'entreprise</li></ul>
+        <p>Pour les ressources non soumises à l'obligation de carnet de route, seule la réservation peut être utilisée.</p>
+      </div>
+      <figure class="lb-shot">
+        <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/poolreservierung-mobile.png" width="401" height="347">
+          <img src="/assets/product/poolreservierung.png" width="501" height="376" alt="Réservation de pool FleetSwiss avec calendrier hebdomadaire des véhicules de pool et formulaire pour une nouvelle réservation" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Exemple d'affichage avec données de démonstration (interface en allemand).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FIRMENFAHRZEUGE / VERTRAUEN -->
+  <section aria-labelledby="lb-firma">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Confiance et protection des données</div>
+        <h2 id="lb-firma">Carnet de route électronique pour véhicules d'entreprise</h2>
+        <p>FleetSwiss est une offre destinée aux entreprises en Suisse – avec des prix en CHF et une attention particulière portée à la protection des données et à la traçabilité.</p>
+      </div>
+      <div class="lb-trust">
+        <div class="feature-card"><h3>Fournisseur suisse</h3><p>FleetSwiss est un produit d'Alpine Service Switzerland GmbH.</p></div>
+        <div class="feature-card"><h3>Architecture multi-mandants</h3><p>Les données des différents mandants sont proprement séparées les unes des autres.</p></div>
+        <div class="feature-card"><h3>Autorisations basées sur les rôles</h3><p>Les accès dépendent du rôle et des autorisations.</p></div>
+        <div class="feature-card"><h3>Historique d'audit traçable</h3><p>Les opérations pertinentes sont documentées de manière traçable.</p></div>
+        <div class="feature-card"><h3>Protection des données selon les exigences suisses</h3><p>Pour en savoir plus, consultez la <a href="/datenschutz.html" hreflang="de" style="color:var(--blue);">déclaration de protection des données (DE)</a> et la page <a href="/fr/securite.html" style="color:var(--blue);">Sécurité</a>.</p></div>
+        <div class="feature-card"><h3>Pas de surveillance GPS permanente</h3><p>La fonction carnet de route ne surveille pas les véhicules en permanence. Si elle est activée, une localisation ponctuelle peut être enregistrée au début et à la fin d'un trajet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE -->
+  <section id="preise" class="lb-pricing" aria-labelledby="lb-preise">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Commencer simplement. Étendre plus tard.</div>
+        <h2 id="lb-preise">Prix du carnet de route électronique</h2>
+        <p>FleetSwiss Digital Logbook est également disponible sans la plateforme complète de gestion de flotte.</p>
+      </div>
+      <div class="lb-plans">
+          <article class="lb-plan" aria-labelledby="plan-starter">
+            <h3 id="plan-starter">Starter</h3>
+            <p class="lb-cap">Jusqu'à 5 véhicules avec carnet de route</p>
+            <p class="lb-price">CHF 99.– <span>/ mois</span></p>
+            <p class="lb-year">CHF 1'188.– par an</p>
+            <p class="lb-bill">Facturation annuelle</p>
+            <ul><li>Carnet de route électronique</li><li>Code QR</li><li>Réservation de pool</li><li>Gestion des conducteurs/utilisateurs</li><li>Historique des trajets</li><li>Ressources réservables</li></ul>
+            <a href="https://app.fleetswiss.ch/checkout?plan=starter" class="btn btn-primary" data-checkout-plan="starter">Souscrire en ligne</a>
+          </article>
+          <article class="lb-plan featured" aria-labelledby="plan-business">
+            <span class="lb-badge">Populaire</span><h3 id="plan-business">Business</h3>
+            <p class="lb-cap">Jusqu'à 10 véhicules avec carnet de route</p>
+            <p class="lb-price">CHF 149.– <span>/ mois</span></p>
+            <p class="lb-year">CHF 1'788.– par an</p>
+            <p class="lb-bill">Facturation annuelle</p>
+            <ul><li>Toutes les fonctions Starter</li><li>Jusqu'à 10 véhicules avec carnet de route</li><li>Réservation de véhicules de pool</li><li>Gestion des conducteurs/utilisateurs</li><li>Contrôle des permis de conduire</li><li>Historique d'audit</li><li>Partage de ressources entre organisations, si configuré en conséquence</li></ul>
+            <a href="https://app.fleetswiss.ch/checkout?plan=business" class="btn btn-primary" data-checkout-plan="business">Souscrire en ligne</a>
+          </article>
+          <article class="lb-plan" aria-labelledby="plan-business-plus">
+            <h3 id="plan-business-plus">Business Plus</h3>
+            <p class="lb-cap">Jusqu'à 25 véhicules avec carnet de route</p>
+            <p class="lb-price">CHF 249.– <span>/ mois</span></p>
+            <p class="lb-year">CHF 2'988.– par an</p>
+            <p class="lb-bill">Facturation annuelle</p>
+            <ul><li>Toutes les fonctions Business</li><li>Jusqu'à 25 véhicules avec carnet de route</li></ul>
+            <a href="https://app.fleetswiss.ch/checkout?plan=business-plus" class="btn btn-primary" data-checkout-plan="business-plus">Souscrire en ligne</a>
+          </article>
+          <article class="lb-plan" aria-labelledby="plan-professional">
+            <h3 id="plan-professional">Professional</h3>
+            <p class="lb-cap">Jusqu'à 50 véhicules avec carnet de route</p>
+            <p class="lb-price">CHF 399.– <span>/ mois</span></p>
+            <p class="lb-year">CHF 4'788.– par an</p>
+            <p class="lb-bill">Facturation annuelle</p>
+            <ul><li>Toutes les fonctions Business</li><li>Jusqu'à 50 véhicules avec carnet de route</li></ul>
+            <a href="https://app.fleetswiss.ch/checkout?plan=professional" class="btn btn-primary" data-checkout-plan="professional">Souscrire en ligne</a>
+          </article>
+          <article class="lb-plan lb-enterprise" aria-labelledby="plan-enterprise">
+            <div><h3 id="plan-enterprise">Enterprise</h3><p class="lb-cap">Plus de 50 véhicules</p></div>
+            <p class="lb-price">Offre individuelle</p>
+            <a href="/fr/#kontakt" class="btn btn-outline">Demander une offre</a>
+          </article>
+      </div>
+      <p class="lb-price-note">Les prix mensuels servent de prix de comparaison. La facturation est annuelle et payable d'avance. Tous les prix s'entendent hors TVA légale.</p>
+      <div class="lb-boxes">
+        <div class="lb-box">
+          <h3>Mise en place unique</h3>
+          <p>En plus de l'abonnement, des frais de mise en place uniques sont facturés. Leur montant dépend de l'effort de mise en place et d'onboarding nécessaire et est communiqué par FleetSwiss après réception de la commande.</p>
+          <p>Le montant concret des frais de mise en place vous est communiqué de manière transparente avant l'exécution de la mise en place payante.</p>
+        </div>
+        <div class="lb-box" id="onlineabschluss">
+          <h3>Conditions contractuelles Digital Logbook</h3>
+          <dl>
+            <dt>Durée minimale du contrat</dt><dd>12 mois</dd>
+            <dt>Renouvellement</dt><dd>par période de 12 mois</dd>
+            <dt>Délai de résiliation</dt><dd>3 mois pour la fin de la période contractuelle en cours</dd>
+            <dt>Facturation</dt><dd>annuelle, payable d'avance</dd>
+          </dl>
+          <p>Les <a href="/agb.html" hreflang="de">CGV</a> et la <a href="/datenschutz.html" hreflang="de">déclaration de protection des données</a> s'appliquent (la version actuellement approuvée est disponible en allemand).</p>
+          <p class="lb-checkout-note" data-checkout-note hidden>La souscription en ligne est en cours de mise en place. Jusqu'à son activation, nous acceptons volontiers votre commande par e-mail à <a href="mailto:info@fleetswiss.ch?subject=Commande%20FleetSwiss%20Digital%20Logbook">info@fleetswiss.ch</a> .</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEHR ALS EIN FAHRTENBUCH -->
+  <section aria-labelledby="lb-mehr">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">FleetSwiss évolue avec vous</div>
+        <h2 id="lb-mehr">Plus qu'un carnet de route ?</h2>
+      </div>
+      <div class="lb-upgrade">
+        <div class="feature-card">
+          <h3>FleetSwiss Full Fleet Software</h3>
+          <p class="lb-sub">Pour les entreprises qui souhaitent gérer l'ensemble de leur flotte de manière centralisée.</p>
+          <ul class="lb-tags"><li>Véhicules</li><li>Conducteurs</li><li>Contrats</li><li>Leasing</li><li>Documents</li><li>Dommages</li><li>Acquisition</li><li>Véhicules de pool</li><li>Carnet de route</li><li>Coûts</li><li>Historiques</li><li>Reporting</li></ul>
+          <p>En savoir plus sur le <a href="/fr/produit.html" style="color:var(--blue);">logiciel de gestion de flotte</a> et les <a href="/fr/fonctions.html" style="color:var(--blue);">Fonctions</a>.</p>
+          <div class="lb-spacer"></div>
+          <a href="/fr/#kontakt" class="btn btn-outline">Demander une offre</a>
+        </div>
+        <div class="feature-card">
+          <h3>FleetSwiss Fleet Management</h3>
+          <p class="lb-sub">Vous souhaitez non seulement numériser la gestion de flotte, mais aussi l'externaliser ?</p>
+          <p>Sur demande, FleetSwiss accompagne également les entreprises dans la gestion opérationnelle de leur flotte.</p>
+          <div class="lb-spacer"></div>
+          <a href="/fr/#kontakt" class="btn btn-outline">Demander une offre individuelle</a>
+        </div>
+      </div>
+      <ol class="lb-ladder" aria-label="Niveaux de produits FleetSwiss">
+        <li><strong>Digital Logbook</strong><span>Carnet de route électronique et réservation de pool</span></li>
+        <li><strong>Full Fleet Software</strong><span>Gestion de flotte entièrement numérique</span></li>
+        <li><strong>Fleet Management</strong><span>Logiciel + prestation opérationnelle de gestion de flotte</span></li>
+      </ol>
+      <p class="lb-ladder-claim">Commencez avec ce dont vous avez besoin aujourd'hui. FleetSwiss évolue avec votre flotte.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--paper);" aria-labelledby="lb-faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2 id="lb-faq-title">Questions fréquentes sur le carnet de route électronique</h2>
+      </div>
+      <div class="lb-faq">
+        <details>
+          <summary>Qu'est-ce qu'un carnet de route électronique ?</summary>
+          <p>Un carnet de route électronique ou numérique remplace le carnet de route papier dans le véhicule. Les trajets sont saisis numériquement avec le conducteur, le véhicule, l'heure, le kilométrage et le motif du trajet, et restent documentés de manière traçable.</p>
+        </details>
+        <details>
+          <summary>Comment fonctionne le carnet de route électronique FleetSwiss ?</summary>
+          <p>Les collaborateurs réservent un véhicule de pool disponible, scannent le code QR du véhicule, saisissent le kilométrage et le motif du trajet, puis démarrent le trajet. Après le trajet, le kilométrage final est saisi. FleetSwiss documente le conducteur, le véhicule, l'heure et le trajet.</p>
+        </details>
+        <details>
+          <summary>Ai-je besoin d'une application ?</summary>
+          <p>Non. FleetSwiss Digital Logbook ne nécessite aucune installation d'application séparée. Le code QR sur le véhicule peut être scanné avec le smartphone et ouvre FleetSwiss directement dans le navigateur.</p>
+        </details>
+        <details>
+          <summary>Comment fonctionne le code QR sur le véhicule ?</summary>
+          <p>Un code QR est apposé sur le véhicule. Les conducteurs le scannent avec leur smartphone, FleetSwiss s'ouvre dans le navigateur et, après la connexion, ils accèdent directement au bon véhicule pour démarrer ou terminer le trajet.</p>
+        </details>
+        <details>
+          <summary>Plusieurs collaborateurs peuvent-ils utiliser le même véhicule de pool ?</summary>
+          <p>Oui. Les véhicules de pool sont attribués dans le temps via la réservation. Chaque trajet est documenté avec le conducteur, l'heure et le kilométrage.</p>
+        </details>
+        <details>
+          <summary>Les véhicules de pool peuvent-ils être réservés en ligne ?</summary>
+          <p>Oui. Les collaborateurs voient la disponibilité et réservent le véhicule souhaité pour la période nécessaire.</p>
+        </details>
+        <details>
+          <summary>Peut-on aussi réserver des remorques et d'autres ressources ?</summary>
+          <p>Oui. Outre les véhicules de pool, il est possible de gérer des remorques, des véhicules de remplacement et d'autres ressources de l'entreprise. Pour les ressources non soumises à l'obligation de carnet de route, seule la réservation peut être utilisée.</p>
+        </details>
+        <details>
+          <summary>Plusieurs entreprises peuvent-elles utiliser les mêmes véhicules de pool ?</summary>
+          <p>Les ressources de pool partagées peuvent, avec l'autorisation et la configuration correspondantes, être utilisées aussi entre organisations. Il n'existe pas d'accès automatique au sein d'un groupe d'entreprises.</p>
+        </details>
+        <details>
+          <summary>Les véhicules sont-ils surveillés en permanence par GPS ?</summary>
+          <p>Non. La fonction carnet de route ne surveille pas les véhicules en permanence. Si elle est activée, une localisation ponctuelle peut être enregistrée au début et à la fin d'un trajet.</p>
+        </details>
+        <details>
+          <summary>Combien coûte le carnet de route électronique ?</summary>
+          <p>FleetSwiss Digital Logbook est disponible dès CHF 99.– par mois (Starter, jusqu'à 5 véhicules avec carnet de route, CHF 1'188.– par an). La facturation est annuelle et payable d'avance ; tous les prix s'entendent hors TVA. En plus, des frais de mise en place uniques sont facturés. FleetSwiss en communique le montant après réception de la commande et avant l'exécution de la mise en place payante.</p>
+        </details>
+        <details>
+          <summary>FleetSwiss peut-il être étendu ultérieurement à une gestion de flotte complète ?</summary>
+          <p>Oui. Vous pouvez commencer avec le carnet de route électronique et, si nécessaire, passer à FleetSwiss Full Fleet Software ou ajouter le FleetSwiss Fleet Management Service. Nous vous établissons pour cela une offre individuelle.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/assets/brand/fleetswiss-logo-white.png" alt="FleetSwiss" width="1200" height="175" loading="lazy">
+        <p>A product by Alpine Service Switzerland GmbH. Gestion de flotte numérique pour les entreprises suisses.</p>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Produit</h2>
+        <ul>
+          <li><a href="/fr/produit.html">Produit</a></li>
+          <li><a href="/fr/fonctions.html">Fonctions</a></li>
+          <li><a href="/fr/carnet-de-route-electronique.html">Carnet de route électronique</a></li>
+          <li><a href="/fr/produit.html#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Entreprise</h2>
+        <ul>
+          <li><a href="/fr/securite.html">Sécurité</a></li>
+          <li><a href="/fr/a-propos.html">À propos</a></li>
+          <li><a href="/fr/#kontakt">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Informations juridiques</h2>
+        <ul>
+          <li><a href="/datenschutz.html" hreflang="de">Protection des données (DE)</a></li>
+          <li><a href="/impressum.html" hreflang="de">Mentions légales (DE)</a></li>
+          <li><a href="/agb.html" hreflang="de">CGV (DE)</a></li>
+          <li hidden><a href="/datenschutz.html#ziffer-35" hreflang="de" data-consent-open>Paramètres de confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal-lang-note">Les documents juridiques (protection des données, mentions légales, CGV) sont actuellement disponibles en allemand, dans leur version approuvée.</p>
+    <div class="footer-bottom">
+      <span>© 2026 FleetSwiss. Tous droits réservés.</span>
+      <div class="swiss-badge">
+        <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#C7492B"/><rect x="13" y="8" width="6" height="16" fill="#fff"/><rect x="8" y="13" width="16" height="6" fill="#fff"/></svg>
+        Swiss based. Globally minded.
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  (function(){
+    var toggle = document.getElementById('menuToggle');
+    var menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.querySelectorAll('.mobile-menu a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+  })();
+</script>
+<script src="/assets/js/consent.js" defer></script>
+<script>
+  /* Onlineabschluss Digital Logbook: produktiven Checkout-Endpunkt hier eintragen (z. B. https://…).
+     Solange leer, führen die Buttons zu den Vertragsbedingungen mit dem Hinweis zur Bestellung per E-Mail.
+     Nur das Digital Logbook ist online abschliessbar; Full Fleet Software und Fleet Management nur auf Anfrage. */
+  (function () {
+    var CHECKOUT_URL = 'https://app.fleetswiss.ch/checkout';
+    if (!CHECKOUT_URL) return;
+    Array.prototype.forEach.call(document.querySelectorAll('a[data-checkout-plan]'), function (a) {
+      var plan = a.getAttribute('data-checkout-plan');
+      a.href = CHECKOUT_URL + (plan ? (CHECKOUT_URL.indexOf('?') < 0 ? '?' : '&') + 'plan=' + encodeURIComponent(plan) : '');
+    });
+    var note = document.querySelector('[data-checkout-note]');
+    if (note) note.hidden = true;
+  })();
+</script>
+</body>
+</html>

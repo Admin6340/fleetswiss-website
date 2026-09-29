@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sicherheit im Fuhrparkmanagement | FleetSwiss</title>
 <meta name="description" content="Sicherheit bei FleetSwiss: Multi-Tenant-Architektur, Rollen und Berechtigungen, Multi-Faktor-Authentifizierung sowie nachvollziehbare Änderungen.">
 <link rel="canonical" href="https://fleetswiss.ch/sicherheit.html">
+<link rel="alternate" hreflang="de-CH" href="https://fleetswiss.ch/sicherheit.html">
+<link rel="alternate" hreflang="fr-CH" href="https://fleetswiss.ch/fr/securite.html">
+<link rel="alternate" hreflang="en" href="https://fleetswiss.ch/en/security.html">
+<link rel="alternate" hreflang="x-default" href="https://fleetswiss.ch/sicherheit.html">
+<meta property="og:locale:alternate" content="fr_CH">
+<meta property="og:locale:alternate" content="en_GB">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FleetSwiss">
 <meta property="og:title" content="Sicherheit im Fuhrparkmanagement | FleetSwiss">
@@ -618,48 +624,6 @@
   .contact-tag { margin-top: 32px; font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: #7EB4E6; }
   .contact-tag span { display: block; font-size: 13px; letter-spacing: 0.1em; }
 
-  .form-card {
-    background: #fff;
-    color: var(--ink);
-    border-radius: 14px;
-    padding: 32px;
-    box-shadow: var(--shadow);
-  }
-  .form-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); }
-  .form-card > p { font-size: 14px; color: var(--slate); margin-top: 6px; }
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 22px;
-  }
-  @media (max-width: 480px) { .form-grid { grid-template-columns: 1fr; } }
-  .form-grid .full { grid-column: 1 / -1; }
-  label {
-    display: block;
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--slate);
-    margin-bottom: 6px;
-  }
-  input, select, textarea {
-    width: 100%;
-    font: inherit;
-    padding: 11px 13px;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--paper);
-    color: var(--ink);
-  }
-  input:focus, select:focus, textarea:focus {
-    outline: 2px solid var(--blue);
-    outline-offset: 1px;
-    background: #fff;
-  }
-  textarea { resize: vertical; min-height: 92px; }
-  .form-card .btn { width: 100%; justify-content: center; margin-top: 18px; }
-  .form-status { font-size: 13px; margin-top: 12px; color: var(--green); display: none; }
-  .form-status.show { display: block; }
 
   /* Footer */
   footer.site {
@@ -758,7 +722,6 @@
 <style id="pre-golive">
   .lang-switch[hidden] { display: none !important; }
   .footer-col .legal-pending { font-size: 13.5px; color: #6F8497; }
-  .form-status.info { color: var(--slate); }
 </style>
 <style id="brand">
   /* Finales FleetSwiss-Logo (Header/Footer) */
@@ -796,9 +759,34 @@
     .menu-toggle span, .menu-toggle::before, .menu-toggle::after { background: var(--navy); }
     :root:not([data-theme="dark"]) .mobile-menu a.mobile-login { border-color: var(--blue); color: var(--blue); }
     .mobile-menu a.btn-primary { color: #fff; }
-    input, select, textarea { background: #fff; color: var(--ink); border-color: #8193A4; }
-    input::placeholder, textarea::placeholder { color: #6B7B89; }
     .roadmap-card.now .tag { color: #1E7A45; }
+  }
+</style>
+<style id="i18n-lang">
+  /* V1.13 Sprachumschalter DE | FR | EN */
+  .lang-switch { display: flex; align-items: center; gap: 2px; font-size: 13px; font-weight: 600; color: var(--slate-light); white-space: nowrap; }
+  .lang-switch span { padding: 0 1px; }
+  .lang-switch a { padding: 4px 5px; border-radius: 4px; color: var(--slate); text-decoration: none; line-height: 1.2; }
+  .lang-switch a:hover, .lang-switch a:focus-visible { color: var(--blue); }
+  .lang-switch a[aria-current="page"] { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+  nav.primary .lang-switch { margin-left: -12px; }
+  nav.primary .lang-switch a { font-size: 13px; font-weight: 600; }
+  .mobile-menu .lang-switch { order: 99; justify-content: flex-start; gap: 6px; padding: 16px 0 2px; font-size: 15px; }
+  .mobile-menu .lang-switch a { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; font-weight: 600; }
+  .mobile-menu .lang-switch a[aria-current="page"] { border-color: var(--navy); }
+  .mobile-menu .lang-switch span { display: none; }
+  :root[data-theme="dark"] .lang-switch a { color: #C9D6E3; }
+  :root[data-theme="dark"] .lang-switch a[aria-current="page"] { color: #fff; }
+  .legal-lang-note { margin-top: 18px; font-size: 12.5px; color: #93A9BE; }
+  .lang-switch .lang-off { padding: 4px 5px; color: var(--slate-light); opacity: .55; cursor: not-allowed; }
+  .mobile-menu .lang-switch .lang-off { display: inline-block; padding: 8px 12px; border: 1px dashed var(--line); border-radius: 6px; font-weight: 600; }
+  .legal-lang-banner { background: var(--paper, #F5F7FA); border-bottom: 1px solid var(--line); font-size: 13px; line-height: 1.5; color: var(--slate); }
+  .legal-lang-banner .wrap { padding-top: 9px; padding-bottom: 9px; }
+  .legal-lang-banner span[lang="de-CH"] { color: var(--navy); font-weight: 600; }
+  @media (max-width: 1180px) {
+    nav.primary { display: none; }
+    .menu-toggle { display: block; }
+    header.site .nav-right { display: flex; }
   }
 </style>
 </head>
@@ -811,17 +799,14 @@
     <nav class="primary" aria-label="Hauptnavigation">
       <a href="/produkt.html">Produkt</a>
       <a href="/funktionen.html">Funktionen</a>
+      <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
       <a href="/sicherheit.html">Sicherheit</a>
       <a href="/ueber-uns.html">Über uns</a>
       <a href="/#kontakt">Kontakt</a>
       <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
+      <div class="lang-switch lang-desktop" role="group" aria-label="Sprache wählen"><a href="/sicherheit.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/securite.html" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/security.html" hreflang="en" lang="en">EN</a></div>
     </nav>
     <div class="nav-right">
-      <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
-        <button type="button" aria-current="true">DE</button>
-        <span aria-hidden="true">|</span>
-        <button type="button" aria-current="false">EN</button>
-      </div>
       <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
@@ -829,11 +814,13 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/produkt.html">Produkt</a>
     <a href="/funktionen.html">Funktionen</a>
+    <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
     <a href="/sicherheit.html">Sicherheit</a>
     <a href="/ueber-uns.html">Über uns</a>
     <a href="/#kontakt">Kontakt</a>
     <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
     <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
+    <div class="lang-switch lang-mobile" role="group" aria-label="Sprache wählen"><a href="/sicherheit.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/securite.html" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/security.html" hreflang="en" lang="en">EN</a></div>
   </div>
 </header>
 <main>
@@ -920,6 +907,7 @@
         <ul>
           <li><a href="/produkt.html">Produkt</a></li>
           <li><a href="/funktionen.html">Funktionen</a></li>
+          <li><a href="/elektronisches-fahrtenbuch.html">Elektronisches Fahrtenbuch</a></li>
           <li><a href="/produkt.html#roadmap">Roadmap</a></li>
         </ul>
       </div>
@@ -965,17 +953,6 @@
       });
     });
 
-    var form = document.getElementById('contactForm');
-    var status = document.getElementById('formStatus');
-    if (form) {
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        // Hinweis: Formular ist aktuell nicht an ein Backend/Mailsystem angebunden.
-        // Anbindung (z. B. E-Mail-Versand oder CRM) folgt in einem separaten Schritt.
-        status.classList.add('show');
-        form.reset();
-      });
-    }
   })();
 </script>
 <script src="/assets/js/consent.js" defer></script>

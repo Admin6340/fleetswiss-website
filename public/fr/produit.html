@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="de-CH">
+<html lang="fr-CH">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Funktionen der Flottenmanagement Software | FleetSwiss</title>
-<meta name="description" content="Alle Funktionen von FleetSwiss V1: Fahrzeuge, Fahrer, Führerausweiskontrolle, Poolfahrzeuge, QR-Fahrtenbuch, Schadenmanagement, Importe und operative Prozesse.">
-<link rel="canonical" href="https://fleetswiss.ch/funktionen.html">
-<link rel="alternate" hreflang="de-CH" href="https://fleetswiss.ch/funktionen.html">
-<link rel="alternate" hreflang="fr-CH" href="https://fleetswiss.ch/fr/fonctions.html">
-<link rel="alternate" hreflang="en" href="https://fleetswiss.ch/en/features.html">
-<link rel="alternate" hreflang="x-default" href="https://fleetswiss.ch/funktionen.html">
-<meta property="og:locale:alternate" content="fr_CH">
+<title>Gestion de flotte numérique : plateforme et roadmap | FleetSwiss</title>
+<meta name="description" content="FleetSwiss, la plateforme de gestion de flotte numérique : reprise structurée des données, onboarding accompagné et roadmap transparente.">
+<link rel="canonical" href="https://fleetswiss.ch/fr/produit.html">
+<link rel="alternate" hreflang="de-CH" href="https://fleetswiss.ch/produkt.html">
+<link rel="alternate" hreflang="fr-CH" href="https://fleetswiss.ch/fr/produit.html">
+<link rel="alternate" hreflang="en" href="https://fleetswiss.ch/en/product.html">
+<link rel="alternate" hreflang="x-default" href="https://fleetswiss.ch/produkt.html">
+<meta property="og:locale:alternate" content="de_CH">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FleetSwiss">
-<meta property="og:title" content="Funktionen der Flottenmanagement Software | FleetSwiss">
-<meta property="og:description" content="Alle Funktionen von FleetSwiss V1: Fahrzeuge, Fahrer, Führerausweiskontrolle, Poolfahrzeuge, QR-Fahrtenbuch, Schadenmanagement, Importe und operative Prozesse.">
-<meta property="og:locale" content="de_CH">
-<meta property="og:url" content="https://fleetswiss.ch/funktionen.html">
+<meta property="og:title" content="Gestion de flotte numérique : plateforme et roadmap | FleetSwiss">
+<meta property="og:description" content="FleetSwiss, la plateforme de gestion de flotte numérique : reprise structurée des données, onboarding accompagné et roadmap transparente.">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:url" content="https://fleetswiss.ch/fr/produit.html">
 <meta property="og:image" content="https://fleetswiss.ch/assets/og-fleetswiss.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="FleetSwiss Firmenfahrzeuge vor Schweizer Alpenpanorama">
+<meta property="og:image:alt" content="Véhicules d&#x27;entreprise FleetSwiss devant un panorama alpin suisse">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -711,19 +711,6 @@
 </style>
 
 
-<style id="v1-features">
-  .v1-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-  .v1-list li { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--white); font-size: 14.5px; font-weight: 500; color: var(--ink); }
-  .v1-list li svg { flex: none; color: var(--green); }
-  .v1-note { margin-top: 18px; font-size: 13.5px; color: var(--slate); max-width: 640px; line-height: 1.55; }
-  .future-box { margin-top: 44px; border: 1px dashed var(--line); border-radius: var(--radius); padding: 28px; background: var(--paper); }
-  .future-box h3 { font-size: 18px; font-weight: 700; color: var(--navy); }
-  .future-box > p { font-size: 14.5px; color: var(--slate); margin-top: 6px; }
-  .future-list { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-  .future-list li { padding: 8px 13px; border-radius: 6px; background: var(--ice); color: var(--blue); font-size: 14px; font-weight: 600; }
-  @media (max-width: 640px) { .v1-list li { font-size: 14px; padding: 8px 12px; } .future-box { padding: 22px 18px; } }
-</style>
-
 <style id="v1-final">
   /* V1-Finalisierung: Harmonisierung & Responsive */
   .footer-col .footer-h { font-size: 12.5px; font-weight: 700; color: #fff; margin: 0 0 14px; letter-spacing: 0; }
@@ -743,17 +730,30 @@
   @media (max-width: 420px) { .logo .logo-image { height: 26px; } }
   .footer-brand .footer-logo { height: 28px; width: auto; max-width: 100%; object-fit: contain; display: block; }
 </style>
-<style id="process-fix">
-  /* Responsive-Fix: Prozesskarten duerfen schmaler werden als das laengste Wort (kein Seitenueberlauf) */
-  @media (max-width: 620px) {
-    .process-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .process-card { min-width: 0; }
-    .process-card h3, .process-card p { overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
+<style id="product-visuals">
+  /* Kennzeichnungen 1 / CH / V1 / E2E zentriert, Beschreibung linksbuendig */
+  .stat-card .num { text-align: center; }
+  .stat-card .lbl { text-align: left; }
+  /* Produktvisuals */
+  .shot { margin: 0; }
+  .shot img { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border-radius: 10px; border: 1px solid var(--line); background: #fff;
+              box-shadow: 0 24px 60px -32px rgba(14,42,71,0.45); }
+  .shot figcaption { margin-top: 12px; font-size: 13px; color: var(--slate-light); text-align: center; }
+  .product-views .pv-list { display: grid; gap: 56px; margin-top: 40px; }
+  .pv-row { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 44px; align-items: center; }
+  .pv-row.pv-flip { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
+  .pv-row.pv-flip .pv-media { order: 2; }
+  .pv-media { display: flex; justify-content: center; }
+  .pv-media .shot { width: 100%; }
+  .pv-media .shot.pv-natural { width: auto; max-width: 100%; }
+  .pv-text h3 { font-size: 21px; font-weight: 800; color: var(--navy); line-height: 1.3; }
+  .pv-text p { margin-top: 10px; font-size: 16px; color: var(--slate); line-height: 1.65; }
+  @media (max-width: 900px) {
+    .pv-row, .pv-row.pv-flip { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .pv-row.pv-flip .pv-media { order: 0; }
+    .product-views .pv-list { gap: 44px; }
   }
-  /* Sehr schmale Bildschirme: eine Spalte, damit lange Woerter (z. B. Verzollungsmanagement) ungetrennt bleiben */
-  @media (max-width: 480px) {
-    .process-row { grid-template-columns: minmax(0, 1fr); }
-  }
+  @media (max-width: 640px) { .pv-media .shot { max-width: 420px; margin: 0 auto; } }
 </style>
 <style id="header-layout">
   /* Desktop-Kopfzeile: Logo links, Navigation rechts, volle Breite mit schmalem Seitenrand */
@@ -770,6 +770,19 @@
   .mobile-menu a.mobile-login { margin-top: 10px; border: 1px solid var(--blue); color: var(--blue); font-weight: 600; }
   .mobile-menu a.mobile-login:hover { background: var(--blue); color: #fff; }
   :root[data-theme="dark"] nav.primary a.nav-login, :root[data-theme="dark"] .mobile-menu a.mobile-login { border-color: #7EB4E6; color: #7EB4E6; }
+</style>
+<style id="service-models">
+  /* V1.8 Leistungsmodelle */
+  .sm-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 24px; align-items: start; }
+  .sm-card { background: var(--white); }
+  .sm-card h3 { font-size: 19px; font-weight: 800; color: var(--navy); }
+  .sm-card p { font-size: 15px; }
+  .sm-list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .sm-list li { padding: 9px 0; border-top: 1px solid var(--line); font-size: 14.5px; line-height: 1.55; color: var(--slate); }
+  .sm-list strong { color: var(--ink); font-weight: 600; }
+  .sm-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  @media (max-width: 820px) { .sm-grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 480px) { .sm-cta .btn { flex: 1 1 100%; justify-content: center; text-align: center; } }
 </style>
 <style id="mobile-fix">
   /* V1.8 FINAL Mobile-Korrektur: Bis 900 px gilt immer das helle FleetSwiss-Farbsystem.
@@ -788,7 +801,7 @@
   }
 </style>
 <style id="lb-links">
-  .lb-inline-link { margin-top: 10px; font-size: 14px; }
+  .lb-inline-link { margin-top: 10px; font-size: 15px; }
   .lb-inline-link a { color: var(--blue); font-weight: 600; text-decoration: none; }
   .lb-inline-link a:hover { text-decoration: underline; }
 </style>
@@ -823,203 +836,266 @@
 <body>
 <header class="site">
   <div class="wrap nav-row">
-    <a href="/" class="logo" aria-label="FleetSwiss Startseite">
+    <a href="/fr/" class="logo" aria-label="Page d&#x27;accueil FleetSwiss">
       <picture><img class="logo-image" src="/assets/brand/fleetswiss-logo.png" alt="FleetSwiss" width="1200" height="175"></picture>
     </a>
-    <nav class="primary" aria-label="Hauptnavigation">
-      <a href="/produkt.html">Produkt</a>
-      <a href="/funktionen.html">Funktionen</a>
-      <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
-      <a href="/sicherheit.html">Sicherheit</a>
-      <a href="/ueber-uns.html">Über uns</a>
-      <a href="/#kontakt">Kontakt</a>
-      <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
-      <div class="lang-switch lang-desktop" role="group" aria-label="Sprache wählen"><a href="/funktionen.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/fonctions.html" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/features.html" hreflang="en" lang="en">EN</a></div>
+    <nav class="primary" aria-label="Navigation principale">
+      <a href="/fr/produit.html">Produit</a>
+      <a href="/fr/fonctions.html">Fonctions</a>
+      <a href="/fr/carnet-de-route-electronique.html">Carnet de route</a>
+      <a href="/fr/securite.html">Sécurité</a>
+      <a href="/fr/a-propos.html">À propos</a>
+      <a href="/fr/#kontakt">Contact</a>
+      <a href="https://app.fleetswiss.ch" class="nav-login">Connexion</a>
+      <div class="lang-switch lang-desktop" role="group" aria-label="Choisir la langue"><a href="/produkt.html" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/produit.html" hreflang="fr-CH" lang="fr-CH" aria-current="page">FR</a><span aria-hidden="true">|</span><a href="/en/product.html" hreflang="en" lang="en">EN</a></div>
     </nav>
     <div class="nav-right">
-      <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+      <a href="/fr/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demander une démo</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/produkt.html">Produkt</a>
-    <a href="/funktionen.html">Funktionen</a>
-    <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
-    <a href="/sicherheit.html">Sicherheit</a>
-    <a href="/ueber-uns.html">Über uns</a>
-    <a href="/#kontakt">Kontakt</a>
-    <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
-    <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
-    <div class="lang-switch lang-mobile" role="group" aria-label="Sprache wählen"><a href="/funktionen.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/fonctions.html" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/features.html" hreflang="en" lang="en">EN</a></div>
+    <a href="/fr/produit.html">Produit</a>
+    <a href="/fr/fonctions.html">Fonctions</a>
+    <a href="/fr/carnet-de-route-electronique.html">Carnet de route</a>
+    <a href="/fr/securite.html">Sécurité</a>
+    <a href="/fr/a-propos.html">À propos</a>
+    <a href="/fr/#kontakt">Contact</a>
+    <a href="/fr/#kontakt" class="btn btn-primary">Demander une démo</a>
+    <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Connexion</a>
+    <div class="lang-switch lang-mobile" role="group" aria-label="Choisir la langue"><a href="/produkt.html" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/produit.html" hreflang="fr-CH" lang="fr-CH" aria-current="page">FR</a><span aria-hidden="true">|</span><a href="/en/product.html" hreflang="en" lang="en">EN</a></div>
   </div>
 </header>
 <main>
 
   <section class="page-head">
     <div class="wrap">
-      <div class="eyebrow">Funktionen</div>
-      <h1>Alle Funktionen im Überblick</h1>
-      <p>Die vollständige Funktionsmatrix von FleetSwiss V1 &ndash; von der Fahrzeugverwaltung bis zu den operativen Prozessen im Alltag.</p>
+      <div class="eyebrow">Produit</div>
+      <h1>FleetSwiss en détail</h1>
+      <p>Comment FleetSwiss fonctionne en tant que plateforme, comment vos données sont reprises de manière structurée et dans quelle direction le produit évolue.</p>
     </div>
   </section>
-<!-- V1 FEATURES -->
-  <section id="funktionen">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Verfügbar in V1</div>
-        <h2>Die wichtigsten Funktionen</h2>
-        <p>FleetSwiss deckt den heutigen Arbeitsalltag im Flottenmanagement ab. Weitere Module folgen laufend – siehe Roadmap weiter unten.</p>
+<!-- PLATFORM STATEMENT -->
+  <section class="platform" id="produkt">
+    <div class="wrap platform-grid">
+      <div>
+        <div class="eyebrow" style="color:#7EB4E6;">La plateforme</div>
+        <h2>Plus de contrôle. <span class="accent">Moins d'effort.</span></h2>
+        <p>FleetSwiss n'est pas une simple base de données de véhicules, mais une plateforme opérationnelle pour le travail quotidien des fleet managers – de l'acquisition à la restitution, en passant par l'exploitation courante.</p>
+        <p>Au lieu de répartir les informations entre listes Excel, e-mails et systèmes isolés, véhicules, conducteurs, contrats, coûts et processus sont réunis au même endroit.</p>
       </div>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 13l1.5-5A2 2 0 016.4 6.5h11.2A2 2 0 0119.5 8l1.5 5M3 13v5a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-5M3 13h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="16.5" r="1.3" fill="currentColor"/><circle cx="16.5" cy="16.5" r="1.3" fill="currentColor"/></svg></div>
-          <h3>Fahrzeuge & Fahrzeugakten</h3>
-          <p>Vollständige Fahrzeugübersicht mit Stammdaten, Dokumenten und Historie an einem Ort.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          <h3>Fahrer & Fahrerzuordnungen</h3>
-          <p>Klare Zuordnung von Fahrern zu Fahrzeugen inkl. Kontrollschild- und Zuordnungshistorie.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 4v16M4 9h5" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Führerausweiskontrolle</h3>
-          <p>Systematische Kontrolle und Fristenüberwachung der Führerausweise Ihrer Fahrer.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 6V4h8v2" stroke="currentColor" stroke-width="1.6"/><path d="M3 11h18" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Poolfahrzeuge & Reservationen</h3>
-          <p>Gemeinsam genutzte Fahrzeuge einfach verwalten, buchen und reservieren.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h.01M8 12h.01M8 16h.01M12 8h4M12 12h4M12 16h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-          <h3>QR-Fahrtenbuch</h3>
-          <p>Fahrten unkompliziert per QR-Code erfassen – ohne separate Hardware.</p>
-          <p class="lb-inline-link"><a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch für Poolfahrzeuge →</a></p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19V7a2 2 0 012-2h6l4 4v10a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 13h6M9 16.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          <h3>Leasing, Verträge & Kosten</h3>
-          <p>Verträge, Laufzeiten und Kosten pro Fahrzeug transparent im Blick behalten.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          <h3>Dokumentenverwaltung</h3>
-          <p>Fahrzeug- und Vertragsdokumente zentral, sicher und jederzeit auffindbar ablegen.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4l-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-          <h3>Schäden & Schadenmanagement</h3>
-          <p>Schadenmeldungen erfassen, Fotos hinterlegen und den Verlauf nachvollziehen.</p>
-        </div>
+      <div class="platform-stats">
+        <div class="stat-card"><div class="num">1</div><div class="lbl">Plateforme pour la flotte, les conducteurs et les contrats</div></div>
+        <div class="stat-card"><div class="num">CH</div><div class="lbl">Support personnalisé depuis la Suisse</div></div>
+        <div class="stat-card"><div class="num">V1</div><div class="lbl">État actuel, enrichi en continu</div></div>
+        <div class="stat-card"><div class="num">E2E</div><div class="lbl">Couverture de bout en bout – du handover au return</div></div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCT SCREENSHOT PLACEHOLDER --><!-- OPERATIVE PROZESSE -->
-  <section style="background:var(--paper);">
+  <!-- PRODUKT-EINBLICKE (Beispielansichten mit Demodaten) -->
+  <section class="product-views" aria-labelledby="einblicke-title">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">Betrieb im Alltag</div>
-        <h2>Operative Prozesse durchgängig abgebildet</h2>
-        <p>Vom Fahrzeugwechsel bis zur Rückgabe – FleetSwiss begleitet die wiederkehrenden Abläufe im Fuhrpark strukturiert und nachvollziehbar.</p>
+        <div class="eyebrow">Aperçu du produit</div>
+        <h2 id="einblicke-title">FleetSwiss en action</h2>
+        <p>Exemples d'affichage avec données de démonstration (interface en allemand).</p>
       </div>
-      <div class="process-row">
-        <div class="process-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Übergabe / Handover</h3>
-          <p>Strukturierte Fahrzeugübergabe mit Protokoll.</p>
-        </div>
-        <div class="process-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 12H7M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Rückgabe / Return</h3>
-          <p>Kontrollierte Rücknahme mit Zustandsprüfung.</p>
-        </div>
-        <div class="process-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4l1.5 1.5M20 4l-1.5 1.5M12 3v3M4 12h3M17 12h3M6 19h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Aufbereitung / Prepare</h3>
-          <p>Aufbereitungsschritte vor der nächsten Nutzung.</p>
-        </div>
-        <div class="process-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 21V8l9-5 9 5v13" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Partnergarage</h3>
-          <p>Objektbezogener Zugriff für externe Partner.</p>
-        </div>
-        <div class="process-card">
-          <div class="icon"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 19V9l5-4 5 4v10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-          <h3>Verzollungsmanagement</h3>
-          <p>Grenzüberschreitende Vorgänge im Blick.</p>
-        </div>
+      <div class="pv-list">
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/fahrzeugverwaltung-mobile.png" width="374" height="400">
+          <img src="/assets/product/fahrzeugverwaltung.png" width="838" height="505" alt="Liste des véhicules FleetSwiss avec recherche, filtres par véhicule de pool, carnet de route, catégorie de véhicule et carburant, ainsi que plaque d&#x27;immatriculation, véhicule, statut, conducteur et kilométrage" loading="lazy" decoding="async">
+          </picture>
+        </figure>
       </div>
-      <div class="process-extra">
-        <div class="row-item">
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.6"/></svg>
-          <div><div class="t">Mitarbeiterbelastungen</div><div class="s">Kosten und Folgeprozesse klar zuordnen.</div></div>
-        </div>
-        <div class="row-item">
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <div><div class="t">HR Reporting</div><div class="s">Auswertungen für HR-relevante Fragestellungen.</div></div>
-        </div>
-        <div class="row-item">
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4v16h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 15l4-4 3 3 5-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <div><div class="t">PDF-Protokolle & Export</div><div class="s">Protokolle sowie Excel-/ZIP-Export auf Knopfdruck.</div></div>
-        </div>
+      <div class="pv-text">
+        <h3>Gestion des véhicules</h3>
+        <p>Vue complète des véhicules avec données de base, documents et historique au même endroit.</p>
+      </div>
+      </div>
+      <div class="pv-row pv-flip">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/fahrzeugakte-mobile.png" width="410" height="342">
+          <img src="/assets/product/fahrzeugakte.png" width="668" height="376" alt="Dossier véhicule FleetSwiss avec identité et données du véhicule, statut et utilisation, leasing et coûts ainsi qu&#x27;aperçu des documents" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Dossier véhicule avec leasing et documents</h3>
+        <p>Garder une vue transparente sur les contrats, durées et coûts par véhicule. Stocker les documents des véhicules et des contrats de manière centralisée, sûre et retrouvable à tout moment.</p>
+      </div>
+      </div>
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot">
+          <picture>
+          <source media="(max-width: 640px)" srcset="/assets/product/poolreservierung-mobile.png" width="401" height="347">
+          <img src="/assets/product/poolreservierung.png" width="501" height="376" alt="Réservation de pool FleetSwiss avec calendrier hebdomadaire des véhicules de pool et formulaire pour une nouvelle réservation" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Réservation de pool</h3>
+        <p>Gérer, réserver et planifier facilement les véhicules partagés.</p>
+      </div>
+      </div>
+      <div class="pv-row pv-flip">
+      <div class="pv-media">
+        <figure class="shot pv-natural">
+          <picture>
+          <img src="/assets/product/qr-fahrtenbuch.png" width="305" height="189" alt="Étiquette de véhicule FleetSwiss avec code QR, plaque d&#x27;immatriculation et modèle du véhicule pour démarrer un trajet dans le carnet de route électronique" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Carnet de route QR / électronique</h3>
+        <p>Saisir les trajets simplement par code QR – sans matériel supplémentaire.</p>
+        <p class="lb-inline-link"><a href="/fr/carnet-de-route-electronique.html">Le carnet de route électronique existe aussi en solution autonome →</a></p>
+      </div>
+      </div>
+      <div class="pv-row">
+      <div class="pv-media">
+        <figure class="shot pv-natural">
+          <picture>
+          <img src="/assets/product/fahrerverwaltung.png" width="541" height="187" alt="Liste des conducteurs FleetSwiss avec recherche, filtres et aperçu des conducteurs avec véhicules attribués et statut" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="pv-text">
+        <h3>Gestion des conducteurs</h3>
+        <p>Attribution claire des conducteurs aux véhicules, avec historique des plaques d'immatriculation et des attributions.</p>
+      </div>
+      </div>
       </div>
     </div>
   </section>
 
-  <!-- V1-FUNKTIONSUEBERSICHT & ROADMAP -->
-  <section id="v1-uebersicht">
+  <!-- LEISTUNGSMODELLE (V1.8) -->
+  <section class="service-models" style="background:var(--paper);" aria-labelledby="modelle-title">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">Verfügbar in V1</div>
-        <h2>Alle V1-Funktionen auf einen Blick</h2>
-        <p>Diese Funktionen stehen in FleetSwiss V1 zur Verfügung.</p>
+        <div class="eyebrow">Modèles de prestations</div>
+        <h2 id="modelle-title">Deux façons d'utiliser FleetSwiss</h2>
       </div>
-      <ul class="v1-list" aria-label="Verfügbare Funktionen in V1">
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Fahrzeuge</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Fahrer</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Führerausweiskontrolle</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Poolfahrzeuge</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Reservationen</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>QR-Fahrtenbuch</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Leasing &amp; Kosten</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Dokumente</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>MASTER Import</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Providerimporte</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>HANDOVER</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>RETURN</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>PREPARE</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Partnergarage</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Schadenmanagement</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Mitarbeiterbelastungen</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Verzollung</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>HR Reporting</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Provider-Synchronisation</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>PDF-Protokolle</li>
-          <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".15"/><path d="M6 10.2l2.4 2.4L14 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Excel/ZIP-Export</li>
-      </ul>
-      <p class="v1-note">MASTER Import, Providerimporte und Provider-Synchronisation laufen als strukturierter Import bzw. Workflow – nicht als Echtzeit-API.</p>
-      <div class="future-box" id="roadmap">
-        <h3>Roadmap – V2</h3>
-        <p>Zukünftige Erweiterungen, in V1 noch nicht verfügbar:</p>
-        <ul class="future-list">
-          <li>GPS / Telematik</li>
-          <li>Maut</li>
-          <li>FleetSwiss Advisor (KI)</li>
-          <li>Erweiterte Analytics</li>
-          <li>E-Mobilität & Ladeinfrastruktur</li>
-          <li>Versicherungs-/Schadenplattform-Anbindungen</li>
+      <div class="sm-grid">
+        <div class="feature-card sm-card">
+          <h3>FleetSwiss Full Fleet Software</h3>
+          <p>Vous travaillez vous-même avec la plateforme. Les fonctions sont à votre disposition selon l'étendue souscrite.</p>
+        </div>
+        <div class="feature-card sm-card">
+          <h3>Managed Fleet</h3>
+          <p>Des prestations de gestion de flotte complémentaires adaptées à votre flotte – du soutien pour l'acquisition et les processus contractuels jusqu'aux processus de dommages, de restitution et de partenaires. L'étendue et les responsabilités sont convenues individuellement.</p>
+          <ul class="sm-list">
+              <li><strong>Acquisition de véhicules :</strong> Soutien pour les commandes de véhicules et la remise des nouveaux véhicules.</li>
+              <li><strong>Gestion des contrats et des documents :</strong> Soutien pour les processus de leasing et contractuels ainsi que pour l'archivage des documents des véhicules.</li>
+              <li><strong>Gestion des dommages :</strong> Accompagnement des sinistres, de la déclaration à la clôture.</li>
+              <li><strong>Restitutions de véhicules :</strong> Accompagnement des restitutions, y compris préparation et procès-verbal.</li>
+              <li><strong>Partenaires et garages :</strong> Soutien pour la coordination avec les garages partenaires et les prestataires.</li>
+              <li><strong>Administration opérationnelle de la flotte :</strong> Soutien pour les tâches administratives liées à la flotte, telles que les échéances et les contrôles.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm-cta">
+        <a href="/fr/#preise" class="btn btn-outline">Voir les prix</a>
+        <a href="/fr/#kontakt" class="btn btn-primary">Demander Fleet Management</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- V1 FEATURES --><!-- IMPORT & INTEGRATION -->
+  <section>
+    <div class="wrap import-wrap">
+      <div>
+        <div class="eyebrow">Reprise des données</div>
+        <h2 style="font-size:clamp(24px,3vw,32px); font-weight:800; color:var(--navy); margin-top:10px; line-height:1.25;">Import structuré plutôt que chaos Excel</h2>
+        <p style="margin-top:14px; color:var(--slate); font-size:15.5px; line-height:1.65;">FleetSwiss assure l'intégration initiale structurée de vos données existantes – sans double saisie et sans rupture de support.</p>
+        <ul class="import-list" style="margin-top:26px;">
+          <li>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="t">FleetSwiss MASTER Import</div><div class="s">Import central de vos données de véhicules et de flotte au démarrage.</div></div>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <div><div class="t">Imports de fournisseurs de leasing et IFRS</div><div class="s">Reprise dans FleetSwiss des données de leasing et IFRS existantes.</div></div>
+          </li>
         </ul>
+        <div class="note-box">Sources de données prises en charge pour l'import/le workflow – actuellement sous forme d'import structuré, pas d'API en temps réel.</div>
+        <div class="source-pills">
+          <span class="source-pill">MOVON</span>
+          <span class="source-pill">Arval</span>
+          <span class="source-pill">Alphabet</span>
+          <span class="source-pill">Données de cartes carburant et de fournisseurs</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Onboarding</div>
+        <h2 style="font-size:clamp(24px,3vw,32px); font-weight:800; color:var(--navy); margin-top:10px; line-height:1.25;">Opérationnel dès le premier jour</h2>
+        <p style="margin-top:14px; color:var(--slate); font-size:15.5px; line-height:1.65;">Nous accompagnons l'introduction, de la migration des données à la configuration de votre mandant.</p>
+        <ul class="import-list" style="margin-top:26px;">
+          <li>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 12.5l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="t">Configurer le mandant et les rôles</div><div class="s">Structure multi-mandants et autorisations adaptées à votre organisation.</div></div>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <div><div class="t">Configuration des fournisseurs et du reporting</div><div class="s">Rapports et sources de données adaptés à vos besoins.</div></div>
+          </li>
+        </ul>
+        <div class="note-box">Résultat : une situation de départ opérationnelle, avec laquelle votre équipe travaille de manière productive dès le premier jour.</div>
       </div>
     </div>
   </section>
 
+  <!-- SECURITY --><!-- ROADMAP -->
+  <section id="roadmap">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Roadmap</div>
+        <h2>Ce qui fonctionne aujourd'hui – et ce qui suivra</h2>
+        <p>Nous développons FleetSwiss en continu, en fonction des besoins réels du quotidien des flottes suisses.</p>
+      </div>
+      <div class="roadmap-grid">
+        <div class="roadmap-card now">
+          <span class="tag">V1 – disponible aujourd'hui</span>
+          <h3>Disponible</h3>
+          <ul>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Véhicules, conducteurs, contrôle des permis de conduire</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Véhicules de pool, réservations et carnet de route QR</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Leasing et coûts, documents, gestion des dommages</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> HANDOVER, RETURN, PREPARE et garage partenaire</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Refacturations aux collaborateurs, dédouanement et reporting RH</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> MASTER Import, imports de fournisseurs et synchronisation des fournisseurs</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Procès-verbaux PDF et export Excel/ZIP</li>
+          </ul>
+        </div>
+        <div class="roadmap-card next">
+          <span class="tag">V2 – extensions futures</span>
+          <h3>Prévu, pas encore disponible</h3>
+          <ul>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> GPS / télématique</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> Péages</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> FleetSwiss Advisor (IA)</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> Analyses avancées</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> Mobilité électrique et infrastructure de recharge</li>
+            <li><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/></svg> Connexions aux plateformes d'assurance et de gestion des sinistres</li>
+          </ul>
+          <div class="roadmap-foot">Ordre et calendrier selon la priorisation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
   <section class="page-cta">
     <div class="wrap">
-      <h2>Bereit, FleetSwiss live zu sehen?</h2>
-      <p>Vereinbaren Sie eine unverbindliche Demo &ndash; wir zeigen Ihnen FleetSwiss anhand Ihrer eigenen Flotte.</p>
-      <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
+      <h2>Prêt à voir FleetSwiss en direct ?</h2>
+      <p>Convenez d'une démo sans engagement – nous vous présentons FleetSwiss à partir de votre propre flotte.</p>
+      <a href="/fr/#kontakt" class="btn btn-primary">Demander une démo</a>
     </div>
   </section>
 
@@ -1030,37 +1106,38 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img class="footer-logo" src="/assets/brand/fleetswiss-logo-white.png" alt="FleetSwiss" width="1200" height="175" loading="lazy">
-        <p>A product by Alpine Service Switzerland GmbH. Digitales Flottenmanagement für Schweizer Unternehmen.</p>
+        <p>A product by Alpine Service Switzerland GmbH. Gestion de flotte numérique pour les entreprises suisses.</p>
       </div>
       <div class="footer-col">
-        <h2 class="footer-h">Produkt</h2>
+        <h2 class="footer-h">Produit</h2>
         <ul>
-          <li><a href="/produkt.html">Produkt</a></li>
-          <li><a href="/funktionen.html">Funktionen</a></li>
-          <li><a href="/elektronisches-fahrtenbuch.html">Elektronisches Fahrtenbuch</a></li>
-          <li><a href="/produkt.html#roadmap">Roadmap</a></li>
+          <li><a href="/fr/produit.html">Produit</a></li>
+          <li><a href="/fr/fonctions.html">Fonctions</a></li>
+          <li><a href="/fr/carnet-de-route-electronique.html">Carnet de route électronique</a></li>
+          <li><a href="/fr/produit.html#roadmap">Roadmap</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h2 class="footer-h">Unternehmen</h2>
+        <h2 class="footer-h">Entreprise</h2>
         <ul>
-          <li><a href="/sicherheit.html">Sicherheit</a></li>
-          <li><a href="/ueber-uns.html">Über uns</a></li>
-          <li><a href="/#kontakt">Kontakt</a></li>
+          <li><a href="/fr/securite.html">Sécurité</a></li>
+          <li><a href="/fr/a-propos.html">À propos</a></li>
+          <li><a href="/fr/#kontakt">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h2 class="footer-h">Rechtliches</h2>
+        <h2 class="footer-h">Informations juridiques</h2>
         <ul>
-          <li><a href="/datenschutz.html">Datenschutz</a></li>
-          <li><a href="/impressum.html">Impressum</a></li>
-          <li><a href="/agb.html">AGB</a></li>
-          <li hidden><a href="/datenschutz.html#ziffer-35" data-consent-open>Datenschutz-Einstellungen</a></li>
+          <li><a href="/datenschutz.html" hreflang="de">Protection des données (DE)</a></li>
+          <li><a href="/impressum.html" hreflang="de">Mentions légales (DE)</a></li>
+          <li><a href="/agb.html" hreflang="de">CGV (DE)</a></li>
+          <li hidden><a href="/datenschutz.html#ziffer-35" hreflang="de" data-consent-open>Paramètres de confidentialité</a></li>
         </ul>
       </div>
     </div>
+    <p class="legal-lang-note">Les documents juridiques (protection des données, mentions légales, CGV) sont actuellement disponibles en allemand, dans leur version approuvée.</p>
     <div class="footer-bottom">
-      <span>© 2026 FleetSwiss. Alle Rechte vorbehalten.</span>
+      <span>© 2026 FleetSwiss. Tous droits réservés.</span>
       <div class="swiss-badge">
         <svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#C7492B"/><rect x="13" y="8" width="6" height="16" fill="#fff"/><rect x="8" y="13" width="16" height="6" fill="#fff"/></svg>
         Swiss based. Globally minded.

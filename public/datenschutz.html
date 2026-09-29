@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -618,48 +618,6 @@
   .contact-tag { margin-top: 32px; font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: #7EB4E6; }
   .contact-tag span { display: block; font-size: 13px; letter-spacing: 0.1em; }
 
-  .form-card {
-    background: #fff;
-    color: var(--ink);
-    border-radius: 14px;
-    padding: 32px;
-    box-shadow: var(--shadow);
-  }
-  .form-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); }
-  .form-card > p { font-size: 14px; color: var(--slate); margin-top: 6px; }
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 22px;
-  }
-  @media (max-width: 480px) { .form-grid { grid-template-columns: 1fr; } }
-  .form-grid .full { grid-column: 1 / -1; }
-  label {
-    display: block;
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--slate);
-    margin-bottom: 6px;
-  }
-  input, select, textarea {
-    width: 100%;
-    font: inherit;
-    padding: 11px 13px;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--paper);
-    color: var(--ink);
-  }
-  input:focus, select:focus, textarea:focus {
-    outline: 2px solid var(--blue);
-    outline-offset: 1px;
-    background: #fff;
-  }
-  textarea { resize: vertical; min-height: 92px; }
-  .form-card .btn { width: 100%; justify-content: center; margin-top: 18px; }
-  .form-status { font-size: 13px; margin-top: 12px; color: var(--green); display: none; }
-  .form-status.show { display: block; }
 
   /* Footer */
   footer.site {
@@ -758,7 +716,6 @@
 <style id="pre-golive">
   .lang-switch[hidden] { display: none !important; }
   .footer-col .legal-pending { font-size: 13.5px; color: #6F8497; }
-  .form-status.info { color: var(--slate); }
 </style>
 <style id="impressum">
   .legal-text h2 { font-size: 17px; font-weight: 700; color: var(--navy); margin: 36px 0 10px; }
@@ -831,9 +788,34 @@
     .menu-toggle span, .menu-toggle::before, .menu-toggle::after { background: var(--navy); }
     :root:not([data-theme="dark"]) .mobile-menu a.mobile-login { border-color: var(--blue); color: var(--blue); }
     .mobile-menu a.btn-primary { color: #fff; }
-    input, select, textarea { background: #fff; color: var(--ink); border-color: #8193A4; }
-    input::placeholder, textarea::placeholder { color: #6B7B89; }
     .roadmap-card.now .tag { color: #1E7A45; }
+  }
+</style>
+<style id="i18n-lang">
+  /* V1.13 Sprachumschalter DE | FR | EN */
+  .lang-switch { display: flex; align-items: center; gap: 2px; font-size: 13px; font-weight: 600; color: var(--slate-light); white-space: nowrap; }
+  .lang-switch span { padding: 0 1px; }
+  .lang-switch a { padding: 4px 5px; border-radius: 4px; color: var(--slate); text-decoration: none; line-height: 1.2; }
+  .lang-switch a:hover, .lang-switch a:focus-visible { color: var(--blue); }
+  .lang-switch a[aria-current="page"] { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+  nav.primary .lang-switch { margin-left: -12px; }
+  nav.primary .lang-switch a { font-size: 13px; font-weight: 600; }
+  .mobile-menu .lang-switch { order: 99; justify-content: flex-start; gap: 6px; padding: 16px 0 2px; font-size: 15px; }
+  .mobile-menu .lang-switch a { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; font-weight: 600; }
+  .mobile-menu .lang-switch a[aria-current="page"] { border-color: var(--navy); }
+  .mobile-menu .lang-switch span { display: none; }
+  :root[data-theme="dark"] .lang-switch a { color: #C9D6E3; }
+  :root[data-theme="dark"] .lang-switch a[aria-current="page"] { color: #fff; }
+  .legal-lang-note { margin-top: 18px; font-size: 12.5px; color: #93A9BE; }
+  .lang-switch .lang-off { padding: 4px 5px; color: var(--slate-light); opacity: .55; cursor: not-allowed; }
+  .mobile-menu .lang-switch .lang-off { display: inline-block; padding: 8px 12px; border: 1px dashed var(--line); border-radius: 6px; font-weight: 600; }
+  .legal-lang-banner { background: var(--paper, #F5F7FA); border-bottom: 1px solid var(--line); font-size: 13px; line-height: 1.5; color: var(--slate); }
+  .legal-lang-banner .wrap { padding-top: 9px; padding-bottom: 9px; }
+  .legal-lang-banner span[lang="de-CH"] { color: var(--navy); font-weight: 600; }
+  @media (max-width: 1180px) {
+    nav.primary { display: none; }
+    .menu-toggle { display: block; }
+    header.site .nav-right { display: flex; }
   }
 </style>
 </head>
@@ -846,17 +828,14 @@
     <nav class="primary" aria-label="Hauptnavigation">
       <a href="/produkt.html">Produkt</a>
       <a href="/funktionen.html">Funktionen</a>
+      <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
       <a href="/sicherheit.html">Sicherheit</a>
       <a href="/ueber-uns.html">Über uns</a>
       <a href="/#kontakt">Kontakt</a>
       <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
+      <div class="lang-switch lang-desktop" role="group" aria-label="Sprache wählen"><a href="/datenschutz.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><span class="lang-off" lang="fr-CH" aria-disabled="true" title="Version juridique disponible uniquement en allemand">FR</span><span aria-hidden="true">|</span><span class="lang-off" lang="en" aria-disabled="true" title="Legal text available in German only">EN</span></div>
     </nav>
     <div class="nav-right">
-      <div class="lang-switch" role="group" aria-label="Sprache wählen" hidden>
-        <button type="button" aria-current="true">DE</button>
-        <span aria-hidden="true">|</span>
-        <button type="button" aria-current="false">EN</button>
-      </div>
       <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
@@ -864,13 +843,16 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/produkt.html">Produkt</a>
     <a href="/funktionen.html">Funktionen</a>
+    <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
     <a href="/sicherheit.html">Sicherheit</a>
     <a href="/ueber-uns.html">Über uns</a>
     <a href="/#kontakt">Kontakt</a>
     <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
     <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
+    <div class="lang-switch lang-mobile" role="group" aria-label="Sprache wählen"><a href="/datenschutz.html" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><span class="lang-off" lang="fr-CH" aria-disabled="true" title="Version juridique disponible uniquement en allemand">FR</span><span aria-hidden="true">|</span><span class="lang-off" lang="en" aria-disabled="true" title="Legal text available in German only">EN</span></div>
   </div>
 </header>
+<div class="legal-lang-banner" role="note"><div class="wrap"><span lang="de-CH">Diese Rechtsfassung liegt derzeit ausschliesslich auf Deutsch vor.</span> <span lang="fr-CH">Version juridique approuvée disponible uniquement en allemand.</span> <span lang="en">The approved legal text is currently available in German only.</span></div></div>
 <main>
 
   <section class="page-head">
@@ -1520,8 +1502,9 @@
       </section>
       <section class="agb-section" id="ziffer-37" aria-labelledby="ziffer-37-titel">
         <h2 id="ziffer-37-titel"><span class="agb-h-no">37.</span> Kontakt-, Demo- und Angebotsanfragen</h2>
-        <p>Wenn eine Person FleetSwiss über das Kontaktformular, per E-Mail oder auf anderem Weg kontaktiert, können insbesondere Name, Unternehmen, E-Mail-Adresse, Telefonnummer, Inhalt der Anfrage, Zeitpunkt der Kontaktaufnahme sowie weitere freiwillig übermittelte Informationen bearbeitet werden. Diese Daten werden zur Bearbeitung der Anfrage, zur Kommunikation und gegebenenfalls zur Vorbereitung oder Durchführung einer Geschäftsbeziehung verwendet.</p>
+        <p>Die öffentliche FleetSwiss-Website bietet kein Kontaktformular an. Wenn eine Person FleetSwiss per E-Mail, über WhatsApp oder auf anderem Weg kontaktiert, können insbesondere Name, Kontaktangaben wie E-Mail-Adresse oder Telefonnummer, Unternehmen, Inhalt der Anfrage, Zeitpunkt der Kontaktaufnahme sowie weitere freiwillig übermittelte Informationen bearbeitet werden. Diese Daten werden zur Bearbeitung der Anfrage, zur Kommunikation und gegebenenfalls zur Vorbereitung oder Durchführung einer Geschäftsbeziehung verwendet.</p>
         <p>Entsteht daraus keine Geschäftsbeziehung, werden die Daten grundsätzlich gelöscht oder anonymisiert, sobald sie für diese Zwecke nicht mehr erforderlich sind und keine gesetzlichen oder berechtigten Gründe für eine weitere Aufbewahrung bestehen.</p>
+        <p>Auf der Website befindet sich lediglich ein externer Link zu WhatsApp. Beim blossen Besuch von fleetswiss.ch wird über diesen Link keine Verbindung zu WhatsApp aufgebaut. Erst wenn Sie den WhatsApp-Link bewusst öffnen, verlassen Sie die FleetSwiss-Website und nutzen den Dienst des jeweiligen WhatsApp-Anbieters. Bei der anschliessenden Nutzung von WhatsApp können Personendaten nach den Bedingungen und Datenschutzbestimmungen des Anbieters bearbeitet werden.</p>
       </section>
       <section class="agb-section" id="ziffer-38" aria-labelledby="ziffer-38-titel">
         <h2 id="ziffer-38-titel"><span class="agb-h-no">38.</span> Support und Kommunikation</h2>
@@ -1729,6 +1712,7 @@
         <ul>
           <li><a href="/produkt.html">Produkt</a></li>
           <li><a href="/funktionen.html">Funktionen</a></li>
+          <li><a href="/elektronisches-fahrtenbuch.html">Elektronisches Fahrtenbuch</a></li>
           <li><a href="/produkt.html#roadmap">Roadmap</a></li>
         </ul>
       </div>
@@ -1774,17 +1758,6 @@
       });
     });
 
-    var form = document.getElementById('contactForm');
-    var status = document.getElementById('formStatus');
-    if (form) {
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        // Hinweis: Formular ist aktuell nicht an ein Backend/Mailsystem angebunden.
-        // Anbindung (z. B. E-Mail-Versand oder CRM) folgt in einem separaten Schritt.
-        status.classList.add('show');
-        form.reset();
-      });
-    }
   })();
 </script>
 <script src="/assets/js/consent.js" defer></script>
