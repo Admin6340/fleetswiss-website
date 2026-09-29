@@ -978,6 +978,11 @@
   .contact-card .cc-foot { margin-top: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate); }
   .contact-card .cc-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 </style>
+<style id="anchor-stability">
+  /* V1.13 Patch: Platz für nachladende Bilder vorab reservieren, damit Anker (#kontakt) nach dem Laden exakt treffen */
+  .product-shot .shot img { width: 100%; }
+  .lb-teaser-visual .lb-phone-pair img { width: 256px; }
+</style>
 </head>
 <body>
 <header class="site">
