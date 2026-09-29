@@ -967,6 +967,17 @@
     header.site .nav-right { display: flex; }
   }
 </style>
+<style id="contact-card-v113">
+  /* V1.13 P2: vereinfachte Kontaktkarte (ohne Formular) */
+  .contact-card .cc-title { font-size: 22px; font-weight: 800; color: var(--navy); line-height: 1.25; }
+  .contact-card .cc-intro { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--slate); }
+  .contact-card .cc-block { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .contact-card .cc-address { display: block; margin-top: 4px; font-size: clamp(19px, 2.1vw, 22px); font-weight: 700; color: var(--navy); word-break: break-word; }
+  .contact-card .cc-text { margin-top: 4px; font-size: 15px; line-height: 1.55; color: var(--ink); }
+  .contact-card .cc-btn { display: flex; width: 100%; justify-content: center; text-align: center; margin-top: 14px; white-space: normal; }
+  .contact-card .cc-foot { margin-top: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate); }
+  .contact-card .cc-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+</style>
 </head>
 <body>
 <header class="site">
@@ -980,12 +991,12 @@
       <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
       <a href="/sicherheit.html">Sicherheit</a>
       <a href="/ueber-uns.html">Über uns</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="/#kontakt">Kontakt</a>
       <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
       <div class="lang-switch lang-desktop" role="group" aria-label="Sprache wählen"><a href="/" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/" hreflang="en" lang="en">EN</a></div>
     </nav>
     <div class="nav-right">
-      <a href="#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
+      <a href="/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Demo anfragen</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
   </div>
@@ -995,8 +1006,8 @@
     <a href="/elektronisches-fahrtenbuch.html">E-Fahrtenbuch</a>
     <a href="/sicherheit.html">Sicherheit</a>
     <a href="/ueber-uns.html">Über uns</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#kontakt" class="btn btn-primary">Demo anfragen</a>
+    <a href="/#kontakt">Kontakt</a>
+    <a href="/#kontakt" class="btn btn-primary">Demo anfragen</a>
     <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
     <div class="lang-switch lang-mobile" role="group" aria-label="Sprache wählen"><a href="/" hreflang="de-CH" lang="de-CH" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="/fr/" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/" hreflang="en" lang="en">EN</a></div>
   </div>
@@ -1219,8 +1230,8 @@
       </div>
       <figure class="lb-teaser-visual">
         <div class="lb-phone-pair">
-          <img src="/assets/product/fahrer-1-qr-scannen.png" width="252" height="635" alt="Mobile Fahreransicht: QR-Code am Fahrzeug mit dem Smartphone scannen" loading="lazy" decoding="async">
-          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="253" height="637" alt="Mobile Fahreransicht: Fahrzeug erkannt und für den Fahrer freigegeben, mit Führerausweis-, Reservations- und Standortangaben" loading="lazy" decoding="async">
+          <img src="/assets/product/fahrer-1-qr-scannen.png" width="256" height="632" alt="Mobile Fahreransicht: QR-Code am Fahrzeug mit dem Smartphone scannen" loading="lazy" decoding="async">
+          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="256" height="632" alt="Mobile Fahreransicht: Fahrzeug erkannt und für den Fahrer freigegeben, mit Führerausweis-, Reservations- und Standortangaben" loading="lazy" decoding="async">
         </div>
         <figcaption>Beispielansicht mit Demodaten · FleetSwiss läuft direkt im Browser auf dem Smartphone – keine App-Installation erforderlich.</figcaption>
       </figure>
@@ -1273,15 +1284,20 @@
         <p class="contact-note">Unverbindlich und persönlich.</p>
         <div class="contact-tag">DRIVEN BY BETTER<span>DECISIONS.</span></div>
       </div>
-      <div class="contact-card">
-        <p class="cc-label">E-Mail</p>
-        <a class="cc-email" href="mailto:info@fleetswiss.ch">info@fleetswiss.ch</a>
-        <p class="cc-label cc-label-next">WhatsApp</p>
-        <a class="cc-email" href="https://wa.me/41766070531?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20FleetSwiss%20und%20w%C3%BCrde%20gerne%20mehr%20erfahren." target="_blank" rel="noopener noreferrer">+41 76 607 05 31</a>
-        <div class="cc-actions">
-          <a class="btn btn-primary" href="mailto:info@fleetswiss.ch">E-Mail schreiben</a>
-          <a class="btn btn-outline cc-whatsapp" href="https://wa.me/41766070531?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20FleetSwiss%20und%20w%C3%BCrde%20gerne%20mehr%20erfahren." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp kontaktieren (öffnet WhatsApp in einem neuen Fenster)">Per WhatsApp kontaktieren</a>
+      <div class="contact-card" role="group" aria-labelledby="cc-title">
+        <h3 class="cc-title" id="cc-title">Kontakt aufnehmen</h3>
+        <p class="cc-intro">Sie möchten FleetSwiss kennenlernen oder haben Fragen? Wir freuen uns auf Ihre Nachricht.</p>
+        <div class="cc-block">
+          <p class="cc-label">E-Mail</p>
+          <span class="cc-address">info@fleetswiss.ch</span>
+          <a class="btn btn-primary cc-btn" href="mailto:info@fleetswiss.ch">E-Mail schreiben</a>
         </div>
+        <div class="cc-block">
+          <p class="cc-label">WhatsApp</p>
+          <p class="cc-text">Direkt und unkompliziert mit uns Kontakt aufnehmen.</p>
+          <a class="btn btn-outline cc-whatsapp cc-btn" href="https://wa.me/41766070531?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20FleetSwiss%20und%20w%C3%BCrde%20gerne%20mehr%20erfahren." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp öffnen (öffnet WhatsApp in einem neuen Fenster)">WhatsApp öffnen</a>
+        </div>
+        <p class="cc-foot">Wir melden uns in der Regel kurzfristig bei Ihnen.</p>
       </div>
     </div>
   </section>

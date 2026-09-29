@@ -991,6 +991,17 @@
     header.site .nav-right { display: flex; }
   }
 </style>
+<style id="contact-card-v113">
+  /* V1.13 P2: vereinfachte Kontaktkarte (ohne Formular) */
+  .contact-card .cc-title { font-size: 22px; font-weight: 800; color: var(--navy); line-height: 1.25; }
+  .contact-card .cc-intro { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--slate); }
+  .contact-card .cc-block { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .contact-card .cc-address { display: block; margin-top: 4px; font-size: clamp(19px, 2.1vw, 22px); font-weight: 700; color: var(--navy); word-break: break-word; }
+  .contact-card .cc-text { margin-top: 4px; font-size: 15px; line-height: 1.55; color: var(--ink); }
+  .contact-card .cc-btn { display: flex; width: 100%; justify-content: center; text-align: center; margin-top: 14px; white-space: normal; }
+  .contact-card .cc-foot { margin-top: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate); }
+  .contact-card .cc-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+</style>
 </head>
 <body>
 <header class="site">
@@ -1004,12 +1015,12 @@
       <a href="/en/electronic-logbook.html">E-Logbook</a>
       <a href="/en/security.html">Security</a>
       <a href="/en/about.html">About us</a>
-      <a href="#kontakt">Contact</a>
+      <a href="/en/#kontakt">Contact</a>
       <a href="https://app.fleetswiss.ch" class="nav-login">Login</a>
       <div class="lang-switch lang-desktop" role="group" aria-label="Choose language"><a href="/" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/" hreflang="en" lang="en" aria-current="page">EN</a></div>
     </nav>
     <div class="nav-right">
-      <a href="#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Request a demo</a>
+      <a href="/en/#kontakt" class="btn btn-primary" style="display:none" id="navCtaDesktop">Request a demo</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </div>
   </div>
@@ -1019,8 +1030,8 @@
     <a href="/en/electronic-logbook.html">E-Logbook</a>
     <a href="/en/security.html">Security</a>
     <a href="/en/about.html">About us</a>
-    <a href="#kontakt">Contact</a>
-    <a href="#kontakt" class="btn btn-primary">Request a demo</a>
+    <a href="/en/#kontakt">Contact</a>
+    <a href="/en/#kontakt" class="btn btn-primary">Request a demo</a>
     <a href="https://app.fleetswiss.ch" class="btn btn-outline mobile-login">Login</a>
     <div class="lang-switch lang-mobile" role="group" aria-label="Choose language"><a href="/" hreflang="de-CH" lang="de-CH">DE</a><span aria-hidden="true">|</span><a href="/fr/" hreflang="fr-CH" lang="fr-CH">FR</a><span aria-hidden="true">|</span><a href="/en/" hreflang="en" lang="en" aria-current="page">EN</a></div>
   </div>
@@ -1243,8 +1254,8 @@
       </div>
       <figure class="lb-teaser-visual">
         <div class="lb-phone-pair">
-          <img src="/assets/product/fahrer-1-qr-scannen.png" width="252" height="635" alt="Mobile driver view: scanning the QR code on the vehicle with a smartphone" loading="lazy" decoding="async">
-          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="253" height="637" alt="Mobile driver view: vehicle recognised and released for the driver, with driving licence, booking and location details" loading="lazy" decoding="async">
+          <img src="/assets/product/fahrer-1-qr-scannen.png" width="256" height="632" alt="Mobile driver view: scanning the QR code on the vehicle with a smartphone" loading="lazy" decoding="async">
+          <img src="/assets/product/fahrer-2-fahrzeug-erkannt.png" width="256" height="632" alt="Mobile driver view: vehicle recognised and released for the driver, with driving licence, booking and location details" loading="lazy" decoding="async">
         </div>
         <figcaption>Sample view with demo data (German interface) · FleetSwiss runs directly in the smartphone browser – no app installation required.</figcaption>
       </figure>
@@ -1297,15 +1308,20 @@
         <p class="contact-note">No obligation and personal.</p>
         <div class="contact-tag">DRIVEN BY BETTER<span>DECISIONS.</span></div>
       </div>
-      <div class="contact-card">
-        <p class="cc-label">Email</p>
-        <a class="cc-email" href="mailto:info@fleetswiss.ch">info@fleetswiss.ch</a>
-        <p class="cc-label cc-label-next">WhatsApp</p>
-        <a class="cc-email" href="https://wa.me/41766070531?text=Hello%2C%20I%20am%20interested%20in%20FleetSwiss%20and%20would%20like%20to%20learn%20more." target="_blank" rel="noopener noreferrer">+41 76 607 05 31</a>
-        <div class="cc-actions">
-          <a class="btn btn-primary" href="mailto:info@fleetswiss.ch">Send an email</a>
-          <a class="btn btn-outline cc-whatsapp" href="https://wa.me/41766070531?text=Hello%2C%20I%20am%20interested%20in%20FleetSwiss%20and%20would%20like%20to%20learn%20more." target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp (opens WhatsApp in a new window)">Contact via WhatsApp</a>
+      <div class="contact-card" role="group" aria-labelledby="cc-title">
+        <h3 class="cc-title" id="cc-title">Get in touch</h3>
+        <p class="cc-intro">Would you like to get to know FleetSwiss or do you have any questions? We look forward to hearing from you.</p>
+        <div class="cc-block">
+          <p class="cc-label">Email</p>
+          <span class="cc-address">info@fleetswiss.ch</span>
+          <a class="btn btn-primary cc-btn" href="mailto:info@fleetswiss.ch">Send an email</a>
         </div>
+        <div class="cc-block">
+          <p class="cc-label">WhatsApp</p>
+          <p class="cc-text">Contact us directly and easily.</p>
+          <a class="btn btn-outline cc-whatsapp cc-btn" href="https://wa.me/41766070531?text=Hello%2C%20I%20am%20interested%20in%20FleetSwiss%20and%20would%20like%20to%20learn%20more." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp (opens WhatsApp in a new window)">Open WhatsApp</a>
+        </div>
+        <p class="cc-foot">We usually get back to you promptly.</p>
       </div>
     </div>
   </section>
